@@ -1,0 +1,36 @@
+[
+	{
+		"title": "Coin Caps",
+		"tools": ["JavaScript", "React", "Css3", "Html5", "Node.js"],
+		"url": "https://coincaps.netlify.app/",
+		"info": "A React web-application where the user can view the 1000 most valuable cryptocurrencies by market capitalization. Additionally, the user can select in which currency the app displays the price data for the cryptos. All of the cryptos can also be filtered out with a search field. The data and statistics of the application are retrieved from the CoinGecko API with different AJAX calls."
+	},
+	{
+		"title": "The Hottest Blogs",
+		"tools": ["Python", "Django", "Css3", "Html5"],
+		"url": "https://the-hottest-blogs.herokuapp.com/",
+		"info": "This is my first ever web application project created with Django and Python. This application is the Blog exercise from the ebook Python Crash Course by: Eric Matthes."
+	},
+	{
+		"title": "CS-GO Weapons",
+		"tools": ["JavasScript", "Css3", "Html5"],
+		"url": "https://csgo-weapons.netlify.app/",
+		"info": "A simple web application, that lets the user shoot either a single shot or multiple shots with a selected weapon from the game 'Counter-Strike: Global Offensive'. Created with vanilla JavaScript, HTML & CSS."
+	},
+	{
+		"title": "Polish Cow",
+		"tools": ["JavasScript", "Css3", "Html5"],
+		"url": "https://polishcow.netlify.app/",
+		"info": "A simple web application that generates dancing cows in an infininte loop while playing Gdzie jest biały węgorz (Zejście) by: Cypis. created with vanilla JavaScript, HTML & CSS."
+	},
+	{
+		"title": "Simple JavaScript Projects",
+		"tools": ["JavasScript", "Css3", "Html5"],
+		"url": "https://simplejsprojects.netlify.app/"
+	},
+	{
+		"title": "Simple To-Do List",
+		"tools": ["JavasScript", "Css3", "Html5"],
+		"url": "https://omars-todo-list.netlify.app/"
+	}
+]
