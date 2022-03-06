@@ -20,7 +20,7 @@ const About = () => {
 						<h1>Software Engineering</h1>
 						<div className="about-info">
 							<p>
-								My name is <b>Omar <span className="secondary-color">Kraidié</span></b>. I'm a 2'nd year software engineering student
+								My name is <b>Omar <span className="secondary-color">Kraidié</span></b>. I'm a second year software engineering student
 								currently studying in LAB University of Applied Sciences in Lahti!
 							</p>
 							<p>

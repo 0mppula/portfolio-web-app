@@ -16,8 +16,8 @@ function App() {
 		<Router>
 			<Nav activePage={activePage} setActivePage={setActivePage} />
 			<Routes>
-				<Route exact path="/projects" element={<Projects />} />
-				<Route exact path="/about" element={<About />} />
+				<Route exact path="projects" element={<Projects />} />
+				<Route exact path="about" element={<About />} />
 				<Route path="*" element={<Home setActivePage={setActivePage} />} />
 			</Routes>
 			<Footer />

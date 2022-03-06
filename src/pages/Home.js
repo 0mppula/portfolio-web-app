@@ -16,8 +16,8 @@ const Home = ({ setActivePage }) => {
 				<div className="greet-bottom">
 					<div className="greet-info">
 						<p>
-							I'm a software engineering student currently studying in LAB University
-							of Applied Sciences in Lahti!
+							I'm a second year software engineering student currently studying in LAB
+							University of Applied Sciences in Lahti!
 							<br />
 							<br />
 							Feel free to view the projects I've created and take a look at my CV by
