@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-const Nav = ({ activePage, setActivePage }) => {
+const Nav = ({ setActivePage }) => {
 	const [sideNav, setSideNav] = useState(false);
 
 	const links = ['home', 'projects', 'about'];
@@ -14,12 +14,12 @@ const Nav = ({ activePage, setActivePage }) => {
 		return () => window.removeEventListener('resize', handleWindowResize);
 	}, []);
 
-  const handleWindowResize = () => {
-    const w = window.innerWidth
-    if(w > 800) {
-      setSideNav(false)
-    }
-  };
+	const handleWindowResize = () => {
+		const w = window.innerWidth;
+		if (w > 800) {
+			setSideNav(false);
+		}
+	};
 
 	const handleMouseOver = (e) => {
 		if (e.target.classList.contains('list-item') && !sideNav) {
@@ -71,13 +71,13 @@ const Nav = ({ activePage, setActivePage }) => {
 								: '',
 						}}
 					>
-						<Link
-							className={`list-item ${activePage === link ? 'active' : ''}`}
+						<NavLink
+							className="list-item"
 							to={`/${link === 'home' ? '' : link}`}
 							onClick={() => handleLinkClick(link)}
 						>
 							{link} <span className="underline"></span>
-						</Link>
+						</NavLink>
 					</li>
 				))}
 			</ul>
