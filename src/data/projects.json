@@ -1,15 +1,15 @@
 [
 	{
-		"title": "Coin Caps",
-		"tools": ["JavaScript", "React", "Css3", "Html5", "Node.js"],
-		"url": "https://coincaps.netlify.app/",
-		"info": "A React web-application where the user can view the 1000 most valuable cryptocurrencies by market capitalization. Additionally, the user can select in which currency the app displays the price data for the cryptos. All of the cryptos can also be filtered out with a search field. The data and statistics of the application are retrieved from the CoinGecko API with different AJAX calls."
+		"title": "KoronKorko",
+		"tools": ["MongoDB", "React.js", "Express.js", "Redux.js", "Node.js"],
+		"url": "https://koronkorko.herokuapp.com/",
+		"info": "KoronKorko is a compound interest calculator web-application created with the MERN stack. In Addition to calculating interest reates, authenticated users can create, save, edit, import and delete their calculations. The compound interest is calculated from various inputs such as starting balance, interest rate, duration, contribution and more. The calculated interest data can be viewed in both numerical and visual form."
 	},
 	{
-		"title": "The Hottest Blogs",
-		"tools": ["Python", "Django", "Css3", "Html5"],
-		"url": "https://the-hottest-blogs.herokuapp.com/",
-		"info": "This is my first ever web application project created with Django and Python. This application is the Blog exercise from the ebook Python Crash Course by: Eric Matthes."
+		"title": "CoinCaps",
+		"tools": ["JavaScript", "React.js", "Css3", "Html5", "Node.js"],
+		"url": "https://coincaps.netlify.app/",
+		"info": "A React web-application where the user can view the 1000 most valuable cryptocurrencies by market capitalization. Additionally, the user can select in which currency the app displays the price data for the cryptos. All of the cryptos can also be filtered out with a search field. The data and statistics of the application are retrieved from the CoinGecko API with different AJAX calls."
 	},
 	{
 		"title": "CS-GO Weapons",
@@ -22,6 +22,12 @@
 		"tools": ["JavasScript", "Css3", "Html5"],
 		"url": "https://polishcow.netlify.app/",
 		"info": "A simple web application that generates dancing cows in an infininte loop while playing Gdzie jest biały węgorz (Zejście) by: Cypis. created with vanilla JavaScript, HTML & CSS."
+	},
+	{
+		"title": "The Hottest Blogs",
+		"tools": ["Python", "Django", "Css3", "Html5"],
+		"url": "https://the-hottest-blogs.herokuapp.com/",
+		"info": "This is my first ever web application project created with Django and Python. This application is the Blog exercise from the ebook Python Crash Course by: Eric Matthes."
 	},
 	{
 		"title": "Simple JavaScript Projects",
