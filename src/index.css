@@ -514,15 +514,37 @@ li {
 .about-info {
 	position: relative;
 	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
 }
 
-.about-info p {
-	font-size: 1.3rem;
+.about-info p,
+.about-info ul li {
+	font-size: 1rem;
 	margin-bottom: 0.5rem;
 }
 
-.about-info p:last-child {
+.about-info ul li {
+	list-style-type: disc !important;
+	overflow: visible !important;
+}
+
+.about-info ul {
+	margin-left: 1rem !important;
+}
+.about-info div:nth-child(2) p:first-child {
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.about-info li:last-child {
 	margin-bottom: 0rem;
+}
+.about-info p:first-child {
+	margin-bottom: 1rem;
 }
 /* End About styles */
 
