@@ -25,7 +25,6 @@
 
 html {
 	overflow-x: hidden;
-	scroll-behavior: smooth;
 	overflow-y: scroll; /* Show scrollbars */
 }
 
@@ -45,9 +44,11 @@ body {
 	width: min(1140px, 92vw);
 	min-height: calc(100vh - 3.5rem);
 	margin: 3.5rem auto 0 auto;
+	position: relative;
 }
 
 .to-top {
+	cursor: pointer;
 	position: fixed;
 	bottom: 0.7rem;
 	right: 1.25rem;
@@ -61,6 +62,7 @@ body {
 	font-size: 1.5rem;
 	text-decoration: none;
 	border-radius: 50%;
+	border: solid 2px var(--clr-black);
 	transition: var(--slow-transition);
 	opacity: 0;
 	pointer-events: none;

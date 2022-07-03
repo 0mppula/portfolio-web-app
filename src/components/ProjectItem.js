@@ -4,7 +4,6 @@ import placeHolderInfo from '../utils/placeholderInfo';
 import Frame from '../components/Frame';
 import projectImg from '../images/project_bg.jpg';
 
-
 const ProjectItem = ({ project, index }) => {
 	const mouseoverImage = (e) => {
 		if (e.target.classList.contains('hover')) {
@@ -49,7 +48,7 @@ const ProjectItem = ({ project, index }) => {
 				onMouseOver={mouseoverImage}
 				onMouseOut={mouseoutImage}
 			>
-				<img src={projectImg} alt="project-background" />
+				<img src={project?.image || projectImg} alt="project-background" />
 				<div className="hover"></div>
 				<div id="index" className={`index ${(index + 1) % 2 === 0 ? 'right' : 'left'}`}>
 					{index + 1}

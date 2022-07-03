@@ -6,7 +6,9 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import { useTitle } from './hooks/useTitle';
+import ToTop from './components/ToTop';
 
 function App() {
 	const [activePage, setActivePage] = useState('home');
@@ -14,7 +16,9 @@ function App() {
 
 	return (
 		<Router>
+			<ScrollToTop />
 			<Nav activePage={activePage} setActivePage={setActivePage} />
+			<ToTop />
 			<Routes>
 				<Route exact path="projects" element={<Projects />} />
 				<Route exact path="about" element={<About />} />
