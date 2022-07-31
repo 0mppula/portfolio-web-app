@@ -22,7 +22,7 @@ Here is the full list of all the tech books that I have read.
 
 [Full list][6] (Good Reads link)
 
-[0]: https://omars-portfolio.netlify.app/
+[0]: https://omarkraidie.com/
 [1]: https://koronkorko.herokuapp.com/
 [2]: https://coincaps.netlify.app/
 [3]: https://csgo-weapons.netlify.app/
