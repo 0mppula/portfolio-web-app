@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
-	const [year, setyear] = useState(new Date().getFullYear().toString());
+	const [year] = useState(new Date().getFullYear().toString());
 
 	return (
 		<div className="footer">
@@ -11,14 +11,22 @@ const Footer = () => {
 				<a href="https://github.com/0mppula" target="_blank" rel="noreferrer">
 					<FontAwesomeIcon className="footer-icon icon" icon={faGithub} />
 				</a>
-				<a href="https://www.linkedin.com/in/omar-kraidi%C3%A9-b7a8141a8/" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon className="footer-icon icon" icon={faLinkedin} />
+				<a
+					href="https://www.linkedin.com/in/omar-kraidi%C3%A9-b7a8141a8/"
+					target="_blank"
+					rel="noreferrer"
+				>
+					<FontAwesomeIcon className="footer-icon icon" icon={faLinkedin} />
 				</a>
 				<a href="https://twitter.com/OmarKraidie" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon className="footer-icon icon" icon={faTwitter} />
+					<FontAwesomeIcon className="footer-icon icon" icon={faTwitter} />
 				</a>
-				<a href="https://www.youtube.com/channel/UCdpM1SUen7ZxX2owolyIGyQ" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon className="footer-icon icon" icon={faYoutube} />
+				<a
+					href="https://www.youtube.com/channel/UCdpM1SUen7ZxX2owolyIGyQ"
+					target="_blank"
+					rel="noreferrer"
+				>
+					<FontAwesomeIcon className="footer-icon icon" icon={faYoutube} />
 				</a>
 			</div>
 
