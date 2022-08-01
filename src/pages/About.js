@@ -27,9 +27,16 @@ const About = () => {
 									</b>
 									. I'm a second year software engineering student currently
 									studying in LAB University of Applied Sciences in Lahti!
+									<br />
+									<br />
+									I like to create useful software that can be leveraged in everyday applications. In short, if you have a problem that needs to be resolved I <b>will</b> create a perfect solution. The best way for me to widen the knowledge in my career is by <b>DOING</b>.
+									<br />
+									<br />
+									In addition coding, I'm intereseted in stocks,
+									economics and investing. That said, I believe in a pinch I can perform as an Excel superstar.
 								</p>
 							</div>
-							
+
 							<div>
 								<p>Milestones</p>
 								<ul>
@@ -37,32 +44,31 @@ const About = () => {
 										<b>Q3 2019</b> Wrote my first Hello World! web-app.
 									</li>
 									<li>
-										<b>Q1 2020</b> Decided to seariously pursue software
-										engineering as a full-time career.
+										<b>Q1 2020</b> Decided to pursue software engineering as a
+										full-time career.
 									</li>
 									<li>
-										<b>Q4 2020</b> Developed first my couple of projects with
-										HTML, CSS & JavaScript.
+										<b>Q3 2020</b> Developed my first projects with HTML, CSS &
+										JavaScript.
 									</li>
 									<li>
-										<b>Q1 2021</b> Started Bachelor's degree in Computer Science
-										at my local University LAB.
+										<b>Q1 2021</b> Started a Bachelor's degree in Computer
+										Science.
 									</li>
 									<li>
-										<b>Q2 2021</b> Decided to start learning Python & use it as
-										my <b>secondary</b> programming language.
+										<b>Q2 2021</b> Started learning Python & data science.
 									</li>
 									<li>
 										<b>Q3 2021</b> Began internship at Tavata Global Oy
 										(web-development).
 									</li>
 									<li>
-										<b>Q1 2022</b> Started first <b>real</b> part-time web-dev
-										job at Tavata Global Oy.
+										<b>Q1 2022</b> Started first part-time web-dev job at Tavata
+										Global Oy.
 									</li>
 									<li>
-										<b>Q2 2022</b> Started <b>second</b> part-time web-dev job
-										at Ovio Carbook Oy.
+										<b>Q2 2022</b> Started another part-time web-dev job at Ovio
+										Carbook Oy.
 									</li>
 								</ul>
 
