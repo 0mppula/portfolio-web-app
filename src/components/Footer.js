@@ -32,7 +32,7 @@ const Footer = () => {
 
 			<div className="footer-text">
 				<p>
-					Copyright{' '}
+					Copyright
 					<span id="copyright" className="copyright">
 						{`${year} ©`}
 					</span>{' '}
