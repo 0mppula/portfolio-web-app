@@ -385,7 +385,8 @@ li {
 }
 
 .project-items .project-item:last-child img,
-.project-items .project-item:last-child:hover {
+.project-items .project-item:last-child:hover,
+.project-items .project-item:last-child {
 	border-radius: 0 0 0 4px;
 }
 
