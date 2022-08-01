@@ -182,14 +182,14 @@ li {
 .hero-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: flex-start;
-	height: calc(100vh - 3.5rem);
+	min-height: calc(100vh - 3.5rem);
 	width: 100vw;
 	max-width: 100%;
 	background: url(../src/images/hero_bg_right.jpg) no-repeat center right;
 	background-size: cover;
 	margin: 3.5rem auto 0 auto;
+	padding: 1rem 0;
 	position: relative;
 }
 
@@ -205,6 +205,7 @@ li {
 }
 
 .greet-card {
+	margin: auto 0;
 	margin-left: 4rem;
 	color: var(--clr-black);
 	width: min(650px, 80vw);
@@ -216,7 +217,7 @@ li {
 }
 
 .greet-card h1 {
-	font-size: 3.5rem;
+	font-size: 3rem;
 	text-transform: capitalize;
 	margin-top: -1.15rem;
 	animation: fade-greet-text 0.5s ease-in forwards;
@@ -228,11 +229,11 @@ li {
 .greet-info {
 	position: relative;
 	padding: 1rem;
-	margin: 1.5rem 0;
+	margin: 1rem 0;
 }
 
 .greet-card p {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 
 .btn {
@@ -683,9 +684,8 @@ li {
 	}
 
 	.greet-card {
-		margin: 0 auto;
+		margin: auto auto;
 		width: 90vw;
-		margin-bottom: 8rem;
 	}
 
 	.btn:hover {
