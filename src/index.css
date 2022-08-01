@@ -79,6 +79,7 @@ body {
 	pointer-events: auto;
 	animation: pulse 2s infinite;
 	animation-delay: 1s;
+	z-index: 10;
 }
 /* EndMaster styles */
 
@@ -383,8 +384,9 @@ li {
 	border-radius: 4px 0 0 0;
 }
 
-.project-items .project-item:last-child img {
-	border-radius: 0 0 4px 0;
+.project-items .project-item:last-child img,
+.project-items .project-item:last-child:hover {
+	border-radius: 0 0 0 4px;
 }
 
 .project-text {

@@ -28,12 +28,16 @@ const About = () => {
 									. I'm a second year software engineering student currently
 									studying in LAB University of Applied Sciences in Lahti!
 									<br />
+									<br />I like to create useful software that can be leveraged in
+									everyday applications. In short, if you have a problem that
+									needs to be resolved I <b>will</b> create a perfect solution.
+									The best way for me to widen the knowledge in my career is by{' '}
+									<b>DOING</b>.
 									<br />
-									I like to create useful software that can be leveraged in everyday applications. In short, if you have a problem that needs to be resolved I <b>will</b> create a perfect solution. The best way for me to widen the knowledge in my career is by <b>DOING</b>.
 									<br />
-									<br />
-									In addition coding, I'm intereseted in stocks,
-									economics and investing. That said, I believe in a pinch I can perform as an Excel superstar.
+									In addition coding, I'm intereseted in stocks and economics.
+									That said, I believe in a pinch I can perform as an Excel
+									superstar.
 								</p>
 							</div>
 
