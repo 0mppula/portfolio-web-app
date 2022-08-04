@@ -30,12 +30,10 @@ const About = () => {
 									<br />
 									<br />I like to create useful software that can be leveraged in
 									everyday applications. In short, if you have a problem that
-									needs to be resolved I <b>will</b> create a perfect solution.
-									The best way for me to widen the knowledge in my career is by{' '}
-									<b>DOING</b>.
+									needs to be resolved I <b>will</b> create a perfect and sustainable solution for you.
 									<br />
 									<br />
-									In addition coding, I'm intereseted in stocks and economics.
+									In addition to coding, I'm intereseted in stocks and economics.
 									That said, I believe in a pinch I can perform as an Excel
 									superstar.
 								</p>
