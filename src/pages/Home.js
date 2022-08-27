@@ -20,7 +20,7 @@ const Home = ({ setActivePage }) => {
 							University of Applied Sciences in Lahti!
 							<br />
 							<br />
-							Feel free to view the projects I've created and take a look at my CV by
+							Feel free to view some of my projects and take a look at my CV by
 							clicking the buttons below.
 						</p>
 						<Frame />
