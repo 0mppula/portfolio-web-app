@@ -302,6 +302,9 @@ li {
 }
 
 .project-items {
+	display: flex;
+	row-gap: 1rem;
+	flex-direction: column;
 	margin-bottom: 5rem;
 	box-shadow: var(--main-boxshadow);
 	border-radius: var(--main-border-radius);
@@ -327,6 +330,7 @@ li {
 }
 .project-item:last-child {
 	border-radius: 0 0 4px 0;
+	margin-bottom: 1rem;
 }
 
 .project-image {
@@ -384,19 +388,12 @@ li {
 	border-radius: 4px 0 0 0;
 }
 
-.project-items .project-item:last-child img,
-.project-items .project-item:last-child:hover,
-.project-items .project-item:last-child {
-	border-radius: 0 0 0 4px;
-}
-
 .project-text {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	width: 50%;
-	padding: 1.5rem 1rem;
-	padding-bottom: 2rem;
+	padding: 1.5rem 1rem 0rem;
 }
 
 .project-header {
