@@ -425,6 +425,7 @@ li {
 }
 
 .project-content {
+	white-space: pre-line;
 	position: relative;
 	min-height: 238px;
 	padding: 1rem;
