@@ -640,11 +640,13 @@ li {
 		position: absolute;
 		top: 3.5rem;
 		right: 0;
+		row-gap: 2.5rem;
+		padding-top: 15vh;
+		justify-content: flex-start;
 		height: calc(100vh - 3.5rem);
 		width: 100%;
 		flex-direction: column;
 		align-items: center;
-		padding: 30% 0 50%;
 		background: var(--clr-black);
 		transform: translate(101%);
 		z-index: 3;
