@@ -12,6 +12,12 @@
 		"info": "A React web-application where the user can view the 1000 most valuable cryptocurrencies by market capitalization. Additionally, the user can select in which currency the app displays the price data for the cryptos. All of the cryptos can also be filtered out with a search field. The data and statistics of the application are retrieved from the CoinGecko API with different AJAX calls."
 	},
 	{
+		"title": "WSB-Tickers",
+		"tools": ["React.js", "TypeScript", "Node.js"],
+		"url": "https://wsb-tickers.netlify.app/",
+		"info": "A simple app that displays the top 50 stocks discussed on reddit.com/r/wallstreetbets/."
+	},
+	{
 		"title": "Déjà Vu",
 		"tools": ["React.js", "TypeScript", "Node.js"],
 		"url": "https://dejavu-app.netlify.app/",
