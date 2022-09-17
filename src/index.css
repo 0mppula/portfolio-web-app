@@ -396,6 +396,10 @@ li {
 	padding: 1.5rem 1rem 0rem;
 }
 
+.link {
+	color: var(--clr-secondary);
+}
+
 .project-header {
 	display: flex;
 	flex-direction: column;

@@ -15,7 +15,7 @@
 		"title": "WSB-Tickers",
 		"tools": ["React.js", "TypeScript", "Node.js"],
 		"url": "https://wsb-tickers.netlify.app/",
-		"info": "A simple app that displays the top 50 stocks discussed on reddit.com/r/wallstreetbets/."
+		"info": "A simple app that displays the top 50 stocks discussed on reddit.com/r/wallstreetbets/.\n\nThe data for this app is retrieved from the https://tradestie.com/apps/reddit/api/ API."
 	},
 	{
 		"title": "Déjà Vu",

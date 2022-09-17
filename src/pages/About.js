@@ -44,6 +44,7 @@ const About = () => {
 										href="https://www.goodreads.com/review/list/135003326-0mppu?ref=nav_mybooks&shelf=programming"
 										target="_blank"
 										rel="noreferrer"
+										className='link'
 									>
 										tech books
 									</a>{' '}
