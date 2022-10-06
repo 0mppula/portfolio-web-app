@@ -82,7 +82,7 @@ const About = () => {
 										Global Oy.
 									</li>
 									<li>
-										<b>Q2 2022</b> Started another part-time web-dev job at Ovio
+										<b>Q2 2022</b> Started second part-time web-dev job at Ovio
 										Carbook Oy.
 									</li>
 								</ul>
