@@ -13,7 +13,7 @@
 	},
 	{
 		"title": "WSB-Tickers",
-		"tools": ["React.js", "TypeScript", "Node.js"],
+		"tools": ["React.js", "TypeScript", "Styled Components"],
 		"url": "https://wsb-tickers.netlify.app/",
 		"info": "A simple app that displays the top 50 stocks discussed on reddit.com/r/wallstreetbets/.\n\nThe data for this app is retrieved from the https://tradestie.com/apps/reddit/api/ API."
 	},
@@ -21,13 +21,19 @@
 		"title": "TypeScript Multi-Page Form",
 		"tools": ["React.js", "TypeScript", "Node.js"],
 		"url": "https://ts-multi-page-form.netlify.app/",
-		"info": "A simple multi-page form application with form validation and custom error messages.\n\nCreated with React and TypeScript."
+		"info": "A simple multi-page form application with form validation and custom error messages. On the last page of the form, before submitting the users provided information will be shown to the user.\n\nCreated with React and TypeScript."
+	},
+	{
+		"title": "TypeScript Paginated Users Page",
+		"tools": ["React.js", "TypeScript", "Node.js"],
+		"url": "https://ts-paginated-users-page.netlify.app/",
+		"info": "A simple users page with filtering, sorting and pagination functionality using query parameters. Additionally, each user has its own user page which can be opened by clicking a user from the users page. The user page prints simple information about the user.\n\nCreated with React and TypeScript."
 	},
 	{
 		"title": "Déjà Vu",
-		"tools": ["React.js", "TypeScript", "Node.js"],
+		"tools": ["React.js", "TypeScript", "Styled Components"],
 		"url": "https://dejavu-app.netlify.app/",
-		"info": "A simple finance themed memory card game created using React and TypeScript.\n\nThe goal of this small project was to learn how to use TypeScript and styled components together."
+		"info": "A simple finance themed memory card game with a turn counter and a timer created using React and TypeScript.\n\nThe goal of this small project was to learn how to use TypeScript and styled components together."
 	},
 	{
 		"title": "CS-GO Weapons",
