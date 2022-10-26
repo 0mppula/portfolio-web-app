@@ -1,9 +1,12 @@
 import React from 'react';
-import Frame from '../components/Frame';
 
+import Frame from '../components/Frame';
+import { useTitle } from '../hooks/useTitle';
 import aboutImg from '../images/about_image.jpg';
 
 const About = () => {
+	useTitle('About');
+
 	return (
 		<div className="container">
 			<div className="content-container">
@@ -34,7 +37,8 @@ const About = () => {
 									sustainable solution for you.
 									<br />
 									<br />
-									In addition to coding, I'm intereseted in investing and economics.
+									In addition to coding, I'm intereseted in investing and
+									economics.
 									<br />
 									<br />
 									If you're interested, here's a full list of the{' '}
@@ -42,7 +46,7 @@ const About = () => {
 										href="https://www.goodreads.com/review/list/135003326-0mppu?ref=nav_mybooks&shelf=programming"
 										target="_blank"
 										rel="noreferrer"
-										className='link'
+										className="link"
 									>
 										tech books
 									</a>{' '}

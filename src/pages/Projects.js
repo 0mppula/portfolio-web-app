@@ -2,8 +2,10 @@ import React from 'react';
 import ProjectItem from '../components/ProjectItem';
 
 import projects from '../data/projects.json';
+import { useTitle } from '../hooks/useTitle';
 
 const Projects = () => {
+	useTitle('Projects');
 	return (
 		<div className="container">
 			<div className="content-container">

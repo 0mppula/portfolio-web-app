@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Nav = ({ setActivePage }) => {
+const Nav = () => {
 	const [sideNav, setSideNav] = useState(false);
 
 	const links = ['home', 'projects', 'about'];
@@ -43,7 +43,6 @@ const Nav = ({ setActivePage }) => {
 
 	const handleLinkClick = (link) => {
 		setSideNav(false);
-		setActivePage(link);
 	};
 
 	return (

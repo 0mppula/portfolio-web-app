@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Frame from '../components/Frame';
 
 import cv from '../data/omar-kraidié-cv.pdf';
+import Frame from '../components/Frame';
+import { useTitle } from '../hooks/useTitle';
 
-const Home = ({ setActivePage }) => {
+const Home = () => {
+	useTitle('home');
 	return (
 		<div className="hero-container">
 			<div className="greet-card">
@@ -25,12 +27,7 @@ const Home = ({ setActivePage }) => {
 						</p>
 						<Frame />
 					</div>
-					<Link
-						to="/projects"
-						type="button"
-						className="greet-btn btn"
-						onClick={() => setActivePage('projects')}
-					>
+					<Link to="/projects" type="button" className="greet-btn btn">
 						Projects
 					</Link>
 					<a
