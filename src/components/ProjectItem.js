@@ -42,18 +42,20 @@ const ProjectItem = ({ project, index }) => {
 
 	return (
 		<div id={index + 1} className="project-item">
-			<div
+			<a
+				href={`${project.url}`}
 				className="project-image"
-				onClick={(e) => redirectProjectUrl(e, project)}
 				onMouseOver={mouseoverImage}
 				onMouseOut={mouseoutImage}
+				rel="noreferrer"
 			>
 				<img src={project?.image || projectImg} alt="project-background" />
 				<div className="hover"></div>
 				<div id="index" className={`index ${(index + 1) % 2 === 0 ? 'right' : 'left'}`}>
 					{index + 1}
 				</div>
-			</div>
+			</a>
+
 			<div className="project-text">
 				<div className="project-header">
 					<h2>{project.title}</h2>
