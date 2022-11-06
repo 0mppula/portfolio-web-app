@@ -30,7 +30,8 @@ const Footer = () => {
 				</a>
 			</div>
 
-			<div className="footer-text">
+			<div>
+				<p>Developed by Omar Kraidié.</p>
 				<p>
 					Copyright{' '}
 					<span id="copyright" className="copyright">

@@ -55,37 +55,41 @@ const About = () => {
 							</div>
 
 							<div>
-								<p>Milestones</p>
+								<p>Career Milestones</p>
 								<ul>
 									<li>
-										<b>Q3 2019</b> Wrote my first Hello World! web-app.
+										<b>Q3 2019</b> Wrote my first Hello World! web-app. 🌍
 									</li>
 									<li>
 										<b>Q1 2020</b> Decided to pursue software engineering as a
-										full-time career.
+										full-time career. 💡
 									</li>
 									<li>
 										<b>Q3 2020</b> Developed my first projects with HTML, CSS &
-										JavaScript.
+										JavaScript. 👨🏼‍💻
 									</li>
 									<li>
 										<b>Q1 2021</b> Started a Bachelor's degree in Computer
-										Science.
+										Science. 🏫
 									</li>
 									<li>
-										<b>Q2 2021</b> Started learning Python & data science.
+										<b>Q2 2021</b> Started learning Python & data science. 📊
 									</li>
 									<li>
 										<b>Q3 2021</b> Began internship at Tavata Global Oy
-										(web-development).
+										(web-development). 💻
 									</li>
 									<li>
-										<b>Q1 2022</b> Started first part-time web-dev job at Tavata
-										Global Oy.
+										<b>Q1 2022</b> Started a part-time web developer role at
+										Tavata Global Oy. 💻
 									</li>
 									<li>
-										<b>Q2 2022</b> Started second part-time web-dev job at Ovio
-										Carbook Oy.
+										<b>Q2 2022</b> Started a part-time web developer role at
+										Ovio Carbook Oy. 💻
+									</li>
+									<li>
+										<b>Q4 2022</b> Started a part-time web developer role at
+										twoday Finland. 💻
 									</li>
 								</ul>
 

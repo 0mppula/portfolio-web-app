@@ -13,13 +13,15 @@ function App() {
 		<Router>
 			<ScrollToTop />
 			<Nav />
-			<ToTop />
+			
 			<Routes>
 				<Route exact path="/" element={<Home />} />
 				<Route exact path="projects" element={<Projects />} />
 				<Route exact path="about" element={<About />} />
 				<Route path="*" element={<Navigate replace to="/" />} />
 			</Routes>
+
+			<ToTop />
 			<Footer />
 		</Router>
 	);

@@ -31,9 +31,9 @@
 	},
 	{
 		"title": "React Redux Toolkit Hello World",
-		"tools": ["React.js", "Redux Toolkit", "Styled Components"],
+		"tools": ["React.js", "Redux Toolkit", "TypeScript", "Styled Components"],
 		"url": "https://react-redux-toolkit-hello-world.netlify.app/",
-		"info": "A simple implementation of React Redux Toolkit with asynchronous actions that fetch data from jsonplaceholder.typicode.com"
+		"info": "A simple implementation of React Redux Toolkit with asynchronous actions that fetch data from jsonplaceholder.typicode.com\n\nCreated with React and TypeScript."
 	},
 	{
 		"title": "Déjà Vu",

@@ -22,13 +22,13 @@ const ToTop = () => {
 	};
 
 	return (
-		<div
+		<button
 			tabIndex={active ? 0 : -1}
 			onClick={scrollToTop}
 			className={`to-top ${active ? 'active' : ''}`}
 		>
 			<FaChevronUp />
-		</div>
+		</button>
 	);
 };
 

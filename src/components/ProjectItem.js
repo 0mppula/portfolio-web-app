@@ -6,14 +6,15 @@ import projectImg from '../images/project_bg.jpg';
 
 const ProjectItem = ({ project, index }) => {
 	const mouseoverImage = (e) => {
-		if (e.target.classList.contains('hover')) {
+		if (e.target.classList.contains('hover') /* || e.target.classList.contains('index') */) {
 			let image = e.target;
 			image.classList.toggle('active', true);
 		}
 	};
 
 	const mouseoutImage = (e) => {
-		if (e.target.classList.contains('hover')) {
+		// console.log(e.target)
+		if (e.target.classList.contains('hover') /* && !e.target.classList.contains('index') */) {
 			let image = e.target;
 			image.classList.toggle('active', false);
 		}
@@ -45,7 +46,7 @@ const ProjectItem = ({ project, index }) => {
 				rel="noreferrer"
 			>
 				<img src={project?.image || projectImg} alt="project-background" />
-				<div className="hover"></div>
+				<div className="hover" />
 				<div id="index" className={`index ${(index + 1) % 2 === 0 ? 'right' : 'left'}`}>
 					{index + 1}
 				</div>

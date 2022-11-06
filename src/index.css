@@ -69,9 +69,11 @@ body {
 	z-index: 10;
 }
 
-.to-top:hover {
+.to-top:hover,
+.to-top:focus-visible {
 	color: var(--clr-white);
 	background: var(--clr-secondary);
+	outline: solid 2px var(--clr-white);
 }
 
 .to-top.active {
@@ -357,6 +359,7 @@ li {
 	font-size: 1.15rem;
 	color: var(--clr-white);
 	user-select: none;
+	pointer-events: none;
 }
 .left {
 	left: 12px;
@@ -559,23 +562,28 @@ li {
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
-	height: 10.5rem;
+	padding: 5rem 1rem 1.5rem;
 	width: 100%;
 	background: var(--clr-black);
 	color: var(--clr-white);
+}
+
+.footer p {
+	text-align: center;
+	margin-bottom: 0.5rem;
 }
 
 .footer-links {
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 1.5rem;
-	width: min(300px, 90vw);
+	padding-bottom: 1.5rem;
+	width: min(350px, 90vw);
+	border-bottom: solid 2px var(--clr-secondary);
 }
 
-.footer-text {
-	font-size: 0.75rem;
-	margin-bottom: 1.25rem;
-	text-align: center;
+.footer-links a {
+	padding: 0.25rem;
 }
 
 .footer-icon {
@@ -584,11 +592,12 @@ li {
 	transition: var(--fast-transition);
 }
 
-.footer-icon:hover {
+.footer-links a:hover .footer-icon,
+.footer-links a:focus-visible .footer-icon {
 	color: var(--clr-secondary);
 }
 
-.footer-text .copyright {
+.copyright {
 	color: var(--clr-secondary);
 }
 /* End Footer */
