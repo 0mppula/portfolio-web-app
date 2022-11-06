@@ -19,12 +19,6 @@ const ProjectItem = ({ project, index }) => {
 		}
 	};
 
-	const redirectProjectUrl = (e, project) => {
-		if (e.target.classList.contains('hover')) {
-			window.open(`${project.url}`, '_blank');
-		}
-	};
-
 	const printTools = (projectTools) => {
 		let tools = [...projectTools];
 
@@ -47,6 +41,7 @@ const ProjectItem = ({ project, index }) => {
 				className="project-image"
 				onMouseOver={mouseoverImage}
 				onMouseOut={mouseoutImage}
+				target="_blank"
 				rel="noreferrer"
 			>
 				<img src={project?.image || projectImg} alt="project-background" />

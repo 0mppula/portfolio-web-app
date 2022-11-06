@@ -30,10 +30,10 @@
 		"info": "A simple users page with filtering, sorting and pagination functionality using query parameters. Additionally, each user has its own user page which can be opened by clicking a user from the users page. The user page prints simple information about the user.\n\nCreated with React and TypeScript."
 	},
 	{
-		"title": "React Redux Hello World",
-		"tools": ["React.js", "Redux", "Styled Components"],
-		"url": "https://react-redux-hello-world.netlify.app/",
-		"info": "A simple legacy implementation of React Redux with asynchronous actions that fetch data from jsonplaceholder.typicode.com"
+		"title": "React Redux Toolkit Hello World",
+		"tools": ["React.js", "Redux Toolkit", "Styled Components"],
+		"url": "https://react-redux-toolkit-hello-world.netlify.app/",
+		"info": "A simple implementation of React Redux Toolkit with asynchronous actions that fetch data from jsonplaceholder.typicode.com"
 	},
 	{
 		"title": "Déjà Vu",
