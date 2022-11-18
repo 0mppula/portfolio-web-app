@@ -11,11 +11,7 @@ const Footer = () => {
 				<a href="https://github.com/0mppula" target="_blank" rel="noreferrer">
 					<FontAwesomeIcon className="footer-icon icon" icon={faGithub} />
 				</a>
-				<a
-					href="https://www.linkedin.com/in/omar-kraidi%C3%A9-b7a8141a8/"
-					target="_blank"
-					rel="noreferrer"
-				>
+				<a href="https://www.linkedin.com/in/omarkraidie/" target="_blank" rel="noreferrer">
 					<FontAwesomeIcon className="footer-icon icon" icon={faLinkedin} />
 				</a>
 				<a href="https://twitter.com/OmarKraidie" target="_blank" rel="noreferrer">
