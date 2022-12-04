@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
-const Footer = () => {
-	const [year] = useState(new Date().getFullYear().toString());
+const year = new Date().getFullYear().toString();
 
+const Footer = () => {
 	return (
 		<div className="footer">
 			<div className="footer-links">

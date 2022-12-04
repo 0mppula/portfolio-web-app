@@ -6,15 +6,14 @@ import projectImg from '../images/project_bg.jpg';
 
 const ProjectItem = ({ project, index }) => {
 	const mouseoverImage = (e) => {
-		if (e.target.classList.contains('hover') /* || e.target.classList.contains('index') */) {
+		if (e.target.classList.contains('hover')) {
 			let image = e.target;
 			image.classList.toggle('active', true);
 		}
 	};
 
 	const mouseoutImage = (e) => {
-		// console.log(e.target)
-		if (e.target.classList.contains('hover') /* && !e.target.classList.contains('index') */) {
+		if (e.target.classList.contains('hover')) {
 			let image = e.target;
 			image.classList.toggle('active', false);
 		}

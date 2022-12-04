@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 
+const links = ['home', 'projects', 'about'];
+
 const Nav = () => {
 	const [sideNav, setSideNav] = useState(false);
-
-	const links = ['home', 'projects', 'about'];
 
 	const navLinksRef = useRef();
 
