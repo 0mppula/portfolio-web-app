@@ -3,7 +3,7 @@
 		"title": "KoronKorko",
 		"tools": ["MongoDB", "React.js", "Express.js", "Redux.js", "Node.js"],
 		"url": "https://www.koronkorko.com/",
-		"info": "KoronKorko is a finance web-application developed by Omar Kraidié. KoronKorko has many different types of finance calculators such as compound interest, annualized return, present value, an many more.\n\nThe users of KoronKorko can select a currency in which the monetary results of the calculators are printed. In addition, authenticated users can create, save, edit, import and delete their calculations."
+		"info": "KoronKorko is a finance web-application developed by Omar Kraidié. KoronKorko has many different types of finance calculators such as compound interest, annualized return, present value, an more.\n\nThe users of KoronKorko can select a currency in which the monetary results of the calculators are printed. In addition, authenticated users can create, save, edit, import and delete their calculations."
 	},
 	{
 		"title": "CoinCaps",
