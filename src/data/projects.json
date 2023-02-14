@@ -3,7 +3,7 @@
 		"title": "KoronKorko",
 		"tools": ["MongoDB", "React.js", "Express.js", "Redux.js", "Node.js"],
 		"url": "https://www.koronkorko.com/",
-		"info": "KoronKorko is a compound interest calculator web-application created with the MERN stack. In Addition to calculating interest reates, authenticated users can create, save, edit, import and delete their calculations. The compound interest is calculated from various inputs such as starting balance, interest rate, duration, contribution and more. The calculated interest data can be viewed in both numerical and visual form."
+		"info": "KoronKorko is a finance web-application developed by Omar Kraidié. KoronKorko has many different types of finance calculators such as compound interest, annualized return, present value, an many more.\n\nThe users of KoronKorko can select a currency in which the monetary results of the calculators are printed. In addition, authenticated users can create, save, edit, import and delete their calculations."
 	},
 	{
 		"title": "CoinCaps",
