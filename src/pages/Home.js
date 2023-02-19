@@ -18,8 +18,8 @@ const Home = () => {
 				<div className="greet-bottom">
 					<div className="greet-info">
 						<p>
-							I'm a second year software engineering student currently studying in LAB
-							University of Applied Sciences in Lahti!
+							I'm a third year software engineering student currently studying in LAB
+							University of Applied Sciences in Lahti.
 							<br />
 							<br />
 							Feel free to view some of my projects and take a look at my CV by
