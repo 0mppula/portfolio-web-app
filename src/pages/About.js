@@ -88,7 +88,7 @@ const About = () => {
 										Ovio Carbook Oy. 💻
 									</li>
 									<li>
-										<b>Q4 2022</b> Started a part-time web developer role at
+										<b>Q4 2022</b> Started a full-time web developer role at
 										twoday Finland. 💻
 									</li>
 								</ul>
