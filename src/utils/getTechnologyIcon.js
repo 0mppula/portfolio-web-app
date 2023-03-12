@@ -29,15 +29,10 @@ const iconComponents = {
 	Firebase: <SiFirebase />,
 };
 
-const getProjectTechnologyIcons = (project) => {
-	// Returns an array of icons representing the technology stack used in a project.
+const getTechnologyIcon = (technology) => {
+	// Returns a components for the passed in technology.
 
-	let techIcons = project.technologies.map((tech) => ({
-		component: iconComponents[tech],
-		technology: tech,
-	}));
-
-	return techIcons;
+	return iconComponents[technology];
 };
 
-export default getProjectTechnologyIcons;
+export default getTechnologyIcon;

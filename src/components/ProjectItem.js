@@ -2,7 +2,7 @@ import React from 'react';
 
 import placeHolderInfo from '../utils/placeholderInfo';
 import Frame from '../components/Frame';
-import getProjectTechnologyIcons from '../utils/getProjectTechnologyIcons';
+import getTechnologyIcon from '../utils/getTechnologyIcon';
 
 const ProjectItem = ({ project, index, thumbnail }) => {
 	return (
@@ -18,13 +18,9 @@ const ProjectItem = ({ project, index, thumbnail }) => {
 					<h2>{project.title}</h2>
 
 					<div className="project-tech-icons">
-						{getProjectTechnologyIcons(project).map((icon) => (
-							<span
-								key={icon.technology}
-								alt={icon.technology}
-								title={icon.technology}
-							>
-								{icon.component}
+						{project.technologies.map((technology) => (
+							<span key={technology} alt={technology} title={technology}>
+								{getTechnologyIcon(technology)}
 							</span>
 						))}
 					</div>
