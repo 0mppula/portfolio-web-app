@@ -3,65 +3,76 @@
 		"title": "KoronKorko",
 		"tools": ["MongoDB", "React.js", "Express.js", "Redux.js", "Node.js"],
 		"url": "https://www.koronkorko.com/",
-		"info": "KoronKorko is a finance web-application developed by Omar Kraidié. KoronKorko has many different types of finance calculators such as compound interest, annualized return, present value, and more.\n\nThe users of KoronKorko can select a currency in which the monetary results of the calculators are displayed. In addition, authenticated users can create, save, edit, import and delete their calculations."
+		"info": "KoronKorko is a finance web-application developed by Omar Kraidié. KoronKorko has many different types of finance calculators such as compound interest, annualized return, present value, and more.\n\nThe users of KoronKorko can select a currency in which the monetary results of the calculators are displayed. In addition, authenticated users can create, save, edit, import and delete their calculations.",
+		"repositoryName": "KoronKorko"
 	},
 	{
 		"title": "CoinCaps",
 		"tools": ["JavaScript", "React.js", "Css3", "Html5", "Node.js"],
 		"url": "https://coincaps.netlify.app/",
-		"info": "A React web-application where the user can view the 1000 most valuable cryptocurrencies by market capitalization. Additionally, the user can select in which currency the app displays the price data for the cryptos. All of the cryptos can also be filtered out with a search field. The data and statistics of the application are retrieved from the CoinGecko API with different AJAX calls."
+		"info": "A React web-application where the user can view the 1000 most valuable cryptocurrencies by market capitalization. Additionally, the user can select in which currency the app displays the price data for the cryptos. All of the cryptos can also be filtered out with a search field. The data and statistics of the application are retrieved from the CoinGecko API with different AJAX calls.",
+		"repositoryName": "CoinCaps"
 	},
 	{
 		"title": "WSB-Tickers",
 		"tools": ["React.js", "TypeScript", "Styled Components"],
 		"url": "https://wsb-tickers.netlify.app/",
-		"info": "A simple app that displays the top 50 stocks discussed on reddit.com/r/wallstreetbets/.\n\nThe data for this app is retrieved from the https://tradestie.com/apps/reddit/api/ API."
+		"info": "A simple app that displays the top 50 stocks discussed on reddit.com/r/wallstreetbets/.\n\nThe data for this app is retrieved from the https://tradestie.com/apps/reddit/api/ API.",
+		"repositoryName": "wsb-tickers"
 	},
 	{
 		"title": "TypeScript Multi-Page Form",
 		"tools": ["React.js", "TypeScript", "Node.js"],
 		"url": "https://ts-multi-page-form.netlify.app/",
-		"info": "A simple multi-page form application with form validation and custom error messages. On the last page of the form, before submitting the users provided information will be shown to the user.\n\nCreated with React and TypeScript."
+		"info": "A simple multi-page form application with form validation and custom error messages. On the last page of the form, before submitting the users provided information will be shown to the user.\n\nCreated with React and TypeScript.",
+		"repositoryName": "ts-multi-page-form"
 	},
 	{
 		"title": "TypeScript Paginated Users Page",
 		"tools": ["React.js", "TypeScript", "Node.js"],
 		"url": "https://ts-paginated-users-page.netlify.app/",
-		"info": "A simple users page with filtering, sorting and pagination functionality using query parameters. Additionally, each user has its own user page which can be opened by clicking a user from the users page. The user page prints simple information about the user.\n\nCreated with React and TypeScript."
+		"info": "A simple users page with filtering, sorting and pagination functionality using query parameters. Additionally, each user has its own user page which can be opened by clicking a user from the users page. The user page prints simple information about the user.\n\nCreated with React and TypeScript.",
+		"repositoryName": "ts-paginated-users-page"
 	},
 	{
 		"title": "React Redux Toolkit Hello World",
 		"tools": ["React.js", "Redux Toolkit", "TypeScript", "Styled Components"],
 		"url": "https://react-redux-toolkit-hello-world.netlify.app/",
-		"info": "A simple implementation of React Redux Toolkit with asynchronous actions that fetch data from jsonplaceholder.typicode.com\n\nCreated with React and TypeScript."
+		"info": "A simple implementation of React Redux Toolkit with asynchronous actions that fetch data from jsonplaceholder.typicode.com\n\nCreated with React and TypeScript.",
+		"repositoryName": "react-redux-toolkit-hello-world"
 	},
 	{
 		"title": "Déjà Vu",
 		"tools": ["React.js", "TypeScript", "Styled Components"],
 		"url": "https://dejavu-app.netlify.app/",
-		"info": "A simple finance themed memory card game with a turn counter and a timer created using React and TypeScript.\n\nThe goal of this small project was to learn how to use TypeScript and styled components together."
+		"info": "A simple finance themed memory card game with a turn counter and a timer created using React and TypeScript.\n\nThe goal of this small project was to learn how to use TypeScript and styled components together.",
+		"repositoryName": "DejaVu"
 	},
 	{
 		"title": "CS-GO Weapons",
 		"tools": ["JavasScript", "Css3", "Html5"],
 		"url": "https://csgo-weapons.netlify.app/",
-		"info": "A simple web application, that lets the user shoot either a single shot or multiple shots with a selected weapon from the game 'Counter-Strike: Global Offensive'.\n\nCreated with vanilla JavaScript, HTML & CSS."
+		"info": "A simple web application, that lets the user shoot either a single shot or multiple shots with a selected weapon from the game 'Counter-Strike: Global Offensive'.\n\nCreated with vanilla JavaScript, HTML & CSS.",
+		"repositoryName": "CS-GO_weapons"
 	},
 	{
 		"title": "Polish Cow",
 		"tools": ["JavasScript", "Css3", "Html5"],
 		"url": "https://polishcow.netlify.app/",
-		"info": "A simple web application that generates dancing cows in an infininte loop while playing Gdzie jest biały węgorz (Zejście) by: Cypis.\n\nCreated with vanilla JavaScript, HTML & CSS."
+		"info": "A simple web application that generates dancing cows in an infininte loop while playing Gdzie jest biały węgorz (Zejście) by: Cypis.\n\nCreated with vanilla JavaScript, HTML & CSS.",
+		"repositoryName": "Polish_Cow"
 	},
 	{
 		"title": "Alien Invasion",
 		"tools": ["Python", "Pygame"],
 		"url": "https://github.com/0mppula/Alien_Invasion",
-		"info": "My Own Version of Alien Invasion from the E-Book Python Crash Course by: Eric Matthes."
+		"info": "My Own Version of Alien Invasion from the E-Book Python Crash Course by: Eric Matthes.",
+		"repositoryName": "Alien_Invasion"
 	},
 	{
 		"title": "Simple JavaScript Projects",
 		"tools": ["JavasScript", "Css3", "Html5"],
-		"url": "https://simplejsprojects.netlify.app/"
+		"url": "https://simplejsprojects.netlify.app/",
+		"repositoryName": "SimpleJavaScriptProjects"
 	}
 ]

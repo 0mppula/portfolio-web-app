@@ -2,9 +2,8 @@ import React from 'react';
 
 import placeHolderInfo from '../utils/placeholderInfo';
 import Frame from '../components/Frame';
-import projectImg from '../images/project_bg.jpg';
 
-const ProjectItem = ({ project, index }) => {
+const ProjectItem = ({ project, index, thumbnail }) => {
 	const mouseoverImage = (e) => {
 		if (e.target.classList.contains('hover')) {
 			let image = e.target;
@@ -44,7 +43,7 @@ const ProjectItem = ({ project, index }) => {
 				target="_blank"
 				rel="noreferrer"
 			>
-				<img src={project?.image || projectImg} alt="project-background" />
+				<img src={thumbnail} alt="project-background" />
 				<div className="hover" />
 				<div id="index" className={`index ${(index + 1) % 2 === 0 ? 'right' : 'left'}`}>
 					{index + 1}
