@@ -33,6 +33,11 @@ const ProjectItem = ({ project, index, thumbnail }) => {
 
 				<div className="project-content">
 					<p>{project.info || placeHolderInfo}</p>
+
+					<div className="project-button-container">
+						{project.liveUrl && <button className="btn">Live Site</button>}
+						{project.codeUrl && <button className="btn">Source Code</button>}
+					</div>
 					<Frame />
 				</div>
 			</div>

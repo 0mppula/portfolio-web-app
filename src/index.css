@@ -241,7 +241,6 @@ li {
 
 .btn {
 	display: inline-block;
-	font-size: 1.25rem;
 	background: var(--clr-black);
 	color: var(--clr-white);
 	text-align: center;
@@ -255,7 +254,12 @@ li {
 	cursor: pointer;
 }
 
+.greet-btn {
+	font-size: 1.25rem;
+}
+
 .cv-btn {
+	font-size: 1.25rem;
 	margin-left: 1rem;
 }
 
@@ -418,11 +422,18 @@ li {
 
 .project-content {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	white-space: pre-line;
 	position: relative;
 	min-height: 238px;
 	padding: 1rem;
+	gap: 1rem;
+}
+
+.project-button-container {
+	display: flex;
+	gap: 1rem;
 }
 
 .project-info {
@@ -811,15 +822,6 @@ li {
 
 	.greet-info {
 		margin: 0.5rem 0 1.5rem 0;
-	}
-
-	.greet-card p {
-		font-size: 1.25rem;
-	}
-
-	.btn {
-		font-size: 1.1rem;
-		padding: 0.25rem 1.25rem;
 	}
 	/* End Hero styles */
 
