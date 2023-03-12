@@ -11,7 +11,7 @@ import Polish_Cow from '../images/projects/Polish_Cow.jpg';
 import SimpleJavaScriptProjects from '../images/projects/SimpleJavaScriptProjects.png';
 import Alien_Invasion from '../images/projects/Alien_Invasion.jpg';
 
-export default {
+export default thumbnails = {
 	KoronKorko: KoronKorko,
 	CoinCaps: CoinCaps,
 	'ts-paginated-users-page': tsPaginatedUsersPage,
