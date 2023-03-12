@@ -8,7 +8,7 @@ const ProjectItem = ({ project, index, thumbnail }) => {
 	return (
 		<div id={index + 1} className="project-item">
 			<a href={`${project.url}`} className="project-image" target="_blank" rel="noreferrer">
-				<img src={thumbnail} alt={`${project.title} mock image`} loading="lazy" />
+				<img src={thumbnail} alt={`${project.title} mock`} loading="lazy" />
 
 				<div className="index">{index + 1}</div>
 			</a>
