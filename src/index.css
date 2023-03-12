@@ -378,7 +378,7 @@ li {
 
 .project-text {
 	width: 50%;
-	padding: 1.5rem 1rem 0rem;
+	padding: 1rem 1rem 0rem;
 }
 
 .link {
@@ -414,10 +414,6 @@ li {
 	height: 1.75rem;
 	pointer-events: none;
 	fill: var(--clr-black);
-}
-
-.project-text p {
-	font-size: 1.2rem;
 }
 
 .project-content {
