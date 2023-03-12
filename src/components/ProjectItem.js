@@ -35,8 +35,28 @@ const ProjectItem = ({ project, index, thumbnail }) => {
 					<p>{project.info || placeHolderInfo}</p>
 
 					<div className="project-button-container">
-						{project.liveUrl && <button className="btn">Live Site</button>}
-						{project.codeUrl && <button className="btn">Source Code</button>}
+						{project.liveUrl && (
+							<a
+								href={project.liveUrl}
+								type="button"
+								className="btn"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Live Site
+							</a>
+						)}
+						{project.codeUrl && (
+							<a
+								href={project.codeUrl}
+								type="button"
+								className="btn"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Source Code
+							</a>
+						)}
 					</div>
 					<Frame />
 				</div>
