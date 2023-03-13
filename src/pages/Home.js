@@ -15,6 +15,7 @@ const Home = () => {
 					<span>My Name Is</span>
 					<span className="secondary-color"> Omar</span>
 				</h1>
+
 				<div className="greet-bottom">
 					<div className="greet-info">
 						<p>
@@ -27,18 +28,15 @@ const Home = () => {
 						</p>
 						<Frame />
 					</div>
-					<Link to="/projects" type="button" className="greet-btn btn">
-						Projects
-					</Link>
-					<a
-						type="button"
-						className="cv-btn btn"
-						target="_blank"
-						rel="noreferrer"
-						href={cv}
-					>
-						CV (.PDF)
-					</a>
+
+					<div className="greet-buttons">
+						<Link to="/projects" type="button" className="btn">
+							Projects
+						</Link>
+						<a type="button" className="btn" target="_blank" rel="noreferrer" href={cv}>
+							CV (.PDF)
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

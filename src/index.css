@@ -12,6 +12,7 @@
 	--clr-body: #eee;
 	--clr-secondary: #9376bc;
 	--clr-black: #1b1b1b;
+	--clr-black-light: #2e2e2e;
 	--clr-white: #fafafa;
 	--clr-white-light: #a8a8a8;
 	--fast-transition: all 0.2s ease;
@@ -139,7 +140,8 @@ h3 {
 	color: var(--clr-white);
 }
 
-li {
+li a {
+	display: block;
 	overflow: hidden;
 	position: relative;
 }
@@ -149,7 +151,7 @@ li {
 	display: flex;
 	bottom: 2px;
 	height: 1px;
-	width: 97%;
+	width: 100%;
 	transform: translateX(-110%);
 	background: var(--clr-white);
 }
@@ -170,6 +172,10 @@ li {
 }
 
 .nav-links li:hover a {
+	color: var(--clr-white);
+}
+
+.nav-links li a:focus-visible {
 	color: var(--clr-white);
 }
 
@@ -256,31 +262,43 @@ li {
 	text-align: center;
 	padding: 0.35rem 1.35rem;
 	border-radius: var(--main-border-radius);
-	transition: var(--fast-transition);
+	transition: var(--slow-transition);
 	box-shadow: var(--main-boxshadow);
 	text-decoration: none;
 	user-select: none;
 	cursor: pointer;
+	outline: solid 3px transparent;
+	background-size: 200% auto;
+	background-image: linear-gradient(
+		to right,
+		var(--clr-black) 0%,
+		var(--clr-black-light) 51%,
+		var(--clr-black) 100%
+	);
 }
 
-.greet-btn {
+.greet-buttons {
+	display: flex;
+	gap: 1rem;
+}
+
+.greet-buttons .btn {
 	font-size: 1.25rem;
 }
 
-.cv-btn {
-	font-size: 1.25rem;
-	margin-left: 1rem;
+.btn:hover,
+.btn:focus-visible {
+	background-position: 99%;
 }
 
-.btn:hover {
-	transform: scale(1.01);
-	background: rgba(27, 27, 27, 0.98);
-	color: var(--clr-secondary);
+.btn:focus-visible {
+	outline: solid 3px var(--clr-black);
 }
 
 .btn:active {
-	transform: scale(1);
+	background-position: 0%;
 }
+
 /* End Hero styles */
 
 /* projects styles */
@@ -700,10 +718,6 @@ li {
 		color: var(--clr-white);
 	}
 
-	.nav-links .active:hover {
-		color: var(--clr-white);
-	}
-
 	.nav-links li {
 		opacity: 0;
 	}
@@ -724,10 +738,6 @@ li {
 	.greet-card {
 		margin: auto auto;
 		width: 90vw;
-	}
-
-	.btn:hover {
-		color: var(--clr-white);
 	}
 	/* EndHero styles */
 

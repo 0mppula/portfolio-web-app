@@ -12,6 +12,7 @@ const ProjectItem = ({ project, index, thumbnail }) => {
 				className="project-image"
 				target="_blank"
 				rel="noreferrer"
+				tabIndex={-1}
 			>
 				<img src={thumbnail} alt={`${project.title} mock`} loading="lazy" />
 
