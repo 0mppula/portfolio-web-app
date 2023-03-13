@@ -16,7 +16,7 @@ const Projects = () => {
 		<div className="container">
 			<div className="content-container">
 				<div className="content-header">
-					<h1>some of my projects</h1>
+					<h1>Some of My Projects</h1>
 					<div className="header-underline"></div>
 				</div>
 
