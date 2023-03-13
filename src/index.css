@@ -15,8 +15,6 @@
 	--clr-white: #fafafb;
 	--fast-transition: all 0.2s ease;
 	--slow-transition: all 0.3s ease;
-	--main-letter-spacing: 0.125rem;
-	--secondary-letter-spacing: 0.06rem;
 	--main-boxshadow: 0px 1px 13px 0px rgba(27, 27, 27, 0.35);
 	--main-border-radius: 4px;
 	--main-border-radius-bottom: 0 0 4px 4px;
@@ -32,6 +30,16 @@ body {
 	font-family: 'Titillium Web', sans-serif;
 	background: var(--clr-body);
 	overflow-x: hidden;
+}
+
+h2 {
+	font-size: 1.75rem;
+	margin-bottom: 0.5rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
 }
 
 ::selection {
@@ -106,10 +114,10 @@ body {
 	padding-left: 1rem;
 }
 
-.nav-header h1 a {
+.nav-header span a {
+	font-weight: 700;
 	color: var(--clr-white);
 	font-size: 2rem;
-	letter-spacing: var(--main-letter-spacing);
 	text-decoration: none;
 }
 
@@ -157,7 +165,6 @@ li {
 	color: var(--clr-white);
 	text-decoration: none;
 	font-size: 1.25rem;
-	letter-spacing: var(--main-letter-spacing);
 	transition: var(--fast-transition);
 }
 
@@ -220,9 +227,11 @@ li {
 }
 
 .greet-card h1 {
+	display: flex;
+	flex-direction: column;
 	font-size: 3rem;
-	text-transform: capitalize;
-	margin-top: -1.15rem;
+	margin-top: -0.75rem;
+	line-height: 56px;
 	animation: fade-greet-text 0.5s ease-in forwards;
 	user-select: none;
 	opacity: 0;
@@ -244,7 +253,6 @@ li {
 	background: var(--clr-black);
 	color: var(--clr-white);
 	text-align: center;
-	text-transform: capitalize;
 	padding: 0.35rem 1.35rem;
 	border-radius: var(--main-border-radius);
 	transition: var(--fast-transition);
@@ -285,7 +293,6 @@ li {
 }
 
 .content-header {
-	text-transform: capitalize;
 	margin-bottom: 3rem;
 }
 
@@ -299,12 +306,7 @@ li {
 .content-header h1 {
 	color: var(--clr-black);
 	font-size: 2.35rem;
-	letter-spacing: var(--secondary-letter-spacing);
 	margin-bottom: 0.35rem;
-}
-
-.content-header h1::first-letter {
-	text-transform: capitalize;
 }
 
 .project-items {
@@ -393,13 +395,6 @@ li {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 1rem;
-	gap: 0.5rem;
-}
-
-.project-text h2 {
-	font-size: 1.75rem;
-	text-transform: capitalize;
-	letter-spacing: var(--secondary-letter-spacing);
 }
 
 .project-tech-icons {
@@ -512,13 +507,6 @@ li {
 	justify-content: space-between;
 	width: 100%;
 	padding: 2rem 1rem;
-}
-
-.about-text h1 {
-	font-size: 2.5rem;
-	margin-bottom: 1.5rem;
-	text-transform: capitalize;
-	letter-spacing: var(--secondary-letter-spacing);
 }
 
 .about-info {
@@ -682,7 +670,6 @@ li {
 
 	.content-header h1 {
 		font-size: 2.25rem;
-		letter-spacing: 0;
 	}
 	/* End Master styles */
 

@@ -48,11 +48,11 @@ const Nav = () => {
 	return (
 		<div className="navbar">
 			<div className="nav-header">
-				<h1>
+				<span>
 					<a href="./index.html">
 						omar <span className="secondary-color">kraidié</span>
 					</a>
-				</h1>
+				</span>
 			</div>
 
 			<ul

@@ -10,10 +10,10 @@ const Home = () => {
 	return (
 		<div className="hero-container">
 			<div className="greet-card">
-				<h1 id="greet-txt">hello there,</h1>
-				<h1 id="greet-txt">my name is</h1>
-				<h1 id="greet-txt">
-					<span className="secondary-color"> omar</span>
+				<h1>
+					<span>Hello There,</span>
+					<span>My Name Is</span>
+					<span className="secondary-color"> Omar</span>
 				</h1>
 				<div className="greet-bottom">
 					<div className="greet-info">

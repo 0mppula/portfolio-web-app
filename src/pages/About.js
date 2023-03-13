@@ -20,7 +20,7 @@ const About = () => {
 						<img src={aboutImg} alt="about_me_image" />
 					</div>
 					<div className="about-text">
-						<h1>Software Engineering</h1>
+						<h2>Software Engineering</h2>
 						<div className="about-info">
 							<div>
 								<p>
@@ -56,7 +56,7 @@ const About = () => {
 							</div>
 
 							<div>
-								<p>Career Milestones</p>
+								<h3>Career Milestones</h3>
 								<ul>
 									<li>
 										<b>Q3 2019</b> Wrote my first Hello World! web-app. 🌍
