@@ -12,7 +12,8 @@
 	--clr-body: #eee;
 	--clr-secondary: #9376bc;
 	--clr-black: #1b1b1b;
-	--clr-white: #fafafb;
+	--clr-white: #fafafa;
+	--clr-white-light: #b3b3b3;
 	--fast-transition: all 0.2s ease;
 	--slow-transition: all 0.3s ease;
 	--main-boxshadow: 0px 1px 13px 0px rgba(27, 27, 27, 0.35);
@@ -135,7 +136,7 @@ h3 {
 }
 
 .nav-links .active {
-	color: var(--clr-secondary);
+	color: var(--clr-white);
 }
 
 li {
@@ -162,14 +163,14 @@ li {
 }
 
 .nav-links li a {
-	color: var(--clr-white);
+	color: var(--clr-white-light);
 	text-decoration: none;
 	font-size: 1.25rem;
 	transition: var(--fast-transition);
 }
 
 .nav-links li:hover a {
-	color: var(--clr-secondary);
+	color: var(--clr-white);
 }
 
 .burger {
@@ -692,19 +693,15 @@ li {
 
 	.nav-links li a {
 		font-size: 1.75rem;
-		color: var(--clr-white);
-	}
-
-	.nav-links li:hover a {
-		color: var(--clr-white);
+		color: var(--clr-white-light);
 	}
 
 	.nav-links li:active a {
-		color: var(--clr-secondary);
+		color: var(--clr-white);
 	}
 
 	.nav-links .active:hover {
-		color: var(--clr-secondary);
+		color: var(--clr-white);
 	}
 
 	.nav-links li {
