@@ -32,8 +32,11 @@ const ProjectItem = ({ project, index, thumbnail }) => {
 					</div>
 				</div>
 
-				<div className="project-content">
-					<p>{project.info || placeHolderInfo}</p>
+				<div className="project-body">
+					<div className="project-content">
+						<p>{project.info || placeHolderInfo}</p>
+						<Frame />
+					</div>
 
 					<div className="project-button-container">
 						{project.liveUrl && (
@@ -59,7 +62,6 @@ const ProjectItem = ({ project, index, thumbnail }) => {
 							</a>
 						)}
 					</div>
-					<Frame />
 				</div>
 			</div>
 		</div>

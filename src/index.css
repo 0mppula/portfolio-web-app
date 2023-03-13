@@ -342,7 +342,7 @@ li a {
 
 .project-item {
 	display: flex;
-	min-height: 375px;
+	min-height: 350px;
 	overflow: hidden;
 }
 
@@ -403,7 +403,7 @@ li a {
 
 .project-text {
 	width: 50%;
-	padding: 1rem 1rem 0rem;
+	padding: 1rem;
 }
 
 .link {
@@ -435,19 +435,22 @@ li a {
 }
 
 .project-content {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	white-space: pre-line;
 	position: relative;
-	min-height: 238px;
+	min-height: 207px;
 	padding: 1rem;
+}
+
+.project-body {
+	display: flex;
+	flex-direction: column;
 	gap: 1rem;
 }
 
 .project-button-container {
 	display: flex;
 	gap: 1rem;
+	padding: 0 1rem;
 }
 
 .project-info {
@@ -640,7 +643,7 @@ li a {
 	}
 }
 
-@media screen and (max-width: 1072px) {
+@media screen and (max-width: 944px) {
 	/* Project styles */
 	.project-item:nth-child(odd) .index,
 	.project-item:nth-child(even) .index {
@@ -668,7 +671,6 @@ li a {
 
 	.project-text {
 		width: 100%;
-		min-height: 350px;
 	}
 	/* End Project styles */
 }
