@@ -11,6 +11,13 @@ import {
 	SiMongodb,
 	SiExpress,
 	SiFirebase,
+	SiSass,
+	SiGit,
+	SiHeroku,
+	SiJest,
+	SiNetlify,
+	SiNumpy,
+	SiPandas,
 } from 'react-icons/si';
 
 const iconComponents = {
@@ -27,6 +34,13 @@ const iconComponents = {
 	MongoDB: <SiMongodb />,
 	'Express.js': <SiExpress />,
 	Firebase: <SiFirebase />,
+	Sass: <SiSass />,
+	Git: <SiGit />,
+	Heroku: <SiHeroku />,
+	Jest: <SiJest />,
+	Netlify: <SiNetlify />,
+	Numpy: <SiNumpy />,
+	Pandas: <SiPandas />,
 };
 
 const getTechnologyIcon = (technology) => {

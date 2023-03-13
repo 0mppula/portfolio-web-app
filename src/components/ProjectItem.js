@@ -24,7 +24,7 @@ const ProjectItem = ({ project, index, thumbnail }) => {
 					<h2>{project.title}</h2>
 
 					<div className="project-tech-icons">
-						{project.technologies.map((technology) => (
+						{project.technologies.reverse().map((technology) => (
 							<span key={technology} alt={technology} title={technology}>
 								{getTechnologyIcon(technology)}
 							</span>
