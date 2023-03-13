@@ -11,16 +11,14 @@ const Home = () => {
 		<div className="hero-container">
 			<div className="greet-card">
 				<h1>
-					<span>Hello There,</span>
-					<span>My Name Is</span>
-					<span>Omar</span>
+					<span>Hello,</span>
+					<span>I'm Omar</span>
 				</h1>
 
 				<div className="greet-bottom">
 					<div className="greet-info">
 						<p>
-							I'm a third year software engineering student currently studying in LAB
-							University of Applied Sciences in Lahti.
+							I'm a full stack JavaScript software engineer from Finland. I like developing cool and useful software by leveraging modern technologies! 👨🏼‍💻🤓
 							<br />
 							<br />
 							Feel free to view some of my projects and take a look at my CV by
