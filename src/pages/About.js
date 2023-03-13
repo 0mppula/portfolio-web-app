@@ -24,22 +24,20 @@ const About = () => {
 						<div className="about-info">
 							<div>
 								<p>
-									My name is{' '}
-									<b>
-										Omar <span className="secondary-color">Kraidié</span>
-									</b>
+									My name is <b>Omar Kraidié</b>
 									. I'm a third year software engineering student currently
 									studying in LAB University of Applied Sciences in Lahti!
 									<br />
 									<br />I like to create useful software that can be leveraged in
-									everyday applications. Furthermore, I'm enthusiastic about learning how to use new
-									technologies and finding efficient ways of implementing modern design patterns. In short, if you have a
-									software problem that needs to be resolved I <b>will</b> develop the
-									perfect and sustainable solution for you.
+									everyday applications. Furthermore, I'm enthusiastic about
+									learning how to use new technologies and finding efficient ways
+									of implementing modern design patterns. In short, if you have a
+									software problem that needs to be resolved I <b>will</b> develop
+									the perfect and sustainable solution for you.
 									<br />
 									<br />
-									In addition to coding, I'm interested in investing,
-									economics, artificial intelligence and personal development.
+									In addition to coding, I'm interested in investing, economics,
+									artificial intelligence and personal development.
 									<br />
 									<br />
 									If you're interested, here's a full list of the{' '}

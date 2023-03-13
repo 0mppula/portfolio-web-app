@@ -13,7 +13,7 @@ const Home = () => {
 				<h1>
 					<span>Hello There,</span>
 					<span>My Name Is</span>
-					<span className="secondary-color"> Omar</span>
+					<span>Omar</span>
 				</h1>
 
 				<div className="greet-bottom">

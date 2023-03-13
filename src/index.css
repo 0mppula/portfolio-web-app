@@ -10,7 +10,7 @@
 
 :root {
 	--clr-body: #eee;
-	--clr-secondary: #9376bc;
+	--clr-secondary: hsl(265, 34%, 65%);
 	--clr-black: #1b1b1b;
 	--clr-black-light: #2e2e2e;
 	--clr-white: #fafafa;
@@ -42,10 +42,6 @@ h2 {
 h3 {
 	font-size: 1.5rem;
 	margin-bottom: 0.5rem;
-}
-
-::selection {
-	background: var(--clr-secondary);
 }
 
 .container {
@@ -121,10 +117,6 @@ h3 {
 	color: var(--clr-white);
 	font-size: 2rem;
 	text-decoration: none;
-}
-
-.secondary-color {
-	color: var(--clr-secondary);
 }
 
 .nav-links {
@@ -406,10 +398,6 @@ li a {
 	padding: 1rem;
 }
 
-.link {
-	color: var(--clr-secondary);
-}
-
 .project-header {
 	display: flex;
 	flex-direction: column;
@@ -608,10 +596,6 @@ li a {
 .footer-links a:focus-visible .footer-icon {
 	color: var(--clr-secondary);
 }
-
-.copyright {
-	color: var(--clr-secondary);
-}
 /* End Footer */
 
 /* Media Queries */
@@ -744,14 +728,6 @@ li a {
 	/* EndHero styles */
 
 	/* Footer styles */
-	.footer-links a i:hover {
-		color: var(--clr-secondary);
-	}
-
-	.footer-links a i:active {
-		color: var(--clr-secondary);
-	}
-
 	a,
 	i {
 		-webkit-tap-highlight-color: transparent;
