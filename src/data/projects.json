@@ -9,17 +9,34 @@
 			"Node.js",
 			"JavaScript",
 			"Css3",
-			"Html5"
+			"Html5",
+			"Heroku"
 		],
 		"liveUrl": "https://www.koronkorko.com/",
 		"codeUrl": "https://github.com/0mppula/KoronKorko",
 		"info": "A full stack web-application with different types of useful and frequently used finance calculators. Some of the included calculators are compound interest, annualized return and present value. Users can also select between a dark or light theme and in which currency the monetary results of the calculators are displayed in. Additionally, authenticated users can create, save, edit, import and delete their calculations.",
 		"repositoryName": "KoronKorko"
 	},
-
+	{
+		"title": "BookStackr",
+		"technologies": [
+			"React.js",
+			"Redux Toolkit",
+			"Node.js",
+			"TypeScript",
+			"Css3",
+			"Html5",
+			"Firebase",
+			"Netlify"
+		],
+		"liveUrl": "https://bookstakr.netlify.app/books",
+		"codeUrl": "https://github.com/0mppula/BookStackr",
+		"info": "A comprehensive book tracking application allowing the users to track their read books by year, category and format. Book data can be viewed both in table and chart format. The app can be used with mock data without user authentication. Alternatively, users can sign in with their Google accounts and save their book data to a secure Firestore database for later use.",
+		"repositoryName": "BookStackr"
+	},
 	{
 		"title": "WSB-Tickers",
-		"technologies": ["React.js", "TypeScript", "Styled Components", "Css3", "Html5"],
+		"technologies": ["React.js", "TypeScript", "Styled Components", "Css3", "Html5", "Netlify"],
 		"liveUrl": "https://wsb-tickers.netlify.app/",
 		"codeUrl": "https://github.com/0mppula/wsb-tickers",
 		"info": "A React app that displays the top 50 stocks discussed on reddit.com/r/wallstreetbets/. Each ticker element displays both the sentiment from bullish to bearish and the sentiment score from -1 to 1 of the stock. The total daily comments are also displayed for each symbol. Tickers can be sorted in ascending or descending order. The data for this app is retrieved from the https://tradestie.com/apps/reddit/api/ API.",
@@ -27,7 +44,7 @@
 	},
 	{
 		"title": "CoinCaps",
-		"technologies": ["JavaScript", "React.js", "Css3", "Html5", "Node.js"],
+		"technologies": ["JavaScript", "React.js", "Css3", "Html5", "Node.js", "Netlify"],
 		"liveUrl": "https://coincaps.netlify.app/",
 		"codeUrl": "https://github.com/0mppula/CoinCaps",
 		"info": "A React web-application where the user can view the 1000 most valuable cryptocurrencies by market capitalization. Additionally, the user can select in which currency the app displays the price data for the cryptos. All of the cryptos can also be filtered out with a search field. The data and statistics of the application are retrieved from the CoinGecko API with different AJAX calls.",
@@ -35,7 +52,7 @@
 	},
 	{
 		"title": "TypeScript Multi-Page Form",
-		"technologies": ["React.js", "TypeScript", "Node.js", "Css3", "Html5"],
+		"technologies": ["React.js", "TypeScript", "Node.js", "Css3", "Html5", "Netlify"],
 		"liveUrl": "https://ts-multi-page-form.netlify.app/",
 		"codeUrl": "https://github.com/0mppula/ts-multi-page-form",
 		"info": "A React multi-page form application with modern and responsive form elements. The form has form validation, optional and required fields and custom error messages. On the last page of the form, before submitting, the users provided information will be shown on screen for the user.",
@@ -43,7 +60,7 @@
 	},
 	{
 		"title": "TypeScript Paginated Users Page",
-		"technologies": ["React.js", "TypeScript", "Node.js", "Css3", "Html5"],
+		"technologies": ["React.js", "TypeScript", "Node.js", "Css3", "Html5", "Netlify"],
 		"liveUrl": "https://ts-paginated-users-page.netlify.app/",
 		"codeUrl": "https://github.com/0mppula/ts-paginated-users-page",
 		"info": "A React users page with filtering, sorting and pagination functionality using query parameters. Additionally, each user has its own user page which can be opened by clicking a user from the users page. The user page prints simple information about the user.",
@@ -57,7 +74,8 @@
 			"TypeScript",
 			"Styled Components",
 			"Css3",
-			"Html5"
+			"Html5",
+			"Netlify"
 		],
 		"liveUrl": "https://react-redux-toolkit-hello-world.netlify.app/",
 		"codeUrl": "react-redux-toolkit-hello-world",
@@ -66,7 +84,7 @@
 	},
 	{
 		"title": "Déjà Vu",
-		"technologies": ["React.js", "TypeScript", "Styled Components", "Css3", "Html5"],
+		"technologies": ["React.js", "TypeScript", "Styled Components", "Css3", "Html5", "Netlify"],
 		"liveUrl": "https://dejavu-app.netlify.app/",
 		"codeUrl": "DejaVu",
 		"info": "A finance themed memory card game created with React. The game counts each card turn the user makes and times each game since the start. The data of each game is displayed above the games card container. This project illustrates how to use TypeScript and styled components together.",
@@ -74,7 +92,7 @@
 	},
 	{
 		"title": "CS-GO Weapons",
-		"technologies": ["JavaScript", "Css3", "Html5"],
+		"technologies": ["JavaScript", "Css3", "Html5", "Netlify"],
 		"liveUrl": "https://csgo-weapons.netlify.app/",
 		"codeUrl": "https://github.com/0mppula/CS-GO_weapons",
 		"info": "A vanilla JavaScript web application that lets the user toggle between a set of weapons from the popular game 'Counter-Strike: Global Offensive'. Each weapon can be reloaded and shot a single or multiple times. All the weapon interactions generate real sound effects from the game.",
@@ -82,7 +100,7 @@
 	},
 	{
 		"title": "Polish Cow",
-		"technologies": ["JavaScript", "Css3", "Html5"],
+		"technologies": ["JavaScript", "Css3", "Html5", "Netlify"],
 		"liveUrl": "https://polishcow.netlify.app/",
 		"codeUrl": "https://github.com/0mppula/Polish_Cow",
 		"info": "A vanilla JavaScript web application that generates dancing cows in an infininte loop while playing the popular Polish song: Gdzie jest biały węgorz (Zejście) by: Cypis. Once the user has started the song a timer counts for how long the song plays and the cows dance, once the music is stopped by the user the timer will be saved in local storage for next time!",
@@ -90,7 +108,7 @@
 	},
 	{
 		"title": "Alien Invasion",
-		"technologies": ["Python", "Pygame"],
+		"technologies": ["Python", "Git"],
 		"codeUrl": "https://github.com/0mppula/Alien_Invasion",
 		"info": "A game created with Python and Pygame. The player has to eliminate all the aliens on screen. When the the player has delt with all the aliens a new fleet of aliens is created and a next level starts. Every new level increases the tempo of the game and the amount of score rewarded by each alien. Highscore are saved in a .txt file and pulled for display before each game.",
 		"repositoryName": "Alien_Invasion"

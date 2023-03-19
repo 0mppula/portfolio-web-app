@@ -10,10 +10,12 @@ import CSGO_Weapons from '../images/projects/CS-GO_weapons/CS-GO_weapons.png';
 import Polish_Cow from '../images/projects/Polish_Cow/Polish_Cow.png';
 import SimpleJavaScriptProjects from '../images/projects/SimpleJavaScriptProjects/SimpleJavaScriptProjects.png';
 import Alien_Invasion from '../images/projects/Alien_Invasion/Alien_Invasion.png';
+import BookStackr from '../images/projects/BookStackr/BookStackr.png';
 
 const thumbnails = {
 	KoronKorko: KoronKorko,
 	CoinCaps: CoinCaps,
+	BookStackr: BookStackr,
 	'ts-paginated-users-page': tsPaginatedUsersPage,
 	DejaVu: DejaVu,
 	'react-redux-toolkit-hello-world': reactReduxToolkitHelloWorld,

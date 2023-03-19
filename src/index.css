@@ -406,6 +406,7 @@ li a {
 
 .project-tech-icons {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	gap: 1rem;
 	font-size: 1rem !important;
