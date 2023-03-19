@@ -3,6 +3,29 @@ import React from 'react';
 import Frame from '../components/Frame';
 import { useTitle } from '../hooks/useTitle';
 import aboutImg from '../images/about_image.jpg';
+import getTechnologyIcon from '../utils/getTechnologyIcon';
+
+const technologies = [
+	'JavaScript',
+	'Redux Toolkit',
+	'Styled Components',
+	'React.js',
+	'Css3',
+	'Html5',
+	'TypeScript',
+	'Node.js',
+	'Python',
+	'MongoDB',
+	'Express.js',
+	'Firebase',
+	'Sass',
+	'Git',
+	'Heroku',
+	'Jest',
+	'Netlify',
+	'Numpy',
+	'Pandas',
+];
 
 const About = () => {
 	useTitle('About');
@@ -54,47 +77,59 @@ const About = () => {
 							</div>
 
 							<div>
-								<h3>Career Milestones</h3>
-								<ul>
-									<li>
-										<b>Q3 2019</b> Wrote my first Hello World! web-app. 🌍
-									</li>
-									<li>
-										<b>Q1 2020</b> Decided to pursue software engineering as a
-										full-time career. 💡
-									</li>
-									<li>
-										<b>Q3 2020</b> Developed my first projects with HTML, CSS &
-										JavaScript. 👨🏼‍💻
-									</li>
-									<li>
-										<b>Q1 2021</b> Started a Bachelor's degree in Computer
-										Science. 🏫
-									</li>
-									<li>
-										<b>Q2 2021</b> Started learning Python & data science. 📊
-									</li>
-									<li>
-										<b>Q3 2021</b> Began internship at Tavata Global Oy
-										(web-development). 💻
-									</li>
-									<li>
-										<b>Q1 2022</b> Started a part-time web developer role at
-										Tavata Global Oy. 💻
-									</li>
-									<li>
-										<b>Q2 2022</b> Started a part-time web developer role at
-										Ovio Carbook Oy. 💻
-									</li>
-									<li>
-										<b>Q4 2022</b> Started a full-time web developer role at
-										twoday Finland. 💻
-									</li>
-								</ul>
-
+								<h3>My Tech Stack</h3>
+								<div className="project-tech-icons">
+									{technologies.map((technology) => (
+										<span key={technology} alt={technology} title={technology}>
+											{getTechnologyIcon(technology)}
+										</span>
+									))}
+								</div>
 								<Frame />
 							</div>
 						</div>
+					</div>
+				</div>
+
+				<div className="career-milestones">
+					<div>
+						<h2>Career Milestones</h2>
+						<ul>
+							<li>
+								<b>Q3 2019</b> Wrote my first Hello World! web-app. 🌍
+							</li>
+							<li>
+								<b>Q1 2020</b> Decided to pursue software engineering as a full-time
+								career. 💡
+							</li>
+							<li>
+								<b>Q3 2020</b> Developed my first projects with HTML, CSS &
+								JavaScript. 👨🏼‍💻
+							</li>
+							<li>
+								<b>Q1 2021</b> Started a Bachelor's degree in Computer Science. 🏫
+							</li>
+							<li>
+								<b>Q2 2021</b> Started learning Python & data science. 📊
+							</li>
+							<li>
+								<b>Q3 2021</b> Began internship at Tavata Global Oy
+								(web-development). 💻
+							</li>
+							<li>
+								<b>Q1 2022</b> Started a part-time web developer role at Tavata
+								Global Oy. 💻
+							</li>
+							<li>
+								<b>Q2 2022</b> Started a part-time web developer role at Ovio
+								Carbook Oy. 💻
+							</li>
+							<li>
+								<b>Q4 2022</b> Started a full-time web developer role at twoday
+								Finland. 💻
+							</li>
+							<Frame />
+						</ul>
 					</div>
 				</div>
 			</div>

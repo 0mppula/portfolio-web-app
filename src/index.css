@@ -484,7 +484,7 @@ li a {
 	box-shadow: var(--main-boxshadow);
 	border-radius: var(--main-border-radius);
 	background: var(--clr-white);
-	margin-bottom: 5rem;
+	margin-bottom: 2rem;
 }
 
 .about-image {
@@ -529,31 +529,44 @@ li a {
 	height: 100%;
 }
 
-.about-info p,
-.about-info ul li {
-	font-size: 1rem;
-	margin-bottom: 0.5rem;
-}
-
 .about-info ul li {
 	list-style-type: disc !important;
 	overflow: visible !important;
 }
 
-.about-info ul {
-	margin-left: 1rem !important;
-}
-.about-info div:nth-child(2) p:first-child {
-	font-weight: bold;
-	font-size: 1.5rem;
+.about-info p:first-child {
 	margin-bottom: 1rem;
 }
 
-.about-info li:last-child {
-	margin-bottom: 0rem;
+.career-milestones {
+	width: 100%;
+	padding: 1rem;
+	box-shadow: var(--main-boxshadow);
+	list-style-type: disc !important;
+	overflow: visible !important;
+	margin-bottom: 5rem;
+	border-radius: var(--main-border-radius);
 }
-.about-info p:first-child {
-	margin-bottom: 1rem;
+
+.career-milestones div ul li {
+	list-style-type: disc !important;
+	overflow: visible !important;
+	margin-left: 1rem;
+}
+
+.career-milestones div ul {
+	position: relative;
+	padding: 1rem;
+}
+
+.career-milestones p,
+.career-milestones ul li {
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+.career-milestones ul li:last-of-type {
+	margin-bottom: 0rem !important;
 }
 /* End About styles */
 
