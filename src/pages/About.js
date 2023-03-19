@@ -49,7 +49,7 @@ const About = () => {
 				</div>
 
 				<div className="about-content">
-					<h2>Info</h2>
+					<h2>General Info</h2>
 					<div>
 						<p>
 							My name is <b>Omar Kraidié</b>

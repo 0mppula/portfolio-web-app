@@ -490,6 +490,7 @@ li a {
 	padding: 1rem;
 	display: flex;
 	flex-direction: column;
+	box-shadow: var(--main-boxshadow);
 }
 
 .about-content:first-child {
