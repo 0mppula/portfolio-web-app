@@ -29,7 +29,7 @@
 			"Firebase",
 			"Netlify"
 		],
-		"liveUrl": "https://bookstakr.netlify.app/books",
+		"liveUrl": "https://bookstakr.netlify.app/",
 		"codeUrl": "https://github.com/0mppula/BookStackr",
 		"info": "A comprehensive book tracking application allowing the users to track their read books by year, category and format. Book data can be viewed both in table and chart format. The app can be used with mock data without user authentication. Alternatively, users can sign in with their Google accounts and save their book data to a secure Firestore database for later use.",
 		"repositoryName": "BookStackr"
@@ -83,6 +83,13 @@
 		"repositoryName": "react-redux-toolkit-hello-world"
 	},
 	{
+		"title": "Alien Invasion",
+		"technologies": ["Python", "Git"],
+		"codeUrl": "https://github.com/0mppula/Alien_Invasion",
+		"info": "A game created with Python and Pygame. The player has to eliminate all the aliens on screen. When the the player has delt with all the aliens a new fleet of aliens is created and a next level starts. Every new level increases the tempo of the game and the amount of score rewarded by each alien. Highscore are saved in a .txt file and pulled for display before each game.",
+		"repositoryName": "Alien_Invasion"
+	},
+	{
 		"title": "Déjà Vu",
 		"technologies": ["React.js", "TypeScript", "Styled Components", "Css3", "Html5", "Netlify"],
 		"liveUrl": "https://dejavu-app.netlify.app/",
@@ -97,26 +104,5 @@
 		"codeUrl": "https://github.com/0mppula/CS-GO_weapons",
 		"info": "A vanilla JavaScript web application that lets the user toggle between a set of weapons from the popular game 'Counter-Strike: Global Offensive'. Each weapon can be reloaded and shot a single or multiple times. All the weapon interactions generate real sound effects from the game.",
 		"repositoryName": "CS-GO_weapons"
-	},
-	{
-		"title": "Polish Cow",
-		"technologies": ["JavaScript", "Css3", "Html5", "Netlify"],
-		"liveUrl": "https://polishcow.netlify.app/",
-		"codeUrl": "https://github.com/0mppula/Polish_Cow",
-		"info": "A vanilla JavaScript web application that generates dancing cows in an infininte loop while playing the popular Polish song: Gdzie jest biały węgorz (Zejście) by: Cypis. Once the user has started the song a timer counts for how long the song plays and the cows dance, once the music is stopped by the user the timer will be saved in local storage for next time!",
-		"repositoryName": "Polish_Cow"
-	},
-	{
-		"title": "Alien Invasion",
-		"technologies": ["Python", "Git"],
-		"codeUrl": "https://github.com/0mppula/Alien_Invasion",
-		"info": "A game created with Python and Pygame. The player has to eliminate all the aliens on screen. When the the player has delt with all the aliens a new fleet of aliens is created and a next level starts. Every new level increases the tempo of the game and the amount of score rewarded by each alien. Highscore are saved in a .txt file and pulled for display before each game.",
-		"repositoryName": "Alien_Invasion"
-	},
-	{
-		"title": "Simple JavaScript Projects",
-		"technologies": ["JavaScript", "Css3", "Html5"],
-		"liveUrl": "https://simplejsprojects.netlify.app/",
-		"repositoryName": "SimpleJavaScriptProjects"
 	}
 ]
