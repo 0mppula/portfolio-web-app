@@ -2,7 +2,6 @@ import React from 'react';
 
 import Frame from '../components/Frame';
 import { useTitle } from '../hooks/useTitle';
-import aboutImg from '../images/about_image.jpg';
 import getTechnologyIcon from '../utils/getTechnologyIcon';
 
 const technologies = [
@@ -25,6 +24,11 @@ const technologies = [
 	'Netlify',
 	'Numpy',
 	'Pandas',
+	'Github',
+	'Gitlab',
+	'Figma',
+	'Adobephotoshop',
+	'Meteor.js',
 ];
 
 const About = () => {
@@ -37,63 +41,51 @@ const About = () => {
 					<h1>A Little About Me</h1>
 					<div className="header-underline"></div>
 				</div>
+			</div>
+
+			<div className="about-content-container">
+				<div className="about-content">
+					<div className="about-image" />
+				</div>
 
 				<div className="about-content">
-					<div className="about-image">
-						<img src={aboutImg} alt="about_me_image" />
-					</div>
-					<div className="about-text">
-						<h2>Software Engineering</h2>
-						<div className="about-info">
-							<div>
-								<p>
-									My name is <b>Omar Kraidié</b>
-									. I'm a third year software engineering student currently
-									studying in LAB University of Applied Sciences in Lahti!
-									<br />
-									<br />I like to create useful software that can be leveraged in
-									everyday applications. Furthermore, I'm enthusiastic about
-									learning how to use new technologies and finding efficient ways
-									of implementing modern design patterns. In short, if you have a
-									software problem that needs to be resolved I <b>will</b> develop
-									the perfect and sustainable solution for you.
-									<br />
-									<br />
-									In addition to coding, I'm interested in investing, economics,
-									artificial intelligence and personal development.
-									<br />
-									<br />
-									If you're interested, here's a full list of the{' '}
-									<a
-										href="https://www.goodreads.com/review/list/135003326-0mppu?ref=nav_mybooks&shelf=programming"
-										target="_blank"
-										rel="noreferrer"
-										className="link"
-									>
-										tech books
-									</a>{' '}
-									that I've read.
-								</p>
-							</div>
-
-							<div>
-								<h3>My Tech Stack</h3>
-								<div className="project-tech-icons">
-									{technologies.map((technology) => (
-										<span key={technology} alt={technology} title={technology}>
-											{getTechnologyIcon(technology)}
-										</span>
-									))}
-								</div>
-								<Frame />
-							</div>
-						</div>
+					<h2>Info</h2>
+					<div>
+						<p>
+							My name is <b>Omar Kraidié</b>
+							. I'm a third year software engineering student currently studying in
+							LAB University of Applied Sciences in Lahti!
+							<br />
+							<br />I like to create useful software that can be leveraged in everyday
+							applications. Furthermore, I'm enthusiastic about learning how to use
+							new technologies and finding efficient ways of implementing modern
+							design patterns. In short, if you have a software problem that needs to
+							be resolved I <b>will</b> develop the perfect and sustainable solution
+							for you.
+							<br />
+							<br />
+							In addition to coding, I'm interested in investing, economics,
+							artificial intelligence and personal development.
+							<br />
+							<br />
+							If you're interested, here's a full list of the{' '}
+							<a
+								href="https://www.goodreads.com/review/list/135003326-0mppu?ref=nav_mybooks&shelf=programming"
+								target="_blank"
+								rel="noreferrer"
+								className="link"
+							>
+								tech books
+							</a>{' '}
+							that I've read.
+						</p>
+						<Frame />
 					</div>
 				</div>
 
-				<div className="career-milestones">
+				<div className="about-content">
+					<h2>Career Milestones</h2>
 					<div>
-						<h2>Career Milestones</h2>
 						<ul>
 							<li>
 								<b>Q3 2019</b> Wrote my first Hello World! web-app. 🌍
@@ -128,8 +120,23 @@ const About = () => {
 								<b>Q4 2022</b> Started a full-time web developer role at twoday
 								Finland. 💻
 							</li>
-							<Frame />
 						</ul>
+						<Frame />
+					</div>
+				</div>
+
+				<div className="about-content">
+					<h2>My Tech Stack</h2>
+					<div className="project-tech-icons">
+						{[...technologies]
+							.sort()
+							.reverse()
+							.map((technology) => (
+								<span key={technology} alt={technology} title={technology}>
+									{getTechnologyIcon(technology)}
+								</span>
+							))}
+						<Frame />
 					</div>
 				</div>
 			</div>

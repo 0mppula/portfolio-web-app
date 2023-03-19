@@ -18,6 +18,11 @@ import {
 	SiNetlify,
 	SiNumpy,
 	SiPandas,
+	SiGithub,
+	SiGitlab,
+	SiFigma,
+	SiAdobephotoshop,
+	SiMeteor,
 } from 'react-icons/si';
 
 const iconComponents = {
@@ -41,6 +46,11 @@ const iconComponents = {
 	Netlify: <SiNetlify />,
 	Numpy: <SiNumpy />,
 	Pandas: <SiPandas />,
+	Github: <SiGithub />,
+	Gitlab: <SiGitlab />,
+	Figma: <SiFigma />,
+	Adobephotoshop: <SiAdobephotoshop />,
+	'Meteor.js': <SiMeteor />,
 };
 
 const getTechnologyIcon = (technology) => {
