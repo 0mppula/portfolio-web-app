@@ -1,12 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const links = ['home', 'projects', 'about'];
 
 const Nav = () => {
 	const [sideNav, setSideNav] = useState(false);
-
-	const navLinksRef = useRef();
 
 	useEffect(() => {
 		window.addEventListener('resize', handleWindowResize);
@@ -21,16 +19,16 @@ const Nav = () => {
 		}
 	};
 
-	const handleMouseOver = (e) => {
-		if (e.target.classList.contains('list-item') && !sideNav) {
+	const handleLinkFocus = (e) => {
+		if (e.target.tagName === 'A' && !sideNav) {
 			let link = e.target.children[0];
 			link.classList.toggle('mouseover-links', true);
 			link.classList.toggle('mouseout-links', false);
 		}
 	};
 
-	const handleMouseOut = (e) => {
-		if (e.target.classList.contains('list-item') && !sideNav) {
+	const handleLinkBlur = (e) => {
+		if (e.target.tagName === 'A' && !sideNav) {
 			let link = e.target.children[0];
 			link.classList.toggle('mouseover-links', false);
 			link.classList.toggle('mouseout-links', true);
@@ -41,7 +39,7 @@ const Nav = () => {
 		setSideNav(!sideNav);
 	};
 
-	const handleLinkClick = (link) => {
+	const handleLinkClick = () => {
 		setSideNav(false);
 	};
 
@@ -53,12 +51,7 @@ const Nav = () => {
 				</span>
 			</div>
 
-			<ul
-				className={`nav-links ${sideNav ? 'nav-links-active' : ''}`}
-				onMouseOver={(e) => handleMouseOver(e)}
-				onMouseOut={(e) => handleMouseOut(e)}
-				ref={navLinksRef}
-			>
+			<ul className={`nav-links ${sideNav ? 'nav-links-active' : ''}`}>
 				{links.map((link, index) => (
 					<li
 						key={link}
@@ -72,8 +65,10 @@ const Nav = () => {
 							className="list-item"
 							to={`/${link === 'home' ? '' : link}`}
 							onClick={() => handleLinkClick(link)}
+							onMouseEnter={(e) => handleLinkFocus(e)}
+							onMouseLeave={(e) => handleLinkBlur(e)}
 						>
-							{link} <span className="underline"></span>
+							{link} <span className="underline" />
 						</NavLink>
 					</li>
 				))}
