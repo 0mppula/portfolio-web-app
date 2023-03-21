@@ -58,7 +58,7 @@ const Nav = () => {
 		<div className="navbar">
 			<div className="nav-header">
 				<span>
-					<a href="./index.html">omar kraidié</a>
+					<a href="./index.html">OMAR KRAIDIÈ</a>
 				</span>
 			</div>
 
