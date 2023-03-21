@@ -8,8 +8,12 @@ const Nav = () => {
 
 	useEffect(() => {
 		window.addEventListener('resize', handleWindowResize);
+		window.addEventListener('focus', dontLinkFocusOnWindowFocus);
 
-		return () => window.removeEventListener('resize', handleWindowResize);
+		return () => {
+			window.removeEventListener('resize', handleWindowResize);
+			window.removeEventListener('focus', dontLinkFocusOnWindowFocus);
+		};
 	}, []);
 
 	const handleWindowResize = () => {
@@ -17,6 +21,10 @@ const Nav = () => {
 		if (w > 800) {
 			setSideNav(false);
 		}
+	};
+
+	const dontLinkFocusOnWindowFocus = () => {
+		document.getElementById('focus-handler').focus();
 	};
 
 	const handleLinkFocus = (e) => {
@@ -28,7 +36,10 @@ const Nav = () => {
 	};
 
 	const handleLinkBlur = (e) => {
-		if (e.target.tagName === 'A' && !sideNav) {
+		const isFocused = document.activeElement === e.target && window.document.hasFocus();
+		const conditions = [e.target.tagName === 'A', !sideNav, !isFocused];
+
+		if (conditions.every((condition) => condition === true)) {
 			let link = e.target.children[0];
 			link.classList.toggle('mouseover-links', false);
 			link.classList.toggle('mouseout-links', true);
@@ -51,6 +62,12 @@ const Nav = () => {
 				</span>
 			</div>
 
+			<input
+				tabIndex={-1}
+				id="focus-handler"
+				style={{ opacity: 0, height: 0, position: 'absolute' }}
+			/>
+
 			<ul className={`nav-links ${sideNav ? 'nav-links-active' : ''}`}>
 				{links.map((link, index) => (
 					<li
@@ -65,8 +82,11 @@ const Nav = () => {
 							className="list-item"
 							to={`/${link === 'home' ? '' : link}`}
 							onClick={() => handleLinkClick(link)}
-							onMouseEnter={(e) => handleLinkFocus(e)}
-							onMouseLeave={(e) => handleLinkBlur(e)}
+							onMouseOver={(e) => handleLinkFocus(e)}
+							onMouseOut={(e) => handleLinkBlur(e)}
+							onFocusCapture={(e) => handleLinkFocus(e)}
+							onBlurCapture={(e) => handleLinkBlur(e)}
+							datatype={index}
 						>
 							{link} <span className="underline" />
 						</NavLink>
