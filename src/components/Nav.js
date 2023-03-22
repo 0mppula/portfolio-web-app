@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const links = ['home', 'projects', 'about'];
 
 const Nav = () => {
 	const [sideNav, setSideNav] = useState(false);
+	const { pathname } = useLocation();
+
+	useEffect(() => {
+		setSideNav(false);
+	}, [pathname]);
 
 	useEffect(() => {
 		window.addEventListener('resize', handleWindowResize);
@@ -50,10 +55,6 @@ const Nav = () => {
 		setSideNav(!sideNav);
 	};
 
-	const handleLinkClick = () => {
-		setSideNav(false);
-	};
-
 	return (
 		<div className="navbar">
 			<div className="nav-header">
@@ -81,7 +82,6 @@ const Nav = () => {
 						<NavLink
 							className="list-item"
 							to={`/${link === 'home' ? '' : link}`}
-							onClick={() => handleLinkClick(link)}
 							onMouseOver={(e) => handleLinkFocus(e)}
 							onMouseOut={(e) => handleLinkBlur(e)}
 							onFocusCapture={(e) => handleLinkFocus(e)}
