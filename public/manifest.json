@@ -8,6 +8,11 @@
       "type": "image/x-icon"
     },
     {
+      "src": "logo180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
       "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
@@ -20,6 +25,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#604388",
-  "background_color": "#fafafb"
+  "theme_color": "#a187c4",
+  "background_color": "#fafafa"
 }
