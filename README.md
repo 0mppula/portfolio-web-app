@@ -30,7 +30,7 @@ Here is the full list of all the tech books that I have read.
 [0]: https://omarkraidie.com/
 [1]: https://www.goodreads.com/review/list/135003326-0mppu?ref=nav_mybooks&shelf=programming
 [koronkorko]: https://www.koronkorko.com/
-[bookstackr]: https://bookstakr.netlify.app/
+[bookstackr]: https://bookstackr.netlify.app/
 [wsb-tickers]: https://wsb-tickers.netlify.app/
 [coincaps]: https://coincaps.netlify.app/
 [ts-multi-page-form]: https://ts-multi-page-form.netlify.app/
