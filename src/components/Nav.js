@@ -13,11 +13,9 @@ const Nav = () => {
 
 	useEffect(() => {
 		window.addEventListener('resize', handleWindowResize);
-		window.addEventListener('focus', dontLinkFocusOnWindowFocus);
 
 		return () => {
 			window.removeEventListener('resize', handleWindowResize);
-			window.removeEventListener('focus', dontLinkFocusOnWindowFocus);
 		};
 	}, []);
 
@@ -25,29 +23,6 @@ const Nav = () => {
 		const w = window.innerWidth;
 		if (w > 800) {
 			setSideNav(false);
-		}
-	};
-
-	const dontLinkFocusOnWindowFocus = () => {
-		document.getElementById('focus-handler').focus();
-	};
-
-	const handleLinkFocus = (e) => {
-		if (e.target.tagName === 'A' && !sideNav) {
-			let link = e.target.children[0];
-			link.classList.toggle('mouseover-links', true);
-			link.classList.toggle('mouseout-links', false);
-		}
-	};
-
-	const handleLinkBlur = (e) => {
-		const isFocused = document.activeElement === e.target && window.document.hasFocus();
-		const conditions = [e.target.tagName === 'A', !sideNav, !isFocused];
-
-		if (conditions.every((condition) => condition === true)) {
-			let link = e.target.children[0];
-			link.classList.toggle('mouseover-links', false);
-			link.classList.toggle('mouseout-links', true);
 		}
 	};
 
@@ -63,12 +38,6 @@ const Nav = () => {
 				</span>
 			</div>
 
-			<input
-				tabIndex={-1}
-				id="focus-handler"
-				style={{ opacity: 0, height: 0, position: 'absolute' }}
-			/>
-
 			<ul className={`nav-links ${sideNav ? 'nav-links-active' : ''}`}>
 				{links.map((link, index) => (
 					<li
@@ -82,22 +51,20 @@ const Nav = () => {
 						<NavLink
 							className="list-item"
 							to={`/${link === 'home' ? '' : link}`}
-							onMouseOver={(e) => handleLinkFocus(e)}
-							onMouseOut={(e) => handleLinkBlur(e)}
-							onFocusCapture={(e) => handleLinkFocus(e)}
-							onBlurCapture={(e) => handleLinkBlur(e)}
-							datatype={index}
+							onBlur={(e) => {
+								!window.document.hasFocus() && e.preventDefault();
+							}}
 						>
-							{link} <span className="underline" />
+							{link}
 						</NavLink>
 					</li>
 				))}
 			</ul>
 
 			<div className={`burger ${sideNav ? 'burger-active' : ''}`} onClick={handleNavClick}>
-				<div className="line-1"></div>
-				<div className="line-2"></div>
-				<div className="line-3"></div>
+				<div className="line-1" />
+				<div className="line-2" />
+				<div className="line-3" />
 			</div>
 		</div>
 	);
