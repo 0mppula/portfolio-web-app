@@ -21,8 +21,8 @@ import {
 	SiGithub,
 	SiGitlab,
 	SiFigma,
-	SiAdobephotoshop,
 	SiMeteor,
+	SiMui,
 } from 'react-icons/si';
 
 const iconComponents = {
@@ -49,8 +49,8 @@ const iconComponents = {
 	Github: <SiGithub />,
 	Gitlab: <SiGitlab />,
 	Figma: <SiFigma />,
-	Adobephotoshop: <SiAdobephotoshop />,
 	'Meteor.js': <SiMeteor />,
+	'Material-UI': <SiMui />,
 };
 
 const getTechnologyIcon = (technology) => {
