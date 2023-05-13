@@ -47,7 +47,7 @@
 		"technologies": ["JavaScript", "React.js", "Css3", "Html5", "Node.js", "Netlify"],
 		"liveUrl": "https://coincaps.netlify.app/",
 		"codeUrl": "https://github.com/0mppula/CoinCaps",
-		"info": "A React web-application where the user can view the 1000 most valuable cryptocurrencies by market capitalization. Additionally, the user can select in which currency the app displays the price data for the cryptos. All of the cryptos can also be filtered out with a search field. The data and statistics of the application are retrieved from the CoinGecko API with different AJAX calls.",
+		"info": "A React web-application where the user can view the 250 most valuable cryptocurrencies by market capitalization. Additionally, the user can select in which currency the app displays the price data for the cryptos. All of the cryptos can also be filtered out with a search field. The data and statistics of the application are retrieved from the CoinGecko API with different AJAX calls.",
 		"repositoryName": "CoinCaps"
 	},
 	{
