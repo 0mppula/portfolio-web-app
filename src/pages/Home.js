@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import cv from '../data/omar-kraidié-cv.pdf';
 import Frame from '../components/Frame';
 import { useTitle } from '../hooks/useTitle';
 
@@ -18,7 +17,9 @@ const Home = () => {
 				<div className="greet-bottom">
 					<div className="greet-info">
 						<p>
-							I'm a full stack JavaScript software engineer from Finland. I like developing cool and useful software by leveraging modern technologies! 👨🏼‍💻🤓
+							I'm a full stack JavaScript software engineer from Finland. I like
+							developing cool and useful software by leveraging modern technologies!
+							👨🏼‍💻🤓
 							<br />
 							<br />
 							Feel free to view some of my projects and take a look at my CV by
@@ -31,9 +32,10 @@ const Home = () => {
 						<Link to="/projects" type="button" className="btn">
 							Projects
 						</Link>
-						<a type="button" className="btn" target="_blank" rel="noreferrer" href={cv}>
+
+						<Link to="/cv" target="_blank" rel="noopener" type="button" className="btn">
 							CV (.PDF)
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>
