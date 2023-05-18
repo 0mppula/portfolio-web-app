@@ -8,19 +8,38 @@ const Footer = () => {
 	return (
 		<div className="footer">
 			<div className="footer-links">
-				<a href="https://github.com/0mppula" target="_blank" rel="noreferrer">
+				<a
+					href="https://github.com/0mppula"
+					target="_blank"
+					rel="noreferrer"
+					aria-label="Github"
+				>
 					<FontAwesomeIcon className="footer-icon icon" icon={faGithub} />
 				</a>
-				<a href="https://www.linkedin.com/in/omarkraidie/" target="_blank" rel="noreferrer">
+
+				<a
+					href="https://www.linkedin.com/in/omarkraidie/"
+					target="_blank"
+					rel="noreferrer"
+					aria-label="Linkedin"
+				>
 					<FontAwesomeIcon className="footer-icon icon" icon={faLinkedin} />
 				</a>
-				<a href="https://twitter.com/OmarKraidie" target="_blank" rel="noreferrer">
+
+				<a
+					href="https://twitter.com/OmarKraidie"
+					target="_blank"
+					rel="noreferrer"
+					aria-label="Twitter"
+				>
 					<FontAwesomeIcon className="footer-icon icon" icon={faTwitter} />
 				</a>
+
 				<a
 					href="https://www.youtube.com/channel/UCdpM1SUen7ZxX2owolyIGyQ"
 					target="_blank"
 					rel="noreferrer"
+					aria-label="Youtube"
 				>
 					<FontAwesomeIcon className="footer-icon icon" icon={faYoutube} />
 				</a>
