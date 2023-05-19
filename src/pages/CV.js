@@ -25,7 +25,7 @@ const CV = () => {
 						<a href="https://omarkraidie.com/projects">
 							omarkraidie.com/projects (portfolio)
 						</a>{' '}
-						| <a href="mailto:omarkraidie1996@gmail.com">omarkraidie1996@gmail.com</a>
+						| <a href="mailto:devomarkraidie@gmail.com">devomarkraidie@gmail.com</a>
 					</p>
 
 					<h2>Skills</h2>
