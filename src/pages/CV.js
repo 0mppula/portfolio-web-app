@@ -1,23 +1,36 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import cv from '../data/omar-kraidié-cv.pdf';
 import { useTitle } from '../hooks/useTitle';
 
 const CV = () => {
+	const [timeout, setIsTimeout] = useState(false);
 	useTitle('CV');
 
 	useEffect(() => {
 		window.location.href = cv;
 		document.title = `Omar Kraidié - CV`;
+
+		const timer = setTimeout(() => {
+			setIsTimeout(true);
+		}, 3000);
+
+		return () => clearTimeout(timer);
 	}, []);
 
 	return (
-		<div style={{ opacity: 0 }} className="container">
+		<div className="container">
 			<div className="content-container">
-				<div className="content-header">
-					<h1>Omar Kraidié - CV</h1>
-					<div className="header-underline" />
-				</div>
+				{timeout && (
+					<p>
+						If you don't see the CV, please try{' '}
+						<Link to="/cv" onClick={() => window.location.reload()}>
+							refreshing the page
+						</Link>
+						.
+					</p>
+				)}
 			</div>
 		</div>
 	);
