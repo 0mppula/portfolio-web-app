@@ -1,6 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
 const year = new Date().getFullYear().toString();
 
@@ -14,7 +13,16 @@ const Footer = () => {
 					rel="noreferrer"
 					aria-label="Github"
 				>
-					<FontAwesomeIcon className="footer-icon icon" icon={faGithub} />
+					<FaGithub className="footer-icon icon" />
+				</a>
+
+				<a
+					href="mailto:devomarkraidie@gmail.com"
+					target="_blank"
+					rel="noreferrer"
+					aria-label="Email"
+				>
+					<FaEnvelope className="footer-icon icon" />
 				</a>
 
 				<a
@@ -23,25 +31,15 @@ const Footer = () => {
 					rel="noreferrer"
 					aria-label="Linkedin"
 				>
-					<FontAwesomeIcon className="footer-icon icon" icon={faLinkedin} />
+					<FaLinkedin className="footer-icon icon" />
 				</a>
-
 				<a
 					href="https://twitter.com/OmarKraidie"
 					target="_blank"
 					rel="noreferrer"
 					aria-label="Twitter"
 				>
-					<FontAwesomeIcon className="footer-icon icon" icon={faTwitter} />
-				</a>
-
-				<a
-					href="https://www.youtube.com/channel/UCdpM1SUen7ZxX2owolyIGyQ"
-					target="_blank"
-					rel="noreferrer"
-					aria-label="Youtube"
-				>
-					<FontAwesomeIcon className="footer-icon icon" icon={faYoutube} />
+					<FaTwitter className="footer-icon icon" />
 				</a>
 			</div>
 

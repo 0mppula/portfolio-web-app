@@ -584,7 +584,8 @@ li a.list-item::after {
 }
 
 .footer-icon {
-	font-size: 2rem;
+	height: 2rem;
+	width: 2rem;
 	color: var(--clr-white);
 	transition: var(--fast-transition);
 }
