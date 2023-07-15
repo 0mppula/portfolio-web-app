@@ -8,8 +8,6 @@
 			"Redux.js",
 			"Node.js",
 			"JavaScript",
-			"Css3",
-			"Html5",
 			"Heroku"
 		],
 		"liveUrl": "https://www.koronkorko.com/",
@@ -24,8 +22,6 @@
 			"Redux Toolkit",
 			"Node.js",
 			"TypeScript",
-			"Css3",
-			"Html5",
 			"Firebase",
 			"Netlify"
 		],
@@ -33,6 +29,22 @@
 		"codeUrl": "https://github.com/0mppula/BookStackr",
 		"info": "A comprehensive book tracking application allowing the users to track their read books by year, category and format. Book data can be viewed both in table and chart format. The app can be used with mock data without user authentication. Alternatively, users can sign in with their Google accounts and save their book data to a secure Firestore database for later use.",
 		"repositoryName": "BookStackr"
+	},
+	{
+		"title": "GoalTrackr",
+		"technologies": [
+			"React.js",
+			"Next.js 13",
+			"Node.js",
+			"TypeScript",
+			"Reactquery",
+			"MongoDB",
+			"Vercel"
+		],
+		"liveUrl": "https://goaltrackr.vercel.app/",
+		"codeUrl": "https://github.com/0mppula/goal-trackr",
+		"info": "A fullstack Next.js 13 application created using the shadcn/ui library. The app allows authenticated users to list and track their daily goals. Global state is managed with Zustand, database queries are done using TanStack Query and authentication is managed with NextAuth.js. User and app data is saved to a MongoDB data base. Additionally, some routes are protected from unauthorized users.",
+		"repositoryName": "goal-trackr"
 	},
 	{
 		"title": "WSB-Tickers",

@@ -11,6 +11,7 @@ import Polish_Cow from '../images/projects/Polish_Cow/Polish_Cow.png';
 import SimpleJavaScriptProjects from '../images/projects/SimpleJavaScriptProjects/SimpleJavaScriptProjects.png';
 import Alien_Invasion from '../images/projects/Alien_Invasion/Alien_Invasion.png';
 import BookStackr from '../images/projects/BookStackr/BookStackr.png';
+import GoalTrack from '../images/projects/goal-trackr/goal-trackr.png';
 
 const thumbnails = {
 	KoronKorko: KoronKorko,
@@ -25,6 +26,7 @@ const thumbnails = {
 	'CS-GO_weapons': CSGO_Weapons,
 	Alien_Invasion: Alien_Invasion,
 	SimpleJavaScriptProjects: SimpleJavaScriptProjects,
+	'goal-trackr': GoalTrack,
 	placeholder: placeholderThumbnail,
 };
 
