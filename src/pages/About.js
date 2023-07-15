@@ -7,7 +7,7 @@ import getTechnologyIcon from '../utils/getTechnologyIcon';
 const technologies = [
 	'JavaScript',
 	'Redux Toolkit',
-	'Styled Components',
+	'Reactquery',
 	'React.js',
 	'Css3',
 	'Html5',
@@ -22,12 +22,12 @@ const technologies = [
 	'Heroku',
 	'Jest',
 	'Netlify',
-	'Numpy',
+	'Vercel',
 	'Pandas',
 	'Github',
 	'Gitlab',
 	'Figma',
-	'Meteor.js',
+	'Next.js 13',
 	'Material-UI',
 ];
 
@@ -53,7 +53,9 @@ const About = () => {
 					<div>
 						<p>
 							My name is <b>Omar Kraidié</b> a third-year software engineering student
-							with over 2 years of professional experience in developing client-facing projects for businesses, as well as 3+ years of experience developing independent open-source projects.
+							with over 2 years of professional experience in developing client-facing
+							projects for businesses, as well as 3+ years of experience developing
+							independent open-source projects.
 							<br />
 							<br />I like to create useful software that can be leveraged in everyday
 							applications. Furthermore, I'm enthusiastic about learning how to use
@@ -85,14 +87,11 @@ const About = () => {
 				<div className="about-content">
 					<h2>My Tech Stack</h2>
 					<div className="project-tech-icons">
-						{[...technologies]
-							.sort()
-							.reverse()
-							.map((technology) => (
-								<span key={technology} alt={technology} title={technology}>
-									{getTechnologyIcon(technology)}
-								</span>
-							))}
+						{[...technologies].sort().map((technology) => (
+							<span key={technology} alt={technology} title={technology}>
+								{getTechnologyIcon(technology)}
+							</span>
+						))}
 						<Frame />
 					</div>
 				</div>
@@ -105,10 +104,12 @@ const About = () => {
 								<b>Q3 2019</b> Wrote my first "Hello World!" project. 🌍
 							</li>
 							<li>
-								<b>Q1 2020</b> Decided to pursue a full-time career in software engineering.
+								<b>Q1 2020</b> Decided to pursue a full-time career in software
+								engineering.
 							</li>
 							<li>
-								<b>Q2 2020</b> Developed projects using HTML, CSS, and JavaScript. 👨🏼‍💻
+								<b>Q2 2020</b> Developed projects using HTML, CSS, and JavaScript.
+								👨🏼‍💻
 							</li>
 							<li>
 								<b>Q1 2021</b> Enrolled in Bachelor's degree in Computer Science. 🏫
@@ -120,13 +121,16 @@ const About = () => {
 								<b>Q3 2021</b> Interned at Tavata Global Oy (web development).
 							</li>
 							<li>
-								<b>Q1 2022</b> Started part-time web developer role at Tavata Global Oy.
+								<b>Q1 2022</b> Started part-time web developer role at Tavata Global
+								Oy.
 							</li>
 							<li>
-								<b>Q2 2022</b> Started part-time web developer role at Ovio Carbook Oy.
+								<b>Q2 2022</b> Started part-time web developer role at Ovio Carbook
+								Oy.
 							</li>
 							<li>
-								<b>Q4 2022</b> Started full-time web developer role at twoday Finland.
+								<b>Q4 2022</b> Started full-time web developer role at twoday
+								Finland.
 							</li>
 						</ul>
 						<Frame />
