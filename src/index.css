@@ -583,6 +583,13 @@ li a.list-item::after {
 	padding: 0.25rem;
 }
 
+.react-tooltip {
+	--rt-opacity: 1;
+	background-color: var(--clr-black) !important;
+	color: var(--clr-white) !important;
+	z-index: 1000 !important;
+}
+
 .footer-icon {
 	height: 2rem;
 	width: 2rem;

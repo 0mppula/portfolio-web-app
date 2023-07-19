@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Tooltip } from 'react-tooltip';
 import placeHolderInfo from '../utils/placeholderInfo';
 import Frame from '../components/Frame';
 import getTechnologyIcon from '../utils/getTechnologyIcon';
@@ -25,9 +25,16 @@ const ProjectItem = ({ project, index, thumbnail }) => {
 
 					<div className="project-tech-icons">
 						{project.technologies.sort().map((technology) => (
-							<span key={technology} alt={technology} title={technology}>
-								{getTechnologyIcon(technology)}
-							</span>
+							<React.Fragment key={technology}>
+								<span
+									data-tooltip-id={`${technology}-tooltip`}
+									data-tooltip-content={technology}
+								>
+									{getTechnologyIcon(technology)}
+								</span>
+
+								<Tooltip id={`${technology}-tooltip`} />
+							</React.Fragment>
 						))}
 					</div>
 				</div>

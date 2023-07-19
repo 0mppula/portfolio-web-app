@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Tooltip } from 'react-tooltip';
 import Frame from '../components/Frame';
 import { useTitle } from '../hooks/useTitle';
 import getTechnologyIcon from '../utils/getTechnologyIcon';
@@ -88,9 +88,16 @@ const About = () => {
 					<h2>My Tech Stack</h2>
 					<div className="project-tech-icons">
 						{[...technologies].sort().map((technology) => (
-							<span key={technology} alt={technology} title={technology}>
-								{getTechnologyIcon(technology)}
-							</span>
+							<React.Fragment key={technology}>
+								<span
+									data-tooltip-id={`${technology}-tooltip`}
+									data-tooltip-content={technology}
+								>
+									{getTechnologyIcon(technology)}
+								</span>
+
+								<Tooltip id={`${technology}-tooltip`} />
+							</React.Fragment>
 						))}
 						<Frame />
 					</div>
