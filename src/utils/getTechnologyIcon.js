@@ -26,6 +26,7 @@ import {
 	SiGitlab,
 	SiFigma,
 	SiMeteor,
+	SiTailwindcss,
 	SiMui,
 } from 'react-icons/si';
 
@@ -59,10 +60,11 @@ const iconComponents = {
 	Reactquery: <SiReactquery />,
 	'Meteor.js': <SiMeteor />,
 	'Material-UI': <SiMui />,
+	'Tailwind CSS': <SiTailwindcss />,
 };
 
 const getTechnologyIcon = (technology) => {
-	// Returns a components for the passed in technology.
+	// Returns an incon component for the respective passed in technology.
 
 	return iconComponents[technology];
 };

@@ -26,7 +26,7 @@ const technologies = [
 	'Pandas',
 	'Github',
 	'Gitlab',
-	'Figma',
+	'Tailwind CSS',
 	'Next.js 13',
 	'Material-UI',
 ];
