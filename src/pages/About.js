@@ -52,10 +52,10 @@ const About = () => {
 					<h2>General Info</h2>
 					<div>
 						<p>
-							My name is <b>Omar Kraidié</b> a third-year software engineering student
-							with over 2 years of professional experience in developing client-facing
-							projects for businesses, as well as 3+ years of experience developing
-							independent open-source projects.
+							My name is <b>Omar Kraidié</b> I'm a third-year software engineering
+							student with over 2 years of professional experience in developing
+							client-facing projects for businesses, as well as 3+ years of experience
+							developing independent open-source projects.
 							<br />
 							<br />I like to create useful software that can be leveraged in everyday
 							applications. Furthermore, I'm enthusiastic about learning how to use
