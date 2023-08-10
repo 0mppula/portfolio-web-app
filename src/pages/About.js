@@ -23,7 +23,7 @@ const technologies = [
 	'Jest',
 	'Netlify',
 	'Vercel',
-	'Pandas',
+	'Prisma',
 	'Github',
 	'Gitlab',
 	'Tailwind CSS',

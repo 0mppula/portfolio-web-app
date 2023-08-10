@@ -12,8 +12,10 @@ import SimpleJavaScriptProjects from '../images/projects/SimpleJavaScriptProject
 import Alien_Invasion from '../images/projects/Alien_Invasion/Alien_Invasion.png';
 import BookStackr from '../images/projects/BookStackr/BookStackr.png';
 import GoalTrack from '../images/projects/goal-trackr/goal-trackr.png';
+import MoneyMapper from '../images/projects/money-mapper/money-mapper.png';
 
 const thumbnails = {
+	'money-mapper': MoneyMapper,
 	KoronKorko: KoronKorko,
 	CoinCaps: CoinCaps,
 	BookStackr: BookStackr,

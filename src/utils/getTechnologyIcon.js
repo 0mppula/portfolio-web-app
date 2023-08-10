@@ -48,7 +48,7 @@ const iconComponents = {
 	Git: <SiGit />,
 	Heroku: <SiHeroku />,
 	Jest: <SiJest />,
-	SiPrisma: <SiPrisma />,
+	Prisma: <SiPrisma />,
 	Netlify: <SiNetlify />,
 	Numpy: <SiNumpy />,
 	Pandas: <SiPandas />,
