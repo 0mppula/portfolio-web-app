@@ -362,13 +362,11 @@ li a.list-item::after {
 .index {
 	position: absolute;
 	top: 16px;
-	text-align: center;
 	color: var(--clr-black);
 	font-weight: 300;
 	border-radius: 50%;
 	font-size: 1.25rem;
 	user-select: none;
-	border: solid 2px transparent;
 	pointer-events: none;
 }
 
