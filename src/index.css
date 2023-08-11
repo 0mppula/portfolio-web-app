@@ -361,19 +361,23 @@ li a.list-item::after {
 
 .index {
 	position: absolute;
-	bottom: 7px;
-	font-size: 1.25rem;
+	top: 16px;
+	text-align: center;
 	color: var(--clr-black);
+	font-weight: 300;
+	border-radius: 50%;
+	font-size: 1.25rem;
 	user-select: none;
+	border: solid 2px transparent;
 	pointer-events: none;
 }
 
 .project-item:nth-child(odd) .index {
-	left: 12px;
+	left: 16px;
 }
 
 .project-item:nth-child(even) .index {
-	right: 12px;
+	right: 16px;
 }
 
 .project-image img {

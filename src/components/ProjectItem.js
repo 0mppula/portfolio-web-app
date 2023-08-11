@@ -16,7 +16,7 @@ const ProjectItem = ({ project, index, thumbnail }) => {
 			>
 				<img src={thumbnail} alt={`${project.title} mock`} loading="lazy" />
 
-				<div className="index">{index + 1}</div>
+				<div className="index">#{index + 1}</div>
 			</a>
 
 			<div className="project-text">
