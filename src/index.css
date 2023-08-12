@@ -272,11 +272,13 @@ li a.list-item::after {
 
 .greet-buttons {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 1rem;
 }
 
 .greet-buttons .btn {
 	font-size: 1.25rem;
+	min-height: 41.6px;
 }
 
 .btn:hover,
@@ -787,6 +789,10 @@ li a.list-item::after {
 
 	.greet-info {
 		margin: 0.5rem 0 1.5rem 0;
+	}
+
+	.greet-buttons {
+		gap: 0.5rem;
 	}
 	/* End Hero styles */
 
