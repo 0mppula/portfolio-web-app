@@ -37,7 +37,7 @@ const Home = () => {
 						<Link
 							to="/cv"
 							target="_blank"
-							rel="noopener"
+							rel="noreferrer"
 							type="button"
 							className="btn"
 							aria-label="CV"
@@ -48,7 +48,7 @@ const Home = () => {
 						<a
 							href="mailto:devomarkraidie@gmail.com"
 							target="_blank"
-							rel="noopener"
+							rel="noreferrer"
 							type="button"
 							className="btn"
 							aria-label="Email"
