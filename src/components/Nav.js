@@ -34,7 +34,7 @@ const Nav = () => {
 		<div className="navbar">
 			<div className="nav-header">
 				<span>
-					<a href="./index.html">OMAR KRAIDIÈ</a>
+					<a href="/">OMAR KRAIDIÈ</a>
 				</span>
 			</div>
 
