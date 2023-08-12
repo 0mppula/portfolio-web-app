@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { FaEnvelope } from 'react-icons/fa';
-import { Tooltip } from 'react-tooltip';
 import Frame from '../components/Frame';
 import { useTitle } from '../hooks/useTitle';
 
