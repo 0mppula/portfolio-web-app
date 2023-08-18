@@ -420,6 +420,13 @@ li a.list-item::after {
 	margin-bottom: 1rem;
 }
 
+.project-header .new {
+	margin-left: 0.25rem;
+	color: #a51d1d;
+	transform: rotate(-4deg);
+	display: inline-block;
+}
+
 .project-tech-icons {
 	display: flex;
 	flex-wrap: wrap;
