@@ -299,6 +299,7 @@ li a.list-item::after {
 /* projects styles */
 .content-container {
 	margin-top: 3rem;
+	margin-bottom: 3rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -328,7 +329,7 @@ li a.list-item::after {
 	display: flex;
 	row-gap: 1rem;
 	flex-direction: column;
-	margin-bottom: 5rem;
+	margin-bottom: 2rem;
 	box-shadow: var(--main-boxshadow);
 	border-radius: var(--main-border-radius);
 	color: var(--clr-black);
@@ -389,7 +390,7 @@ li a.list-item::after {
 	transition: var(--fast-transition);
 	object-fit: cover;
 	overflow: hidden;
-	max-height: 416px !important;
+	max-height: 400px;
 }
 
 .project-image:hover img {

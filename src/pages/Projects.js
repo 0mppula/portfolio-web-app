@@ -9,7 +9,7 @@ const Projects = () => {
 	useTitle('Projects');
 
 	const getProjectThumbnail = (project) => {
-		return projectThumbnails[project?.repositoryName] || projectThumbnails["placeholder"];
+		return projectThumbnails[project?.repositoryName] || projectThumbnails['placeholder'];
 	};
 
 	return (
