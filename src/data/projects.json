@@ -61,7 +61,7 @@
 		],
 		"liveUrl": "https://goaltrackr.vercel.app/",
 		"codeUrl": "https://github.com/0mppula/goal-trackr",
-		"info": "A fullstack Next.js 13 application created using the shadcn/ui library. The app allows authenticated users to list and track their daily goals. Global state is managed with Zustand, database queries are done using TanStack Query and authentication is managed with NextAuth.js. User and app data is saved to a MongoDB data base. Additionally, some routes are protected from unauthorized users.",
+		"info": "A fullstack Next.js 13 application created using the shadcn/ui library. The app allows authenticated users to list and track their daily goals. Global state is managed with Zustand, database queries are done using TanStack Query and authentication is managed with NextAuth.js. Data is saved to a MongoDB data base. Additionally, some routes are protected from unauthorized users.",
 		"repositoryName": "goal-trackr"
 	},
 	{
@@ -97,35 +97,11 @@
 		"repositoryName": "ts-paginated-users-page"
 	},
 	{
-		"title": "React Redux Toolkit Hello World",
-		"technologies": [
-			"React.js",
-			"Redux Toolkit",
-			"TypeScript",
-			"Styled Components",
-			"Css3",
-			"Html5",
-			"Netlify"
-		],
-		"liveUrl": "https://react-redux-toolkit-hello-world.netlify.app/",
-		"codeUrl": "https://github.com/0mppula/react-redux-toolkit-hello-world",
-		"info": "A simple implementation of React Redux Toolkit with asynchronous actions that fetch data from jsonplaceholder.typicode.com. This app efficiently demonstrates how Redux toolkit works. Therefore, it can a very useful tool for junior developers or developers new to Redux toolkit.",
-		"repositoryName": "react-redux-toolkit-hello-world"
-	},
-	{
 		"title": "Alien Invasion",
 		"technologies": ["Python", "Git"],
 		"codeUrl": "https://github.com/0mppula/Alien_Invasion",
 		"info": "A game created with Python and Pygame. The player has to eliminate all the aliens on screen. When the the player has delt with all the aliens a new fleet of aliens is created and a next level starts. Every new level increases the tempo of the game and the amount of score rewarded by each alien. Highscore are saved in a .txt file and pulled for display before each game.",
 		"repositoryName": "Alien_Invasion"
-	},
-	{
-		"title": "Déjà Vu",
-		"technologies": ["React.js", "TypeScript", "Styled Components", "Css3", "Html5", "Netlify"],
-		"liveUrl": "https://dejavu-app.netlify.app/",
-		"codeUrl": "https://github.com/0mppula/DejaVu",
-		"info": "A finance themed memory card game created with React. The game counts each card turn the user makes and times each game since the start. The data of each game is displayed above the games card container. This project illustrates how to use TypeScript and styled components together.",
-		"repositoryName": "DejaVu"
 	},
 	{
 		"title": "CS-GO Weapons",

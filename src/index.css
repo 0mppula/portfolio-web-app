@@ -359,6 +359,9 @@ li a.list-item::after {
 	overflow: hidden;
 	cursor: pointer;
 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .index {
@@ -386,12 +389,12 @@ li a.list-item::after {
 	transition: var(--fast-transition);
 	object-fit: cover;
 	overflow: hidden;
+	max-height: 416px !important;
 }
 
 .project-image:hover img {
 	transform: scale(1.02);
 	border-radius: var(--main-border-radius);
-	overflow: hidden;
 }
 
 .project-items .project-item:first-child img {
@@ -611,6 +614,14 @@ li a.list-item::after {
 @media screen and (max-width: 1200px) {
 	.greet-card {
 		background: rgba(250, 250, 251, 0.75);
+	}
+}
+
+/* Media query for project images */
+@media screen and (min-width: 848px) and (max-width: 1024px) {
+	.project-item img {
+		max-height: 375px !important;
+		scale: 0.9;
 	}
 }
 
