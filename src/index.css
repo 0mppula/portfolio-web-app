@@ -644,6 +644,7 @@ li a.list-item::after {
 		left: 24px;
 	}
 
+	.project-item.row-reverse,
 	.project-item:nth-child(even),
 	.project-item {
 		flex-direction: column;
