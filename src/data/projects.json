@@ -108,7 +108,7 @@
 			"Netlify"
 		],
 		"liveUrl": "https://react-redux-toolkit-hello-world.netlify.app/",
-		"codeUrl": "react-redux-toolkit-hello-world",
+		"codeUrl": "https://github.com/0mppula/react-redux-toolkit-hello-world",
 		"info": "A simple implementation of React Redux Toolkit with asynchronous actions that fetch data from jsonplaceholder.typicode.com. This app efficiently demonstrates how Redux toolkit works. Therefore, it can a very useful tool for junior developers or developers new to Redux toolkit.",
 		"repositoryName": "react-redux-toolkit-hello-world"
 	},
@@ -123,7 +123,7 @@
 		"title": "Déjà Vu",
 		"technologies": ["React.js", "TypeScript", "Styled Components", "Css3", "Html5", "Netlify"],
 		"liveUrl": "https://dejavu-app.netlify.app/",
-		"codeUrl": "DejaVu",
+		"codeUrl": "https://github.com/0mppula/DejaVu",
 		"info": "A finance themed memory card game created with React. The game counts each card turn the user makes and times each game since the start. The data of each game is displayed above the games card container. This project illustrates how to use TypeScript and styled components together.",
 		"repositoryName": "DejaVu"
 	},
