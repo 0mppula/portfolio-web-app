@@ -21,7 +21,7 @@ const ProjectItem = ({ project, index, thumbnail }) => {
 
 			<div className="project-text">
 				<div className="project-header">
-					<h2>{project.title}</h2>
+					<h3>{project.title}</h3>
 
 					<div className="project-tech-icons">
 						{project.technologies.sort().map((technology) => (

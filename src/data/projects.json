@@ -11,6 +11,7 @@
 			"Vercel",
 			"Prisma"
 		],
+		"new": true,
 		"liveUrl": "https://moneymapper.vercel.app/",
 		"codeUrl": "https://github.com/0mppula/money-mapper",
 		"info": "A Next.js 13 fullstack finance tracker for organizing personal finances. Covers income, taxes, assets, debt, and net worth management. Utilizes next-auth for user authentication and stores user data in a MongoDB database with prisma ORM. The app uses shadcn-ui with tailwind css & offers both dark and light modes. Global client state is managed with zustand. The financial information is presented through interactive charts and a comprehensive table.",

@@ -1,0 +1,41 @@
+[
+	{
+		"title": "Déjà Vu",
+		"technologies": ["React.js", "TypeScript", "Styled Components", "Css3", "Html5", "Netlify"],
+		"liveUrl": "https://dejavu-app.netlify.app/",
+		"codeUrl": "https://github.com/0mppula/DejaVu",
+		"info": "A finance themed memory card game created with React. The game counts each card turn the user makes and times each game since the start. The data of each game is displayed above the games card container. This project illustrates how to use TypeScript and styled components together.",
+		"repositoryName": "DejaVu"
+	},
+	{
+		"title": "React Redux Toolkit Hello World",
+		"technologies": [
+			"React.js",
+			"Redux Toolkit",
+			"TypeScript",
+			"Styled Components",
+			"Css3",
+			"Html5",
+			"Netlify"
+		],
+		"liveUrl": "https://react-redux-toolkit-hello-world.netlify.app/",
+		"codeUrl": "https://github.com/0mppula/react-redux-toolkit-hello-world",
+		"info": "A simple implementation of React Redux Toolkit with asynchronous actions that fetch data from jsonplaceholder.typicode.com. This app efficiently demonstrates how Redux toolkit works. Therefore, it can a very useful tool for junior developers or developers new to Redux toolkit.",
+		"repositoryName": "react-redux-toolkit-hello-world"
+	},
+	{
+		"title": "Polish Cow",
+		"technologies": ["JavaScript", "Css3", "Html5", "Netlify"],
+		"liveUrl": "https://polishcow.netlify.app/",
+		"codeUrl": "https://github.com/0mppula/Polish_Cow",
+		"info": "A vanilla JavaScript web application that generates dancing cows in an infininte loop while playing the popular Polish song: Gdzie jest biały węgorz (Zejście) by: Cypis. Once the user has started the song a timer counts for how long the song plays and the cows dance, once the music is stopped by the user the timer will be saved in local storage for next time!",
+		"repositoryName": "Polish_Cow"
+	},
+	{
+		"title": "Simple JavaScript Projects",
+		"technologies": ["JavaScript", "Css3", "Html5"],
+		"liveUrl": "https://simplejsprojects.netlify.app/",
+		"repositoryName": "SimpleJavaScriptProjects",
+		"info": ""
+	}
+]

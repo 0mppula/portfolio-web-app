@@ -34,22 +34,18 @@ body {
 	overflow-x: hidden;
 }
 
-h1 {
+h1,
+.content-header h2 {
 	font-size: 2.5rem;
 	margin-bottom: 1rem;
 	line-height: 46px;
 }
 
-h2 {
+h2,
+h3 {
 	font-size: 1.75rem;
 	line-height: 32px;
 	margin-bottom: 1rem;
-}
-
-h3 {
-	font-size: 1.5rem;
-	margin-bottom: 1rem;
-	line-height: 28px;
 }
 
 .container {
@@ -331,7 +327,7 @@ li a.list-item::after {
 	display: flex;
 	row-gap: 0.75rem;
 	flex-direction: column;
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 	box-shadow: var(--main-boxshadow);
 	border-radius: var(--border-radius-lg);
 	color: var(--clr-black);
@@ -409,8 +405,8 @@ li a.list-item::after {
 	width: calc(100% - 3rem);
 	margin: 0 auto;
 	border: none;
-	border-top: dashed 2px var(--clr-white-light);
-	height: 2px;
+	border-top: dashed 1.6px var(--clr-white-light);
+	height: 1.6px;
 }
 
 .project-text {
@@ -671,11 +667,17 @@ li a.list-item::after {
 }
 
 @media screen and (max-width: 800px) {
-	.content-container h1 {
+	.project-items {
+		margin-bottom: 2.25rem;
+	}
+
+	.content-header h1,
+	.content-header h2 {
 		text-align: center;
 	}
 
-	h1 {
+	h1,
+	.content-header h2 {
 		font-size: 2.25rem;
 		line-height: 42px;
 	}
