@@ -6,7 +6,7 @@ import getTechnologyIcon from '../utils/getTechnologyIcon';
 
 const ProjectItem = ({ project, index, thumbnail }) => {
 	return (
-		<div id={index + 1} className="project-item">
+		<div id={index + 1} className={`project-item ${index % 2 !== 0 ? 'row-reverse' : ''} `}>
 			<a
 				href={`${project.liveUrl || project.codeUrl}`}
 				className="project-image"

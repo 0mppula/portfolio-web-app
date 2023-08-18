@@ -345,7 +345,7 @@ li a.list-item::after {
 }
 
 /* Reverses rows */
-.project-item:nth-child(even) {
+.project-item.row-reverse {
 	flex-direction: row-reverse;
 }
 
