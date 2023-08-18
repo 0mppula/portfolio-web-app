@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ProjectItem from '../components/ProjectItem';
-
-import projects from '../data/projects.json';
 import projectThumbnails from '../data/project-thumbnails';
+import projects from '../data/projects.json';
 import { useTitle } from '../hooks/useTitle';
 
 const Projects = () => {
@@ -22,12 +21,15 @@ const Projects = () => {
 
 				<div className="project-items">
 					{projects.map((project, index) => (
-						<ProjectItem
-							key={`${project}-${index}`}
-							project={project}
-							thumbnail={getProjectThumbnail(project)}
-							index={index}
-						/>
+						<Fragment key={`${project}-${index}`}>
+							<ProjectItem
+								project={project}
+								thumbnail={getProjectThumbnail(project)}
+								index={index}
+							/>
+
+							{index !== projects.length - 1 && <hr />}
+						</Fragment>
 					))}
 				</div>
 			</div>
