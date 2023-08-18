@@ -380,11 +380,11 @@ li a.list-item::after {
 }
 
 .project-item:nth-child(odd) .index {
-	left: 16px;
+	left: 24px;
 }
 
 .project-item:nth-child(even) .index {
-	right: 16px;
+	right: 24px;
 }
 
 .project-image img {
@@ -406,7 +406,7 @@ li a.list-item::after {
 }
 
 .project-items hr {
-	width: calc(100% - 2rem);
+	width: calc(100% - 3rem);
 	margin: 0 auto;
 	border: none;
 	border-top: dashed 2px var(--clr-white-light);
@@ -641,7 +641,7 @@ li a.list-item::after {
 	/* Project styles */
 	.project-item:nth-child(odd) .index,
 	.project-item:nth-child(even) .index {
-		left: 16px;
+		left: 24px;
 	}
 
 	.project-item:nth-child(even),
