@@ -38,7 +38,7 @@ const About = () => {
 		<div className="container">
 			<div className="content-container">
 				<div className="content-header">
-					<h1>A Little About Me</h1>
+					<h1>About Me</h1>
 					<div className="header-underline"></div>
 				</div>
 

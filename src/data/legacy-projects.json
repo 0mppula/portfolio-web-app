@@ -1,7 +1,7 @@
 [
 	{
 		"title": "Déjà Vu",
-		"technologies": ["React.js", "TypeScript", "Styled Components", "Css3", "Html5", "Netlify"],
+		"technologies": ["React.js", "TypeScript", "Styled Components", "Css3", "Netlify"],
 		"liveUrl": "https://dejavu-app.netlify.app/",
 		"codeUrl": "https://github.com/0mppula/DejaVu",
 		"info": "A finance themed memory card game created with React. The game counts each card turn the user makes and times each game since the start. The data of each game is displayed above the games card container. This project illustrates how to use TypeScript and styled components together.",
@@ -15,7 +15,7 @@
 			"TypeScript",
 			"Styled Components",
 			"Css3",
-			"Html5",
+
 			"Netlify"
 		],
 		"liveUrl": "https://react-redux-toolkit-hello-world.netlify.app/",
@@ -33,7 +33,7 @@
 	},
 	{
 		"title": "Simple JavaScript Projects",
-		"technologies": ["JavaScript", "Css3", "Html5"],
+		"technologies": ["JavaScript", "Css3", "Html5", "Netlify"],
 		"liveUrl": "https://simplejsprojects.netlify.app/",
 		"repositoryName": "SimpleJavaScriptProjects",
 		"info": ""

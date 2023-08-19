@@ -35,14 +35,7 @@
 	},
 	{
 		"title": "BookStackr",
-		"technologies": [
-			"React.js",
-			"Redux Toolkit",
-			"Node.js",
-			"TypeScript",
-			"Firebase",
-			"Netlify"
-		],
+		"technologies": ["React.js", "Redux Toolkit", "TypeScript", "Firebase", "Netlify", "Css3"],
 		"liveUrl": "https://bookstackr.netlify.app/",
 		"codeUrl": "https://github.com/0mppula/BookStackr",
 		"info": "A comprehensive book tracking application allowing the users to track their read books by year, category and format. Book data can be viewed both in table and chart format. The app can be used with mock data without user authentication. Alternatively, users can sign in with their Google accounts and save their book data to a secure Firestore database for later use.",
@@ -53,7 +46,6 @@
 		"technologies": [
 			"React.js",
 			"Next.js 13",
-			"Node.js",
 			"TypeScript",
 			"Reactquery",
 			"Tailwind CSS",
@@ -67,7 +59,7 @@
 	},
 	{
 		"title": "WSB-Tickers",
-		"technologies": ["React.js", "TypeScript", "Styled Components", "Css3", "Html5", "Netlify"],
+		"technologies": ["React.js", "TypeScript", "Styled Components", "Css3", "Netlify"],
 		"liveUrl": "https://wsb-tickers.netlify.app/",
 		"codeUrl": "https://github.com/0mppula/wsb-tickers",
 		"info": "A React app that displays the top 50 stocks discussed on reddit.com/r/wallstreetbets/. Each ticker element displays both the sentiment from bullish to bearish and the sentiment score from -1 to 1 of the stock. The total daily comments are also displayed for each symbol. Tickers can be sorted in ascending or descending order. The data for this app is retrieved from the https://tradestie.com/apps/reddit/api/ API.",
@@ -75,7 +67,7 @@
 	},
 	{
 		"title": "CoinCaps",
-		"technologies": ["JavaScript", "React.js", "Css3", "Html5", "Node.js", "Netlify"],
+		"technologies": ["JavaScript", "React.js", "Css3", "Node.js", "Netlify"],
 		"liveUrl": "https://coincaps.netlify.app/",
 		"codeUrl": "https://github.com/0mppula/CoinCaps",
 		"info": "A React web-application where the user can view the 250 most valuable cryptocurrencies by market capitalization. Additionally, the user can select in which currency the app displays the price data for the cryptos. All of the cryptos can also be filtered out with a search field. The data and statistics of the application are retrieved from the CoinGecko API with different AJAX calls.",
@@ -83,7 +75,7 @@
 	},
 	{
 		"title": "TypeScript Multi-Page Form",
-		"technologies": ["React.js", "TypeScript", "Node.js", "Css3", "Html5", "Netlify"],
+		"technologies": ["React.js", "TypeScript", "Html5", "Css3", "Netlify"],
 		"liveUrl": "https://ts-multi-page-form.netlify.app/",
 		"codeUrl": "https://github.com/0mppula/ts-multi-page-form",
 		"info": "A React multi-page form application with modern and responsive form elements. The form has form validation, optional and required fields and custom error messages. On the last page of the form, before submitting, the users provided information will be shown on screen for the user.",
@@ -91,7 +83,7 @@
 	},
 	{
 		"title": "TypeScript Paginated Users Page",
-		"technologies": ["React.js", "TypeScript", "Node.js", "Css3", "Html5", "Netlify"],
+		"technologies": ["React.js", "TypeScript", "Css3", "Netlify"],
 		"liveUrl": "https://ts-paginated-users-page.netlify.app/",
 		"codeUrl": "https://github.com/0mppula/ts-paginated-users-page",
 		"info": "A React users page with filtering, sorting and pagination functionality using query parameters. Additionally, each user has its own user page which can be opened by clicking a user from the users page. The user page prints simple information about the user.",
