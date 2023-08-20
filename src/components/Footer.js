@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaGoodreads, FaLinkedin } from 'react-icons/fa';
 
 const year = new Date().getFullYear().toString();
 
@@ -34,12 +34,12 @@ const Footer = () => {
 					<FaLinkedin className="footer-icon icon" />
 				</a>
 				<a
-					href="https://twitter.com/OmarKraidie"
+					href="https://www.goodreads.com/review/list/135003326-omar-kraidi?ref=nav_mybooks&shelf=read"
 					target="_blank"
 					rel="noreferrer"
-					aria-label="Twitter"
+					aria-label="Books that I have read"
 				>
-					<FaTwitter className="footer-icon icon" />
+					<FaGoodreads className="footer-icon icon" />
 				</a>
 			</div>
 
