@@ -103,11 +103,11 @@ const About = () => {
 					</div>
 
 					<div className="about-content">
-						<h2>Career Milestones</h2>
+						<h2>Career Development</h2>
 						<div>
 							<ul>
 								<li>
-									<b>Q3 2019</b> Wrote my first "Hello World!" project. 🌍
+									<b>Q3 2019</b> Wrote my first "Hello World!" project.
 								</li>
 								<li>
 									<b>Q1 2020</b> Decided to pursue a full-time career in software
@@ -115,29 +115,32 @@ const About = () => {
 								</li>
 								<li>
 									<b>Q2 2020</b> Developed projects using HTML, CSS, and
-									JavaScript. 👨🏼‍💻
+									JavaScript.
 								</li>
 								<li>
-									<b>Q1 2021</b> Enrolled in Bachelor's degree in Computer
-									Science. 🏫
+									<b>Q1 2021</b> Enrolled in a Bachelor's degree in Computer
+									Science.
 								</li>
 								<li>
-									<b>Q2 2021</b> Learned Python and data science. 📊
+									<b>Q2 2021</b> Began learning Python and data science.
 								</li>
 								<li>
 									<b>Q3 2021</b> Interned at Tavata Global Oy (web development).
 								</li>
 								<li>
-									<b>Q1 2022</b> Started part-time web developer role at Tavata
+									<b>Q1 2022</b> Started a part-time web developer role at Tavata
 									Global Oy.
 								</li>
 								<li>
-									<b>Q2 2022</b> Started part-time web developer role at Ovio
+									<b>Q2 2022</b> Started a part-time web developer role at Ovio
 									Carbook Oy.
 								</li>
 								<li>
-									<b>Q4 2022</b> Started full-time web developer role at twoday
-									Finland.
+									<b>Q4 2022</b> Started a full-time web developer role at twoday.
+								</li>
+								<li>
+									<b>Q2 2023</b> Began learning Next.js 13 and server-side
+									rendering.
 								</li>
 							</ul>
 							<Frame />
