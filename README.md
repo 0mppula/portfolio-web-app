@@ -17,7 +17,7 @@ Here are links to some of my projects.
 -   [WSB-Tickers][wsb-tickers]
 -   [CoinCaps][coincaps]
 -   [TypeScript Multi-Page Form][ts-multi-page-form]
--   [TypeScript Paginated Users Page][typescript paginated users page]
+-   [Viewport Select][viewport-select]
 -   [Alien Invasion][alien invasion]
 -   [CS-GO Weapons][cs-go weapons]
 
@@ -26,6 +26,7 @@ Here are links to some of my projects.
 Here are links to some of my legacy projects.
 
 -   [Déjà Vu][déjà vu]
+-   [TypeScript Paginated Users Page][typescript paginated users page]
 -   [React Redux Toolkit Hello World][react redux toolkit hello world]
 -   [Polish Cow][Polish_Cow]
 -   [Simple JavaScript Projects][Simple JavaScript Projects]
@@ -48,13 +49,14 @@ Here is the full list of all the tech books that I have read.
 [wsb-tickers]: https://wsb-tickers.netlify.app/
 [coincaps]: https://coincaps.netlify.app/
 [ts-multi-page-form]: https://ts-multi-page-form.netlify.app/
-[typescript paginated users page]: https://ts-paginated-users-page.netlify.app/
+[viewport-select]: https://viewportselect.netlify.app/
 [alien invasion]: https://github.com/0mppula/Alien_Invasion
 [cs-go weapons]: https://csgo-weapons.netlify.app/
 
 <!-- Legacy projects -->
 
 [déjà vu]: https://dejavu-app.netlify.app/
+[typescript paginated users page]: https://ts-paginated-users-page.netlify.app/
 [react redux toolkit hello world]: https://react-redux-toolkit-hello-world.netlify.app/
 [Polish_Cow]: https://polishcow.netlify.app/
 [Simple JavaScript Projects]: https://simplejsprojects.netlify.app/
