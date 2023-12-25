@@ -13,6 +13,7 @@ import Alien_Invasion from '../images/projects/Alien_Invasion/Alien_Invasion.png
 import BookStackr from '../images/projects/BookStackr/BookStackr.png';
 import GoalTrack from '../images/projects/goal-trackr/goal-trackr.png';
 import MoneyMapper from '../images/projects/money-mapper/money-mapper.png';
+import ViewportSelect from '../images/projects/viewport-select/viewport-select.png';
 
 const thumbnails = {
 	'money-mapper': MoneyMapper,
@@ -29,6 +30,7 @@ const thumbnails = {
 	Alien_Invasion: Alien_Invasion,
 	SimpleJavaScriptProjects: SimpleJavaScriptProjects,
 	'goal-trackr': GoalTrack,
+	'viewport-select': ViewportSelect,
 	placeholder: placeholderThumbnail,
 };
 

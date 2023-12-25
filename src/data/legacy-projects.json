@@ -8,6 +8,14 @@
 		"repositoryName": "DejaVu"
 	},
 	{
+		"title": "TypeScript Paginated Users Page",
+		"technologies": ["React.js", "TypeScript", "Css3", "Netlify"],
+		"liveUrl": "https://ts-paginated-users-page.netlify.app/",
+		"codeUrl": "https://github.com/0mppula/ts-paginated-users-page",
+		"info": "A React users page with filtering, sorting and pagination functionality using query parameters. Additionally, each user has its own user page which can be opened by clicking a user from the users page. The user page prints simple information about the user.",
+		"repositoryName": "ts-paginated-users-page"
+	},
+	{
 		"title": "React Redux Toolkit Hello World",
 		"technologies": [
 			"React.js",
