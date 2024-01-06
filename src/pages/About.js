@@ -27,7 +27,7 @@ const technologies = [
 	'Github',
 	'Gitlab',
 	'Tailwind CSS',
-	'Next.js 13',
+	'Next.js',
 	'Material-UI',
 ];
 
@@ -139,8 +139,7 @@ const About = () => {
 									<b>Q4 2022</b> Started a full-time web developer role at twoday.
 								</li>
 								<li>
-									<b>Q2 2023</b> Began learning Next.js 13 and server-side
-									rendering.
+									<b>Q2 2023</b> Began learning Next.js and server-side rendering.
 								</li>
 							</ul>
 							<Frame />

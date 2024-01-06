@@ -3,7 +3,7 @@
 		"title": "Money Mapper",
 		"technologies": [
 			"React.js",
-			"Next.js 13",
+			"Next.js",
 			"TypeScript",
 			"Reactquery",
 			"Tailwind CSS",
@@ -45,7 +45,7 @@
 		"title": "GoalTrackr",
 		"technologies": [
 			"React.js",
-			"Next.js 13",
+			"Next.js",
 			"TypeScript",
 			"Reactquery",
 			"Tailwind CSS",

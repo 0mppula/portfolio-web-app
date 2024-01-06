@@ -55,7 +55,7 @@ const iconComponents = {
 	Github: <SiGithub />,
 	Gitlab: <SiGitlab />,
 	Figma: <SiFigma />,
-	'Next.js 13': <SiNextdotjs />,
+	'Next.js': <SiNextdotjs />,
 	Vercel: <SiVercel />,
 	Reactquery: <SiReactquery />,
 	'Meteor.js': <SiMeteor />,
