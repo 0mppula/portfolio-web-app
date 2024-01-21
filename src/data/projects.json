@@ -14,8 +14,25 @@
 		"new": true,
 		"liveUrl": "https://moneymapper.vercel.app/",
 		"codeUrl": "https://github.com/0mppula/money-mapper",
-		"info": "A Next.js 13 fullstack finance tracker for organizing personal finances. Covers income, taxes, assets, debt, and net worth management. Utilizes next-auth for user authentication and stores user data in a MongoDB database with prisma ORM. The app uses shadcn-ui with tailwind css & offers both dark and light modes. Global client state is managed with zustand. The financial information is presented through interactive charts and a comprehensive table.",
+		"info": "A fullstack Next.js 13 finance tracker for organizing personal finances. Covers income, taxes, assets, debt, and net worth management. Utilizes next-auth for user authentication and stores user data in a MongoDB database with prisma ORM. The app leverages shadcn-ui with tailwind CSS & offers both dark and light modes. Client state is managed with Zustand and The financial data is presented through interactive charts and a comprehensive table.",
 		"repositoryName": "money-mapper"
+	},
+	{
+		"title": "Element Compare",
+		"technologies": ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+		"new": true,
+		"liveUrl": "https://elementcompare.vercel.app/",
+		"codeUrl": "https://github.com/0mppula/element-compare",
+		"info": "A single-page Next.js 14 app featuring the periodic table in its classic rectangular layout. Users can interactively highlight elements by type, individually select them for detailed property inspection and choose a second element for side-by-side property comparison. The app's components utilize shadcn-ui and are styled with Tailwind CSS. Users can choose between dark and light modes based on their preference.",
+		"repositoryName": "element-compare"
+	},
+	{
+		"title": "BookStackr",
+		"technologies": ["React.js", "Redux Toolkit", "TypeScript", "Firebase", "Netlify", "Css3"],
+		"liveUrl": "https://bookstackr.netlify.app/",
+		"codeUrl": "https://github.com/0mppula/BookStackr",
+		"info": "A comprehensive book tracking application allowing the users to track their read books by year, category and format. Book data can be viewed both in table and chart format. The app can be used with mock data without user authentication. Alternatively, users can sign in with their Google accounts and save their book data to a secure Firestore database for later use.",
+		"repositoryName": "BookStackr"
 	},
 	{
 		"title": "KoronKorko",
@@ -34,14 +51,6 @@
 		"repositoryName": "KoronKorko"
 	},
 	{
-		"title": "BookStackr",
-		"technologies": ["React.js", "Redux Toolkit", "TypeScript", "Firebase", "Netlify", "Css3"],
-		"liveUrl": "https://bookstackr.netlify.app/",
-		"codeUrl": "https://github.com/0mppula/BookStackr",
-		"info": "A comprehensive book tracking application allowing the users to track their read books by year, category and format. Book data can be viewed both in table and chart format. The app can be used with mock data without user authentication. Alternatively, users can sign in with their Google accounts and save their book data to a secure Firestore database for later use.",
-		"repositoryName": "BookStackr"
-	},
-	{
 		"title": "GoalTrackr",
 		"technologies": [
 			"React.js",
@@ -57,14 +66,7 @@
 		"info": "A fullstack Next.js 13 application created using the shadcn/ui library. The app allows authenticated users to list and track their daily goals. Global state is managed with Zustand, database queries are done using TanStack Query and authentication is managed with NextAuth.js. Data is saved to a MongoDB data base. Additionally, some routes are protected from unauthorized users.",
 		"repositoryName": "goal-trackr"
 	},
-	{
-		"title": "WSB-Tickers",
-		"technologies": ["React.js", "TypeScript", "Styled Components", "Css3", "Netlify"],
-		"liveUrl": "https://wsb-tickers.netlify.app/",
-		"codeUrl": "https://github.com/0mppula/wsb-tickers",
-		"info": "A React app that displays the top 50 stocks discussed on reddit.com/r/wallstreetbets/. Each ticker element displays both the sentiment from bullish to bearish and the sentiment score from -1 to 1 of the stock. The total daily comments are also displayed for each symbol. Tickers can be sorted in ascending or descending order. The data for this app is retrieved from the https://tradestie.com/apps/reddit/api/ API.",
-		"repositoryName": "wsb-tickers"
-	},
+
 	{
 		"title": "CoinCaps",
 		"technologies": ["JavaScript", "React.js", "Css3", "Node.js", "Netlify"],
@@ -72,6 +74,14 @@
 		"codeUrl": "https://github.com/0mppula/CoinCaps",
 		"info": "A React web-application where the user can view the 250 most valuable cryptocurrencies by market capitalization. Additionally, the user can select in which currency the app displays the price data for the cryptos. All of the cryptos can also be filtered out with a search field. The data and statistics of the application are retrieved from the CoinGecko API with different AJAX calls.",
 		"repositoryName": "CoinCaps"
+	},
+	{
+		"title": "WSB-Tickers",
+		"technologies": ["React.js", "TypeScript", "Styled Components", "Css3", "Netlify"],
+		"liveUrl": "https://wsb-tickers.netlify.app/",
+		"codeUrl": "https://github.com/0mppula/wsb-tickers",
+		"info": "A React app that displays the top 50 stocks discussed on reddit.com/r/wallstreetbets/. Each ticker element displays both the sentiment from bullish to bearish and the sentiment score from -1 to 1 of the stock. The total daily comments are also displayed for each symbol. Tickers can be sorted in ascending or descending order. The data for this app is retrieved from the https://tradestie.com/apps/reddit/api/ API.",
+		"repositoryName": "wsb-tickers"
 	},
 	{
 		"title": "Viewport Select",
@@ -82,12 +92,12 @@
 		"repositoryName": "viewport-select"
 	},
 	{
-		"title": "TypeScript Multi-Page Form",
-		"technologies": ["React.js", "TypeScript", "Html5", "Css3", "Netlify"],
-		"liveUrl": "https://ts-multi-page-form.netlify.app/",
-		"codeUrl": "https://github.com/0mppula/ts-multi-page-form",
-		"info": "A React multi-page form application with modern and responsive form elements. The form has form validation, optional and required fields and custom error messages. On the last page of the form, before submitting, the users provided information will be shown on screen for the user.",
-		"repositoryName": "ts-multi-page-form"
+		"title": "CS-GO Weapons",
+		"technologies": ["JavaScript", "Css3", "Html5", "Netlify"],
+		"liveUrl": "https://csgo-weapons.netlify.app/",
+		"codeUrl": "https://github.com/0mppula/CS-GO_weapons",
+		"info": "A vanilla JavaScript web application that lets the user toggle between a set of weapons from the popular game 'Counter-Strike: Global Offensive'. Each weapon can be reloaded and shot a single or multiple times. All the weapon interactions generate real sound effects from the game.",
+		"repositoryName": "CS-GO_weapons"
 	},
 	{
 		"title": "Alien Invasion",
@@ -95,13 +105,5 @@
 		"codeUrl": "https://github.com/0mppula/Alien_Invasion",
 		"info": "A game created with Python and Pygame. The player has to eliminate all the aliens on screen. When the the player has delt with all the aliens a new fleet of aliens is created and a next level starts. Every new level increases the tempo of the game and the amount of score rewarded by each alien. Highscore are saved in a .txt file and pulled for display before each game.",
 		"repositoryName": "Alien_Invasion"
-	},
-	{
-		"title": "CS-GO Weapons",
-		"technologies": ["JavaScript", "Css3", "Html5", "Netlify"],
-		"liveUrl": "https://csgo-weapons.netlify.app/",
-		"codeUrl": "https://github.com/0mppula/CS-GO_weapons",
-		"info": "A vanilla JavaScript web application that lets the user toggle between a set of weapons from the popular game 'Counter-Strike: Global Offensive'. Each weapon can be reloaded and shot a single or multiple times. All the weapon interactions generate real sound effects from the game.",
-		"repositoryName": "CS-GO_weapons"
 	}
 ]
