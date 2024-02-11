@@ -11,7 +11,6 @@
 			"Vercel",
 			"Prisma"
 		],
-		"new": true,
 		"liveUrl": "https://moneymapper.vercel.app/",
 		"codeUrl": "https://github.com/0mppula/money-mapper",
 		"info": "A fullstack Next.js 13 finance tracker for organizing personal finances. Covers income, taxes, assets, debt, and net worth management. Utilizes next-auth for user authentication and stores user data in a MongoDB database with prisma ORM. The app leverages shadcn-ui with tailwind CSS & offers both dark and light modes. Client state is managed with Zustand and The financial data is presented through interactive charts and a comprehensive table.",
@@ -51,6 +50,15 @@
 		"repositoryName": "KoronKorko"
 	},
 	{
+		"title": "Instagram Quote Generator",
+		"technologies": ["React.js", "TypeScript", "Netlify", "Tailwind CSS"],
+		"liveUrl": "https://instagram-quote-generator.netlify.app/",
+		"codeUrl": "https://github.com/0mppula/ig-quote-image-generator",
+		"info": "An app that allows users to create stunning 1:1 images with custom quotes and their respective authors. Additionally, users can customize the background and text color of the quote. The generated image can be downloaded to the user's device.",
+		"repositoryName": "ig-quote-image-generator",
+		"new": true
+	},
+	{
 		"title": "GoalTrackr",
 		"technologies": [
 			"React.js",
@@ -66,7 +74,6 @@
 		"info": "A fullstack Next.js 13 application created using the shadcn/ui library. The app allows authenticated users to list and track their daily goals. Global state is managed with Zustand, database queries are done using TanStack Query and authentication is managed with NextAuth.js. Data is saved to a MongoDB data base. Additionally, some routes are protected from unauthorized users.",
 		"repositoryName": "goal-trackr"
 	},
-
 	{
 		"title": "CoinCaps",
 		"technologies": ["JavaScript", "React.js", "Css3", "Node.js", "Netlify"],
@@ -98,12 +105,5 @@
 		"codeUrl": "https://github.com/0mppula/CS-GO_weapons",
 		"info": "A vanilla JavaScript web application that lets the user toggle between a set of weapons from the popular game 'Counter-Strike: Global Offensive'. Each weapon can be reloaded and shot a single or multiple times. All the weapon interactions generate real sound effects from the game.",
 		"repositoryName": "CS-GO_weapons"
-	},
-	{
-		"title": "Alien Invasion",
-		"technologies": ["Python", "Git"],
-		"codeUrl": "https://github.com/0mppula/Alien_Invasion",
-		"info": "A game created with Python and Pygame. The player has to eliminate all the aliens on screen. When the the player has delt with all the aliens a new fleet of aliens is created and a next level starts. Every new level increases the tempo of the game and the amount of score rewarded by each alien. Highscore are saved in a .txt file and pulled for display before each game.",
-		"repositoryName": "Alien_Invasion"
 	}
 ]

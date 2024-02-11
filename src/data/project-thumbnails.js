@@ -15,6 +15,7 @@ import reactReduxToolkitHelloWorld from '../images/projects/react-redux-toolkit-
 import tsMultiPageForm from '../images/projects/ts-multi-page-form/ts-multi-page-form.png';
 import tsPaginatedUsersPage from '../images/projects/ts-paginated-users-page/ts-paginated-users-page.png';
 import viewportSelect from '../images/projects/viewport-select/viewport-select.png';
+import igQuoteImageGenerator from '../images/projects/ig-quote-image-generator/ig-quote-image-generator.png';
 
 const thumbnails = {
 	'money-mapper': moneyMapper,
@@ -32,6 +33,7 @@ const thumbnails = {
 	SimpleJavaScriptProjects: simpleJavaScriptProjects,
 	'goal-trackr': goalTrack,
 	'viewport-select': viewportSelect,
+	'ig-quote-image-generator': igQuoteImageGenerator,
 	placeholder: placeholderThumbnail,
 	'element-compare': elementCompare,
 };

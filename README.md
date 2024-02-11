@@ -10,15 +10,15 @@ Live version: [Portfolio][0]
 
 Here are links to some of my projects.
 
--   [Money Mapper][money-mapper] (new)
--   [KoronKorko][koronkorko]
+-   [Money Mapper][money-mapper]
+-   [Element Compare][element-compare] (new)
 -   [BookStackr][bookstackr]
+-   [KoronKorko][koronkorko]
+-   [Instagram Quote Generator][ig-quote-image-generator] (new)
 -   [GoalTrackr][goal-trackr]
--   [WSB-Tickers][wsb-tickers]
 -   [CoinCaps][coincaps]
--   [TypeScript Multi-Page Form][ts-multi-page-form]
+-   [WSB-Tickers][wsb-tickers]
 -   [Viewport Select][viewport-select]
--   [Alien Invasion][alien invasion]
 -   [CS-GO Weapons][cs-go weapons]
 
 ### Legacy Projects
@@ -26,9 +26,11 @@ Here are links to some of my projects.
 Here are links to some of my legacy projects.
 
 -   [Déjà Vu][déjà vu]
--   [TypeScript Paginated Users Page][typescript paginated users page]
--   [React Redux Toolkit Hello World][react redux toolkit hello world]
 -   [Polish Cow][Polish_Cow]
+-   [Alien Invasion][alien invasion]
+-   [TypeScript Paginated Users Page][typescript paginated users page]
+-   [TypeScript Multi-Page Form][ts-multi-page-form]
+-   [React Redux Toolkit Hello World][react redux toolkit hello world]
 -   [Simple JavaScript Projects][Simple JavaScript Projects]
 
 ### Tech books
@@ -44,6 +46,8 @@ Here is the full list of all the tech books that I have read.
 
 [money-mapper]: https://moneymapper.vercel.app/
 [koronkorko]: https://www.koronkorko.com/
+[element-compare]: https://elementcompare.vercel.app/
+[ig-quote-image-generator]: https://instagram-quote-generator.netlify.app/
 [bookstackr]: https://bookstackr.netlify.app/
 [goal-trackr]: https://goaltrackr.vercel.app/
 [wsb-tickers]: https://wsb-tickers.netlify.app/
@@ -52,9 +56,6 @@ Here is the full list of all the tech books that I have read.
 [viewport-select]: https://viewportselect.netlify.app/
 [alien invasion]: https://github.com/0mppula/Alien_Invasion
 [cs-go weapons]: https://csgo-weapons.netlify.app/
-
-<!-- Legacy projects -->
-
 [déjà vu]: https://dejavu-app.netlify.app/
 [typescript paginated users page]: https://ts-paginated-users-page.netlify.app/
 [react redux toolkit hello world]: https://react-redux-toolkit-hello-world.netlify.app/

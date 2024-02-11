@@ -8,20 +8,27 @@
 		"repositoryName": "DejaVu"
 	},
 	{
-		"title": "TypeScript Paginated Users Page",
-		"technologies": ["React.js", "TypeScript", "Css3", "Netlify"],
-		"liveUrl": "https://ts-paginated-users-page.netlify.app/",
-		"codeUrl": "https://github.com/0mppula/ts-paginated-users-page",
-		"info": "A React users page with filtering, sorting and pagination functionality using query parameters. Additionally, each user has its own user page which can be opened by clicking a user from the users page. The user page prints simple information about the user.",
-		"repositoryName": "ts-paginated-users-page"
-	},
-	{
 		"title": "Polish Cow",
 		"technologies": ["JavaScript", "Css3", "Html5", "Netlify"],
 		"liveUrl": "https://polishcow.netlify.app/",
 		"codeUrl": "https://github.com/0mppula/Polish_Cow",
 		"info": "A vanilla JavaScript web application that generates dancing cows in an infininte loop while playing the popular Polish song: Gdzie jest biały węgorz (Zejście) by: Cypis. Once the user has started the song a timer counts for how long the song plays and the cows dance, once the music is stopped by the user the timer will be saved in local storage for next time!",
 		"repositoryName": "Polish_Cow"
+	},
+	{
+		"title": "Alien Invasion",
+		"technologies": ["Python", "Git"],
+		"codeUrl": "https://github.com/0mppula/Alien_Invasion",
+		"info": "A game created with Python and Pygame. The player has to eliminate all the aliens on screen. When the the player has delt with all the aliens a new fleet of aliens is created and a next level starts. Every new level increases the tempo of the game and the amount of score rewarded by each alien. Highscore are saved in a .txt file and pulled for display before each game.",
+		"repositoryName": "Alien_Invasion"
+	},
+	{
+		"title": "TypeScript Paginated Users Page",
+		"technologies": ["React.js", "TypeScript", "Css3", "Netlify"],
+		"liveUrl": "https://ts-paginated-users-page.netlify.app/",
+		"codeUrl": "https://github.com/0mppula/ts-paginated-users-page",
+		"info": "A React users page with filtering, sorting and pagination functionality using query parameters. Additionally, each user has its own user page which can be opened by clicking a user from the users page. The user page prints simple information about the user.",
+		"repositoryName": "ts-paginated-users-page"
 	},
 	{
 		"title": "TypeScript Multi-Page Form",
