@@ -6,6 +6,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 :root {
@@ -29,7 +30,6 @@ html {
 }
 
 body {
-	font-family: 'Titillium Web', sans-serif;
 	background: var(--clr-body);
 	overflow-x: hidden;
 }
@@ -39,6 +39,7 @@ h1,
 	font-size: 2.5rem;
 	margin-bottom: 1rem;
 	line-height: 46px;
+	color: var(--clr-black);
 }
 
 h2,
@@ -46,6 +47,10 @@ h3 {
 	font-size: 1.75rem;
 	line-height: 32px;
 	margin-bottom: 1rem;
+}
+
+button {
+	border: none;
 }
 
 .container {
@@ -77,6 +82,19 @@ h3 {
 	opacity: 0;
 	pointer-events: none;
 	z-index: 10;
+}
+
+.card {
+	width: 100%;
+	color: var(--clr-black);
+	background-color: var(--clr-white);
+	border-radius: var(--border-radius-lg);
+	box-shadow: var(--main-boxshadow);
+}
+
+.commit-container {
+	width: 100%;
+	margin: 2rem 0;
 }
 
 .to-top:hover,
@@ -263,6 +281,7 @@ li a.list-item::after {
 	box-shadow: var(--main-boxshadow);
 	text-decoration: none;
 	user-select: none;
+	font-size: 1rem;
 	cursor: pointer;
 	outline: solid 3px transparent;
 	background-size: 200% auto;
@@ -272,6 +291,11 @@ li a.list-item::after {
 		var(--clr-black-light) 51%,
 		var(--clr-black) 100%
 	);
+}
+
+.btn:disabled {
+	opacity: 0.5;
+	pointer-events: none;
 }
 
 .greet-buttons {
@@ -328,10 +352,6 @@ li a.list-item::after {
 	row-gap: 0.75rem;
 	flex-direction: column;
 	margin-bottom: 3rem;
-	box-shadow: var(--main-boxshadow);
-	border-radius: var(--border-radius-lg);
-	color: var(--clr-black);
-	background: var(--clr-white);
 }
 
 .project-item {
@@ -461,7 +481,6 @@ li a.list-item::after {
 .project-button-container {
 	display: flex;
 	gap: 1rem;
-	padding: 0 1rem;
 }
 
 .project-info {
@@ -508,12 +527,9 @@ li a.list-item::after {
 }
 
 .about-content {
-	background-color: var(--clr-white);
-	border-radius: var(--border-radius-lg);
 	padding: 1rem;
 	display: flex;
 	flex-direction: column;
-	box-shadow: var(--main-boxshadow);
 }
 
 .about-content:first-child {
@@ -770,6 +786,11 @@ li a.list-item::after {
 }
 
 @media screen and (max-width: 500px) {
+	.project-button-container {
+		flex-direction: column;
+		row-gap: 0.5rem;
+	}
+
 	/* Master styles */
 	.content-container {
 		margin-top: 1.5rem;

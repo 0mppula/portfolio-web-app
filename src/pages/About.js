@@ -43,11 +43,11 @@ const About = () => {
 				</div>
 
 				<div className="about-content-container">
-					<div className="about-content">
+					<div className="about-content card">
 						<div className="about-image" />
 					</div>
 
-					<div className="about-content">
+					<div className="about-content card">
 						<h2>General Info</h2>
 						<div>
 							<p>
@@ -83,7 +83,7 @@ const About = () => {
 						</div>
 					</div>
 
-					<div className="about-content">
+					<div className="about-content card">
 						<h2>My Tech Stack</h2>
 						<div className="project-tech-icons">
 							{[...technologies].sort().map((technology) => (
@@ -102,7 +102,7 @@ const About = () => {
 						</div>
 					</div>
 
-					<div className="about-content">
+					<div className="about-content card">
 						<h2>Career Development</h2>
 						<div>
 							<ul>

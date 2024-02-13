@@ -20,7 +20,7 @@ const Projects = () => {
 					<div className="header-underline"></div>
 				</div>
 
-				<div className="project-items">
+				<div className="project-items card">
 					{projects.map((project, index) => (
 						<Fragment key={`${project}-${index}`}>
 							<ProjectItem
