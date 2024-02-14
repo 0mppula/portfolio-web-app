@@ -29,7 +29,7 @@ const ProjectCommits = () => {
 		);
 	}, [validProjects, repositoryName]);
 
-	useTitle(`${project?.title} / Commits`);
+	useTitle(`${project?.title} Commits`);
 
 	// Check if the repositoryName is a valid project
 	useEffect(() => {

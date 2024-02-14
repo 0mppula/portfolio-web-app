@@ -52,8 +52,8 @@ const About = () => {
 						<div>
 							<p>
 								My name is <b>Omar Kraidié</b> I'm a third-year software engineering
-								student with over 3 years of professional experience in developing
-								client-facing projects for businesses, as well as 3+ years of
+								student with over 4 years of professional experience in developing
+								client-facing projects for businesses, as well as 4+ years of
 								experience developing independent open-source projects.
 								<br />
 								<br />I like to create useful software that can be leveraged in
