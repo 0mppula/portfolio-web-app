@@ -1,11 +1,12 @@
 import { useInfiniteQuery } from '@tanstack/react-query';
 import axios from 'axios';
-import React, { useEffect, useMemo } from 'react';
+import { format, formatDistance } from 'date-fns';
+import React, { Fragment, useEffect, useMemo } from 'react';
+import { FaCodeCommit } from 'react-icons/fa6';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import legacyProjects from '../data/legacy-projects.json';
 import projects from '../data/projects.json';
 import { useTitle } from '../hooks/useTitle';
-import { formatDistance, format } from 'date-fns';
 
 const ProjectCommits = () => {
 	const { repositoryName } = useParams();
@@ -28,7 +29,7 @@ const ProjectCommits = () => {
 		);
 	}, [validProjects, repositoryName]);
 
-	useTitle(project?.repositoryName);
+	useTitle(`${project?.title} / Commits`);
 
 	// Check if the repositoryName is a valid project
 	useEffect(() => {
@@ -44,7 +45,8 @@ const ProjectCommits = () => {
 		getNextPageParam: (lastPage, _) => {
 			return lastPage?.linkHeader?.match(nextCommitsPagePattern)?.[0];
 		},
-		refetchOnWindowFocus: false,
+		staleTime: 1000 * 60 * 10, // 10 minutes
+		refetchInterval: 1000 * 60 * 10, // 10 minutes
 	});
 
 	const getProjectCommits = async ({
@@ -84,16 +86,11 @@ const ProjectCommits = () => {
 		<div className="container">
 			<div className="content-container">
 				<div className="content-header">
-					<h1>{project?.repositoryName} - Commits</h1>
+					<h1>{project?.title} / Commits</h1>
 					<div className="header-underline"></div>
 				</div>
 
-				<div
-					style={{
-						width: '100%',
-						justifySelf: 'flex-start',
-					}}
-				>
+				<div style={{ alignSelf: 'flex-start' }}>
 					<Link
 						className="btn"
 						to="/projects"
@@ -104,104 +101,52 @@ const ProjectCommits = () => {
 				</div>
 
 				<div className="commit-container">
-					{groupedCommits.map((commits, index) => {
+					{groupedCommits.map((commits, i) => {
 						const date = new Date(commits[0].commit.author.date).toDateString();
 
 						return (
-							<div
-								key={index}
-								style={{
-									marginBottom: '2rem',
-								}}
-							>
-								<h2
-									style={{
-										marginBottom: '2rem',
-									}}
-								>
-									Commits on {format(date, 'MMM dd, yyyy')}
-								</h2>
+							<div key={i}>
+								<div>
+									{i === 0 ? null : <span />}
 
-								<ul
-									className="card"
-									style={{
-										listStyleType: 'none',
-										display: 'flex',
-										flexDirection: 'column',
-									}}
-								>
-									{commits.map((commit, index) => {
+									<div>
+										<FaCodeCommit size={28} />
+										<h2>Commits on {format(date, 'MMM dd, yyyy')}</h2>
+									</div>
+									<span />
+								</div>
+
+								<ul className="card">
+									{commits.map((commit, i) => {
 										return (
-											<li
-												key={commit.commit.author.date}
-												style={{ padding: '1rem' }}
-											>
-												<div
-													style={{
-														gap: '1rem',
-														display: 'flex',
-														flexDirection: 'column',
-													}}
-												>
-													<a
-														href={commit.html_url}
-														target="_blank"
-														rel="noreferrer"
-														style={{
-															textDecoration: 'none',
-															color: 'var(--text-color)',
-														}}
-													>
-														<h3
-															style={{
-																fontSize: '1.25rem',
-																lineHeight: '24px',
-																margin: 0,
-															}}
+											<Fragment key={commit.commit.author.date}>
+												<li>
+													{/* Commit message */}
+													<h3>
+														<a
+															href={commit.html_url}
+															target="_blank"
+															rel="noreferrer"
 														>
 															{commit.commit.message}
-														</h3>
-													</a>
+														</a>
+													</h3>
 
-													<div
-														style={{
-															gap: '1rem',
-															display: 'flex',
-															justifyContent: 'space-between',
-														}}
-													>
-														<div
-															style={{
-																display: 'flex',
-																alignItems: 'center',
-																gap: '0.5rem',
-															}}
-														>
+													<div>
+														{/* Commit author & distance */}
+														<div>
 															<a
 																href={commit.author.html_url}
 																target="_blank"
 																rel="noreferrer"
-																style={{
-																	display: 'flex',
-																}}
 															>
 																<img
 																	src={commit.author.avatar_url}
 																	alt="Avatar of the author of the commit"
-																	style={{
-																		width: '32px',
-																		height: '32px',
-																		borderRadius: '50%',
-																	}}
 																/>
 															</a>
 
-															<div
-																style={{
-																	display: 'flex',
-																	alignItems: 'center',
-																}}
-															>
+															<div>
 																<a
 																	href={commit.author.html_url}
 																	target="_blank"
@@ -210,19 +155,9 @@ const ProjectCommits = () => {
 																	{commit.author.login}
 																</a>
 
-																<span
-																	style={{
-																		paddingLeft: '0.25rem',
-																	}}
-																>
-																	committed
-																</span>
+																<span>committed</span>
 
-																<span
-																	style={{
-																		paddingLeft: '0.25rem',
-																	}}
-																>
+																<span>
 																	{formatDistance(
 																		new Date(
 																			commit.commit.author.date
@@ -236,13 +171,8 @@ const ProjectCommits = () => {
 															</div>
 														</div>
 
-														<div
-															style={{
-																display: 'flex',
-																gap: '0.5rem',
-															}}
-														>
-															{/* Repository at this point */}
+														{/* Commit details & repository at that point */}
+														<div>
 															<a
 																className="btn"
 																href={commit.html_url}
@@ -262,8 +192,10 @@ const ProjectCommits = () => {
 															</a>
 														</div>
 													</div>
-												</div>
-											</li>
+												</li>
+
+												{i === commits.length - 1 ? null : <hr />}
+											</Fragment>
 										);
 									})}
 								</ul>
