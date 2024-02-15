@@ -1,9 +1,10 @@
 import { useInfiniteQuery } from '@tanstack/react-query';
 import axios from 'axios';
-import { format, formatDistance } from 'date-fns';
+import { format } from 'date-fns';
 import React, { Fragment, useEffect, useMemo } from 'react';
 import { FaCodeCommit } from 'react-icons/fa6';
 import { Link, useNavigate, useParams } from 'react-router-dom';
+import ProjectCommitItem from '../components/ProjectCommitItem';
 import legacyProjects from '../data/legacy-projects.json';
 import projects from '../data/projects.json';
 import { useTitle } from '../hooks/useTitle';
@@ -120,79 +121,10 @@ const ProjectCommits = () => {
 									{commits.map((commit, i) => {
 										return (
 											<Fragment key={commit.commit.author.date}>
-												<li>
-													{/* Commit message */}
-													<h3>
-														<a
-															href={commit.html_url}
-															target="_blank"
-															rel="noreferrer"
-														>
-															{commit.commit.message}
-														</a>
-													</h3>
-
-													<div>
-														{/* Commit author & distance */}
-														<div>
-															<a
-																href={commit.author.html_url}
-																target="_blank"
-																rel="noreferrer"
-															>
-																<img
-																	src={commit.author.avatar_url}
-																	alt="Avatar of the author of the commit"
-																/>
-															</a>
-
-															<div>
-																<a
-																	href={commit.author.html_url}
-																	target="_blank"
-																	rel="noreferrer"
-																>
-																	{commit.author.login}
-																</a>
-
-																<span>committed</span>
-
-																<span>
-																	{formatDistance(
-																		new Date(
-																			commit.commit.author.date
-																		),
-																		new Date(),
-																		{
-																			addSuffix: true,
-																		}
-																	)}
-																</span>
-															</div>
-														</div>
-
-														{/* Commit details & repository at that point */}
-														<div>
-															<a
-																className="btn"
-																href={commit.html_url}
-																target="_blank"
-																rel="noreferrer"
-															>
-																Commit details
-															</a>
-
-															<a
-																className="btn"
-																href={`https://github.com/0mppula/${project?.repositoryName}/tree/${commit.sha}`}
-																target="_blank"
-																rel="noreferrer"
-															>
-																Repository at this point
-															</a>
-														</div>
-													</div>
-												</li>
+												<ProjectCommitItem
+													project={project}
+													commit={commit}
+												/>
 
 												{i === commits.length - 1 ? null : <hr />}
 											</Fragment>

@@ -168,10 +168,23 @@ button {
 				gap: 1rem;
 				justify-content: space-between;
 
+				@media screen and (max-width: 660px) {
+					flex-direction: column;
+					gap: 1rem;
+				}
+
 				> div:nth-of-type(1) {
 					display: flex;
 					gap: 0.5rem;
 					align-items: center;
+
+					@media screen and (max-width: 660px) {
+						justify-content: space-between;
+					}
+
+					@media screen and (max-width: 378px) {
+						flex-direction: column;
+					}
 
 					a {
 						display: flex;
@@ -186,6 +199,7 @@ button {
 					> div {
 						display: flex;
 						align-items: center;
+						flex-wrap: wrap;
 
 						span {
 							padding-left: 0.25rem;
@@ -209,6 +223,17 @@ button {
 				> div:nth-of-type(2) {
 					display: flex;
 					gap: 0.5rem;
+
+					@media screen and (max-width: 660px) {
+						> * {
+							flex-basis: 100%;
+							justify-content: center;
+						}
+					}
+
+					@media screen and (max-width: 378px) {
+						flex-direction: column;
+					}
 				}
 			}
 		}
@@ -418,6 +443,12 @@ li a.list-item::after {
 		var(--clr-black-light) 51%,
 		var(--clr-black) 100%
 	);
+}
+
+.icon-btn {
+	display: flex;
+	align-items: center;
+	min-height: 36px;
 }
 
 .btn:disabled {
