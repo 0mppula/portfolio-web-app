@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Tooltip } from 'react-tooltip';
-import placeHolderInfo from '../utils/placeholderInfo';
 import Frame from '../components/Frame';
 import getTechnologyIcon from '../utils/getTechnologyIcon';
+import placeHolderInfo from '../utils/placeholderInfo';
 
 const ProjectItem = ({ project, index, thumbnail }) => {
 	return (
@@ -58,6 +59,7 @@ const ProjectItem = ({ project, index, thumbnail }) => {
 								Live Site
 							</a>
 						)}
+
 						{project.codeUrl && (
 							<a
 								href={project.codeUrl}
@@ -68,6 +70,17 @@ const ProjectItem = ({ project, index, thumbnail }) => {
 							>
 								Source Code
 							</a>
+						)}
+
+						{project.repositoryName && (
+							<Link
+								href={project.repositoryName}
+								className="btn"
+								to={`${project.repositoryName}`}
+								aria-label="Navigate back to the projects page"
+							>
+								Commits
+							</Link>
 						)}
 					</div>
 				</div>

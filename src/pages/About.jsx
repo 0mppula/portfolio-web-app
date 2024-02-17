@@ -43,17 +43,17 @@ const About = () => {
 				</div>
 
 				<div className="about-content-container">
-					<div className="about-content">
+					<div className="about-content card">
 						<div className="about-image" />
 					</div>
 
-					<div className="about-content">
+					<div className="about-content card">
 						<h2>General Info</h2>
 						<div>
 							<p>
 								My name is <b>Omar Kraidié</b> I'm a third-year software engineering
-								student with over 3 years of professional experience in developing
-								client-facing projects for businesses, as well as 3+ years of
+								student with over 4 years of professional experience in developing
+								client-facing projects for businesses, as well as 4+ years of
 								experience developing independent open-source projects.
 								<br />
 								<br />I like to create useful software that can be leveraged in
@@ -83,7 +83,7 @@ const About = () => {
 						</div>
 					</div>
 
-					<div className="about-content">
+					<div className="about-content card">
 						<h2>My Tech Stack</h2>
 						<div className="project-tech-icons">
 							{[...technologies].sort().map((technology) => (
@@ -102,7 +102,7 @@ const About = () => {
 						</div>
 					</div>
 
-					<div className="about-content">
+					<div className="about-content card">
 						<h2>Career Development</h2>
 						<div>
 							<ul>

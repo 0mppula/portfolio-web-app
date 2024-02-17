@@ -18,9 +18,8 @@ const Home = () => {
 				<div className="greet-bottom">
 					<div className="greet-info">
 						<p>
-							I'm a full stack JavaScript software engineer from Finland. I like
-							developing cool and useful software by leveraging modern technologies!
-							👨🏼‍💻🤓
+							I'm a full stack software engineer from Finland. I like developing cool
+							and useful software by leveraging modern technologies! 👨🏼‍💻🤓
 							<br />
 							<br />
 							Feel free to view some of my showcased projects, take a look at my CV or

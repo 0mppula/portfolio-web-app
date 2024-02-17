@@ -6,7 +6,7 @@ export const useTitle = (title) => {
 		const oldTitle = document.title;
 		if (title) {
 			let formattedTitle = title?.charAt(0).toUpperCase() + title?.slice(1);
-			document.title = `Omar Kraidié - ${formattedTitle}`;
+			document.title = `${formattedTitle} - Omar Kraidié`;
 		}
 		// following line is optional, but will reset title when component unmounts
 		return () => (document.title = oldTitle);
