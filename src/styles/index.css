@@ -72,6 +72,7 @@ li a {
 }
 
 .card {
+	overflow: hidden;
 	width: 100%;
 	color: var(--clr-black);
 	background-color: var(--clr-white);
@@ -635,6 +636,12 @@ li a {
 }
 
 @media screen and (max-width: 500px) {
+	.container {
+		max-width: calc(1140px + 2rem);
+		width: 100%;
+		padding: 0 1rem;
+	}
+
 	.project-button-container {
 		flex-direction: column;
 		row-gap: 0.5rem;
