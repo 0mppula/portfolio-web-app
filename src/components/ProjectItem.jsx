@@ -72,7 +72,7 @@ const ProjectItem = ({ project, index, thumbnail }) => {
 							</a>
 						)}
 
-						{project.repositoryName && (
+						{project.codeUrl && (
 							<Link
 								href={project.repositoryName}
 								className="btn"
