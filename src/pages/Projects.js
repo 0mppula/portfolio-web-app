@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import ProjectItem from '../components/ProjectItem';
+import legacyProjects from '../data/legacy-projects.json';
 import projectThumbnails from '../data/project-thumbnails';
 import projects from '../data/projects.json';
-import legacyProjects from '../data/legacy-projects.json';
 import { useTitle } from '../hooks/useTitle';
 
 const Projects = () => {
@@ -39,7 +39,7 @@ const Projects = () => {
 					<div className="header-underline"></div>
 				</div>
 
-				<div className="project-items">
+				<div className="project-items card">
 					{legacyProjects.map((project, index) => (
 						<Fragment key={`${project}-${index}`}>
 							<ProjectItem

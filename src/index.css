@@ -10,12 +10,14 @@
 }
 
 :root {
-	--clr-body: #eee;
+	--clr-body: rgb(238, 238, 238);
 	--clr-secondary: hsl(265, 34%, 65%);
 	--clr-black: #1b1b1b;
 	--clr-black-light: #2e2e2e;
 	--clr-white: #fafafa;
 	--clr-white-light: #ebebeb;
+	--clr-skeleton-light: #ebebeb;
+	--clr-skeleton-dark: #dcdcdc;
 	--clr-white-dark: #a8a8a8;
 	--fast-transition: all 0.2s ease;
 	--slow-transition: all 0.3s ease;
@@ -93,10 +95,40 @@ button {
 	box-shadow: var(--main-boxshadow);
 }
 
+.skeleton-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.skeleton {
+	animation: skeleton-loading 1s linear infinite alternate;
+	width: 100%;
+	border-radius: var(--border-radius-lg);
+}
+
 /* Project commits */
 .commit-container {
 	width: 100%;
 	margin: 2rem 0;
+}
+
+.commits-list-header-skeleton {
+	margin-bottom: 1rem;
+	height: 28px;
+}
+
+.commits-list-skeleton {
+	height: 321px;
+	margin-bottom: 1rem;
+
+	@media screen and (max-width: 660px) {
+		height: 465px;
+	}
+
+	@media screen and (max-width: 378px) {
+		height: 827px;
+	}
 }
 
 .commit-container {
@@ -107,10 +139,10 @@ button {
 			gap: 0.5rem;
 
 			> span {
-				width: 2px;
+				width: 4px;
 				height: 1.5rem;
 				background: var(--clr-secondary);
-				margin-left: calc(28px / 2 + 1rem - (1.6px / 2));
+				margin-left: calc(28px / 2 + 1rem - (4px / 2));
 			}
 
 			> div {
@@ -151,6 +183,7 @@ button {
 		list-style-type: none;
 		display: flex;
 		flex-direction: column;
+		overflow: hidden;
 
 		li {
 			padding: 1rem;
@@ -1039,6 +1072,15 @@ li a.list-item::after {
 .nav-links-active {
 	transform: translate(0);
 	overflow-y: hidden;
+}
+
+@keyframes skeleton-loading {
+	0% {
+		background-color: var(--clr-skeleton-light);
+	}
+	100% {
+		background-color: var(--clr-skeleton-dark);
+	}
 }
 
 @keyframes fade-nav-links {

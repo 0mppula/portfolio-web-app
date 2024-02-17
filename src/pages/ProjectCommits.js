@@ -5,6 +5,7 @@ import React, { Fragment, useEffect, useMemo } from 'react';
 import { FaCodeCommit } from 'react-icons/fa6';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import ProjectCommitItem from '../components/ProjectCommitItem';
+import ProjectCommitItemSkeletons from '../components/ProjectCommitItemSkeletons';
 import legacyProjects from '../data/legacy-projects.json';
 import projects from '../data/projects.json';
 import { useTitle } from '../hooks/useTitle';
@@ -40,15 +41,16 @@ const ProjectCommits = () => {
 		}
 	}, [isValidProject, navigate]);
 
-	const { data, isLoading, isFetching, isError, hasNextPage, fetchNextPage } = useInfiniteQuery({
-		queryKey: [project?.repositoryName],
-		queryFn: (params) => getProjectCommits(params),
-		getNextPageParam: (lastPage, _) => {
-			return lastPage?.linkHeader?.match(nextCommitsPagePattern)?.[0];
-		},
-		staleTime: 1000 * 60 * 10, // 10 minutes
-		refetchInterval: 1000 * 60 * 10, // 10 minutes
-	});
+	const { data, isLoading, isFetching, isError, hasNextPage, isInitialLoading, fetchNextPage } =
+		useInfiniteQuery({
+			queryKey: [project?.repositoryName],
+			queryFn: (params) => getProjectCommits(params),
+			getNextPageParam: (lastPage, _) => {
+				return lastPage?.linkHeader?.match(nextCommitsPagePattern)?.[0];
+			},
+			staleTime: 1000 * 60 * 10, // 10 minutes
+			refetchInterval: 1000 * 60 * 10, // 10 minutes
+		});
 
 	const getProjectCommits = async ({
 		pageParam = `https://api.github.com/repos/0mppula/${project?.repositoryName}/commits`,
@@ -102,40 +104,44 @@ const ProjectCommits = () => {
 				</div>
 
 				<div className="commit-container">
-					{groupedCommits.map((commits, i) => {
-						const date = new Date(commits[0].commit.author.date).toDateString();
+					{isLoading ? (
+						<ProjectCommitItemSkeletons />
+					) : (
+						<>
+							{groupedCommits.map((commits, i) => {
+								const date = new Date(commits[0].commit.author.date).toDateString();
 
-						return (
-							<div key={i}>
-								<div>
-									{i === 0 ? null : <span />}
+								return (
+									<div key={i}>
+										<div>
+											{i === 0 ? null : <span />}
 
-									<div>
-										<FaCodeCommit size={28} />
-										<h2>Commits on {format(date, 'MMM dd, yyyy')}</h2>
+											<div>
+												<FaCodeCommit size={28} />
+												<h2>Commits on {format(date, 'MMM dd, yyyy')}</h2>
+											</div>
+											<span />
+										</div>
+
+										<ul className="card">
+											{commits.map((commit, i) => {
+												return (
+													<Fragment key={commit.commit.author.date}>
+														<ProjectCommitItem
+															project={project}
+															commit={commit}
+														/>
+
+														{i === commits.length - 1 ? null : <hr />}
+													</Fragment>
+												);
+											})}
+										</ul>
 									</div>
-									<span />
-								</div>
-
-								<ul className="card">
-									{commits.map((commit, i) => {
-										return (
-											<Fragment key={commit.commit.author.date}>
-												<ProjectCommitItem
-													project={project}
-													commit={commit}
-												/>
-
-												{i === commits.length - 1 ? null : <hr />}
-											</Fragment>
-										);
-									})}
-								</ul>
-							</div>
-						);
-					})}
-
-					{(isLoading || isFetching) && <p>Loading...</p>}
+								);
+							})}
+						</>
+					)}
 
 					{isError && <p>Something went wrong...</p>}
 				</div>
@@ -147,7 +153,11 @@ const ProjectCommits = () => {
 						onClick={fetchNextPage}
 						disabled={isFetching || isLoading}
 					>
-						Load more commits
+						{isFetching && !isInitialLoading ? (
+							<span>Loading...</span>
+						) : (
+							<span>Load more commits</span>
+						)}
 					</button>
 				)}
 			</div>
