@@ -1,0 +1,144 @@
+.navbar {
+	width: 100%;
+	height: 3.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	background: var(--clr-black);
+	box-shadow: var(--main-boxshadow);
+	position: fixed;
+	top: 0;
+	user-select: none;
+	z-index: 100;
+}
+
+.nav-header {
+	padding-left: 1rem;
+}
+
+.nav-header span a {
+	font-weight: 700;
+	color: var(--clr-white);
+	font-size: 2rem;
+	text-decoration: none;
+}
+
+.nav-links {
+	width: min(50%, 550px);
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	transition: var(--slow-transition);
+	list-style: none;
+}
+
+.nav-links .active {
+	color: var(--clr-white);
+}
+
+li a.list-item:hover:after,
+li a.list-item:focus-visible:after {
+	transform-origin: left center;
+	transform: scaleX(1);
+}
+
+li a.list-item::after {
+	content: '';
+	position: absolute;
+	display: flex;
+	bottom: 0px;
+	height: 1px;
+	width: 100%;
+	transform: scaleX(0);
+	background: var(--clr-white);
+	transform-origin: right center;
+	transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1),
+		-webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav-links li a {
+	color: var(--clr-white-dark);
+	text-decoration: none;
+	font-size: 1.25rem;
+	transition: var(--fast-transition);
+}
+
+.nav-links li:hover a {
+	color: var(--clr-white);
+}
+
+.nav-links li a:focus-visible {
+	color: var(--clr-white);
+}
+
+.burger {
+	margin-right: 1rem;
+	display: none;
+	transition: var(--fast-transition);
+	cursor: pointer;
+}
+
+.burger > div {
+	width: 25px;
+	height: 3px;
+	margin: 5px;
+	background: var(--clr-white);
+	transition: var(--fast-transition);
+}
+
+.burger-active .line-1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-active .line-2 {
+	opacity: 0;
+}
+
+.burger-active .line-3 {
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-links-active {
+	transform: translate(0) !important;
+	overflow-y: hidden;
+}
+
+@media screen and (max-width: 800px) {
+	.nav-links {
+		position: absolute;
+		top: 3.5rem;
+		right: 0;
+		row-gap: 1.5rem;
+		padding-top: 6rem;
+		justify-content: flex-start;
+		height: calc(100vh - 3.5rem);
+		width: min(250px, 100vw);
+		flex-direction: column;
+		align-items: center;
+		background: var(--clr-black);
+		transform: translate(101%);
+		z-index: 3;
+	}
+
+	.nav-links li a {
+		font-size: 1.5rem;
+		color: var(--clr-white-dark);
+	}
+
+	.nav-links li:active a {
+		color: var(--clr-white);
+	}
+
+	.nav-links li {
+		opacity: 0;
+	}
+
+	li a.list-item::after {
+		content: none;
+	}
+
+	.burger {
+		display: block;
+	}
+}
