@@ -46,11 +46,8 @@ const Footer = () => {
 			<div>
 				<p>Developed by Omar Kraidié.</p>
 				<p>
-					Copyright{' '}
-					<span id="copyright" className="copyright">
-						{`${year}©`}
-					</span>{' '}
-					Lahti, Finland. All Rights Reserved.
+					Copyright <span className="copyright">{`${year}©`}</span> Lahti, Finland. All
+					Rights Reserved.
 				</p>
 			</div>
 		</div>

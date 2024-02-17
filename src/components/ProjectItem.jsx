@@ -7,7 +7,10 @@ import placeHolderInfo from '../utils/placeholderInfo';
 
 const ProjectItem = ({ project, index, thumbnail }) => {
 	return (
-		<div id={index + 1} className={`project-item ${index % 2 !== 0 ? 'row-reverse' : ''} `}>
+		<section
+			id={project.repositoryName}
+			className={`project-item ${index % 2 !== 0 ? 'row-reverse' : ''} `}
+		>
 			<a
 				href={`${project.liveUrl || project.codeUrl}`}
 				className="project-image"
@@ -85,7 +88,7 @@ const ProjectItem = ({ project, index, thumbnail }) => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
