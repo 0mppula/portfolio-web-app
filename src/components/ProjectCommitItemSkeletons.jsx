@@ -4,7 +4,7 @@ const ProjectCommitItemSkeletons = () => {
 			{Array.from({ length: 3 }).map((_, i) => (
 				<div key={`skeleton-${i}`} className="skeleton-container">
 					{/* Commit header */}
-					<div className="Oskeleton commits-list-header-skeleton" />
+					<div className="skeleton commits-list-header-skeleton" />
 
 					{/* 3 Commits list */}
 					<div className="skeleton commits-list-skeleton" />
