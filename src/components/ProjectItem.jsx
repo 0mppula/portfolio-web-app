@@ -8,7 +8,7 @@ import placeHolderInfo from '../utils/placeholderInfo';
 const ProjectItem = ({ project, index, thumbnail }) => {
 	return (
 		<section
-			id={project.repositoryName}
+			id={project.repositoryName.toLowerCase()}
 			className={`project-item ${index % 2 !== 0 ? 'row-reverse' : ''} `}
 		>
 			<a
