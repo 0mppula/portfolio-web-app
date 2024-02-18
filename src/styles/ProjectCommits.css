@@ -170,3 +170,9 @@
 		}
 	}
 }
+
+@media screen and (max-width: 500px) {
+	.commit-container {
+		margin: 1.5rem 0;
+	}
+}
