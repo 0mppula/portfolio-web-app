@@ -2,6 +2,7 @@ import { useInfiniteQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import { format } from 'date-fns';
 import React, { Fragment, useEffect, useMemo } from 'react';
+import { FaArrowLeft } from 'react-icons/fa';
 import { FaCodeCommit } from 'react-icons/fa6';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import ProjectCommitItem from '../components/ProjectCommitItem';
@@ -95,11 +96,16 @@ const ProjectCommits = () => {
 
 				<div style={{ alignSelf: 'flex-start' }}>
 					<Link
-						className="btn"
+						style={{ gap: '0.5rem' }}
+						className="btn icon-btn"
 						to="/projects"
 						aria-label="Navigate back to the projects page"
 					>
-						<span aria-hidden>⬅ Projects</span>
+						<span aria-hidden style={{ display: 'flex', marginTop: '1px' }}>
+							<FaArrowLeft size={14} />
+						</span>
+
+						<span aria-hidden>Projects</span>
 					</Link>
 				</div>
 
