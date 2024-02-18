@@ -1,5 +1,5 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 /* Master styles */
 * {
@@ -141,6 +141,7 @@ li a {
 	user-select: none;
 	opacity: 0;
 	z-index: 0;
+	letter-spacing: -0.035em;
 }
 
 .greet-info {
@@ -276,7 +277,7 @@ li a {
 	position: absolute;
 	top: 16px;
 	color: var(--clr-black);
-	font-weight: 300;
+	font-weight: 600;
 	border-radius: 50%;
 	font-size: 1.25rem;
 	user-select: none;
