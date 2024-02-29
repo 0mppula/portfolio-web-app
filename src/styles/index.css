@@ -643,6 +643,12 @@ li a {
 		padding: 0 1rem;
 	}
 
+	.project-button-container {
+		.btn {
+			flex-grow: 1;
+		}
+	}
+
 	/* Master styles */
 	.content-container {
 		margin-top: 1.5rem;
