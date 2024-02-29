@@ -59,7 +59,7 @@ const ProjectItem = ({ project, index, thumbnail }) => {
 								target="_blank"
 								rel="noreferrer"
 							>
-								Live Site
+								Website
 							</a>
 						)}
 
@@ -71,7 +71,7 @@ const ProjectItem = ({ project, index, thumbnail }) => {
 								target="_blank"
 								rel="noreferrer"
 							>
-								Source Code
+								Code
 							</a>
 						)}
 
