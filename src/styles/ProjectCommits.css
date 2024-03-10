@@ -17,7 +17,7 @@
 	}
 
 	@media screen and (max-width: 378px) {
-		height: 827px;
+		height: 563px;
 	}
 }
 
@@ -122,6 +122,7 @@
 					> div {
 						display: flex;
 						align-items: center;
+						justify-content: center;
 						flex-wrap: wrap;
 
 						span {
@@ -152,10 +153,6 @@
 							flex-basis: 100%;
 							justify-content: center;
 						}
-					}
-
-					@media screen and (max-width: 378px) {
-						flex-direction: column;
 					}
 				}
 			}
