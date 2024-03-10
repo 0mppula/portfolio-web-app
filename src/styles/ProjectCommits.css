@@ -12,7 +12,7 @@
 	height: 321px;
 	margin-bottom: 1rem;
 
-	@media screen and (max-width: 660px) {
+	@media screen and (max-width: 568px) {
 		height: 465px;
 	}
 
@@ -91,7 +91,7 @@
 				gap: 1rem;
 				justify-content: space-between;
 
-				@media screen and (max-width: 660px) {
+				@media screen and (max-width: 568px) {
 					flex-direction: column;
 					gap: 1rem;
 				}
@@ -101,7 +101,7 @@
 					gap: 0.5rem;
 					align-items: center;
 
-					@media screen and (max-width: 660px) {
+					@media screen and (max-width: 568px) {
 						justify-content: space-between;
 					}
 
@@ -147,7 +147,7 @@
 					display: flex;
 					gap: 0.5rem;
 
-					@media screen and (max-width: 660px) {
+					@media screen and (max-width: 568px) {
 						> * {
 							flex-basis: 100%;
 							justify-content: center;

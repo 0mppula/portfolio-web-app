@@ -1,27 +1,9 @@
 import { formatDistance } from 'date-fns';
-import React, { useCallback, useEffect, useState } from 'react';
-import { FaCopy } from 'react-icons/fa';
-import { FaCheck, FaCode } from 'react-icons/fa6';
+import React from 'react';
+import { FaCode } from 'react-icons/fa6';
 import { Tooltip } from 'react-tooltip';
 
 const ProjectCommitItem = ({ commit, project }) => {
-	const [showCopied, setshowCopied] = useState(false);
-
-	useEffect(() => {
-		if (showCopied) {
-			const timeout = setTimeout(() => {
-				setshowCopied(false);
-			}, 2000);
-
-			return () => clearTimeout(timeout);
-		}
-	}, [showCopied]);
-
-	const handleCopy = useCallback((sha) => {
-		navigator.clipboard.writeText(sha);
-		setshowCopied(true);
-	}, []);
-
 	return (
 		<li>
 			{/* Commit message */}
@@ -71,18 +53,6 @@ const ProjectCommitItem = ({ commit, project }) => {
 					</a>
 
 					<Tooltip id={commit.html_url} delayShow={300} />
-
-					<button
-						data-tooltip-id={commit.sha}
-						data-tooltip-content={`Copy full SHA for ${commit.sha.slice(0, 7)}`}
-						className="btn icon-btn"
-						onClick={() => handleCopy(commit.sha)}
-						aria-label={`Copy full SHA for ${commit.sha.slice(0, 7)}`}
-					>
-						{showCopied ? <FaCheck size={16} /> : <FaCopy size={16} />}
-					</button>
-
-					<Tooltip id={commit.sha} delayShow={300} />
 
 					<a
 						data-tooltip-id={`https://github.com/0mppula/${project?.repositoryName}/tree/${commit.sha}`}
