@@ -47,7 +47,7 @@ Here is the full list of all the tech books that I have read.
 [money-mapper]: https://moneymapper.vercel.app/
 [koronkorko]: https://www.koronkorko.com/
 [element-compare]: https://elementcompare.vercel.app/
-[ig-quote-image-generator]: https://instagram-quote-generator.netlify.app/
+[ig-quote-image-generator]: https://instagram-quote-generator.vercel.app/
 [bookstackr]: https://bookstackr.netlify.app/
 [goal-trackr]: https://goaltrackr.vercel.app/
 [wsb-tickers]: https://wsb-tickers.netlify.app/

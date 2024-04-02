@@ -52,7 +52,7 @@
 	{
 		"title": "Instagram Quote Generator",
 		"technologies": ["React.js", "TypeScript", "Netlify", "Tailwind CSS"],
-		"liveUrl": "https://instagram-quote-generator.netlify.app/",
+		"liveUrl": "https://instagram-quote-generator.vercel.app/",
 		"codeUrl": "https://github.com/0mppula/ig-quote-image-generator",
 		"info": "An app that allows users to create stunning 1:1 images with custom quotes and their respective authors. Additionally, users can customize the background and text color of the quote. The generated image can be downloaded to the user's device.",
 		"repositoryName": "ig-quote-image-generator",
