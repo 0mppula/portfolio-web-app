@@ -150,8 +150,15 @@ li a {
 	margin: 1rem 0;
 }
 
-.greet-card p {
-	font-size: 1.25rem;
+.greet-card {
+	p {
+		font-size: 1.25rem;
+		margin-bottom: 1.25rem;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .btn {
@@ -478,6 +485,12 @@ li a {
 .about-content .project-tech-icons svg {
 	height: 2.5rem;
 	width: 2.5rem;
+}
+
+.about-content {
+	p:not(:last-of-type) {
+		margin-bottom: 1rem;
+	}
 }
 /* End About styles */
 

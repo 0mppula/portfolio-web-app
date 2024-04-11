@@ -55,19 +55,21 @@ const About = () => {
 								student with over 4 years of professional experience in developing
 								client-facing projects for businesses, as well as 4+ years of
 								experience developing independent open-source projects.
-								<br />
-								<br />I like to create useful software that can be leveraged in
-								everyday applications. Furthermore, I'm enthusiastic about learning
-								how to use new technologies and finding efficient ways of
-								implementing modern design patterns. In short, if you have a
-								software problem that needs to be resolved I <b>will</b> develop the
-								perfect and sustainable solution for you.
-								<br />
-								<br />
+							</p>
+							<p>
+								I like to create useful software that can be leveraged in everyday
+								applications. Furthermore, I'm enthusiastic about learning how to
+								use new technologies and finding efficient ways of implementing
+								modern design patterns. In short, if you have a software problem
+								that needs to be resolved I <b>will</b> develop the perfect and
+								sustainable solution for you.
+							</p>
+							<p>
 								In addition to coding, I'm interested in investing, economics,
 								artificial intelligence and personal development.
-								<br />
-								<br />
+							</p>
+
+							<p>
 								If you're interested, here's a full list of the{' '}
 								<a
 									href="https://www.goodreads.com/review/list/135003326-0mppu?ref=nav_mybooks&shelf=programming"
@@ -140,6 +142,21 @@ const About = () => {
 								</li>
 								<li>
 									<b>Q2 2023</b> Began learning Next.js and server-side rendering.
+								</li>
+								<li>
+									<b>Q1 2024</b> Wrote my university{' '}
+									<a
+										href="https://www.theseus.fi/handle/10024/850318"
+										style={{
+											display: 'inline',
+										}}
+										rel="noreferrer"
+										target="_blank"
+									>
+										thesis
+									</a>{' '}
+									on developing a full-stack web application for personal finance
+									management.
 								</li>
 							</ul>
 							<Frame />

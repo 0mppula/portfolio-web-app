@@ -20,8 +20,9 @@ const Home = () => {
 						<p>
 							I'm a full-stack software engineer based in Finland. I like developing
 							cool and useful software by leveraging modern technologies!
-							<br />
-							<br />
+						</p>
+
+						<p>
 							Feel free to view some of my showcased projects and their code.
 							Additionally, you can take a look at my CV or reach out to me via email
 							by clicking the buttons below.
