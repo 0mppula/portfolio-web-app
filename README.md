@@ -10,14 +10,14 @@ Live version: [Portfolio][0]
 
 Here are links to some of my projects.
 
--   [Money Mapper][money-mapper]
--   [Element Compare][element-compare] (new)
+-   [KoronKorko (Remastered)][koronkorko-Remastered] (new)
 -   [BookStackr][bookstackr]
--   [KoronKorko][koronkorko]
--   [Instagram Quote Generator][ig-quote-image-generator] (new)
+-   [Money Mapper][money-mapper]
+-   [Element Compare][element-compare]
+-   [Instagram Quote Generator][ig-quote-image-generator]
+-   [KoronKorko (mern)][koronkorko]
 -   [GoalTrackr][goal-trackr]
 -   [CoinCaps][coincaps]
--   [WSB-Tickers][wsb-tickers]
 -   [Viewport Select][viewport-select]
 -   [CS-GO Weapons][cs-go weapons]
 
@@ -25,6 +25,7 @@ Here are links to some of my projects.
 
 Here are links to some of my legacy projects.
 
+-   [WSB-Tickers][wsb-tickers]
 -   [Déjà Vu][déjà vu]
 -   [Polish Cow][Polish_Cow]
 -   [Alien Invasion][alien invasion]
@@ -44,8 +45,9 @@ Here is the full list of all the tech books that I have read.
 
 <!-- Projects -->
 
+[koronkorko-Remastered]: https://www.koronkorko.com/
 [money-mapper]: https://moneymapper.vercel.app/
-[koronkorko]: https://www.koronkorko.com/
+[koronkorko]: https://koronkorko.herokuapp.com/
 [element-compare]: https://elementcompare.vercel.app/
 [ig-quote-image-generator]: https://instagram-quote-generator.vercel.app/
 [bookstackr]: https://bookstackr.netlify.app/
