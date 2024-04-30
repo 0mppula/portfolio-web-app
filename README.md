@@ -15,7 +15,7 @@ Here are links to some of my projects.
 -   [Money Mapper][money-mapper]
 -   [Element Compare][element-compare]
 -   [Instagram Quote Generator][ig-quote-image-generator]
--   [KoronKorko (mern)][koronkorko]
+-   [KoronKorko (MERN)][koronkorko]
 -   [GoalTrackr][goal-trackr]
 -   [CoinCaps][coincaps]
 -   [Viewport Select][viewport-select]
