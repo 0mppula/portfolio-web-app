@@ -1,5 +1,13 @@
 [
 	{
+		"title": "WSB-Tickers",
+		"technologies": ["React.js", "TypeScript", "Styled Components", "Css3", "Netlify"],
+		"liveUrl": "https://wsb-tickers.netlify.app/",
+		"codeUrl": "https://github.com/0mppula/wsb-tickers",
+		"info": "A React app that displays the top 50 stocks discussed on reddit.com/r/wallstreetbets/. Each ticker element displays both the sentiment from bullish to bearish and the sentiment score from -1 to 1 of the stock. The total daily comments are also displayed for each symbol. Tickers can be sorted in ascending or descending order. The data for this app is retrieved from the https://tradestie.com/apps/reddit/api/ API.",
+		"repositoryName": "wsb-tickers"
+	},
+	{
 		"title": "Déjà Vu",
 		"technologies": ["React.js", "TypeScript", "Styled Components", "Css3", "Netlify"],
 		"liveUrl": "https://dejavu-app.netlify.app/",

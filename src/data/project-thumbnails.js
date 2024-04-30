@@ -16,6 +16,7 @@ import tsMultiPageForm from '../images/projects/ts-multi-page-form/ts-multi-page
 import tsPaginatedUsersPage from '../images/projects/ts-paginated-users-page/ts-paginated-users-page.png';
 import viewportSelect from '../images/projects/viewport-select/viewport-select.png';
 import igQuoteImageGenerator from '../images/projects/ig-quote-image-generator/ig-quote-image-generator.png';
+import koronkorkoRemastered from '../images/projects/koronkorko-remastered/koronkorko-remastered.png';
 
 const thumbnails = {
 	'money-mapper': moneyMapper,
@@ -36,6 +37,7 @@ const thumbnails = {
 	'ig-quote-image-generator': igQuoteImageGenerator,
 	placeholder: placeholderThumbnail,
 	'element-compare': elementCompare,
+	'koronkorko-remastered': koronkorkoRemastered,
 };
 
 export default thumbnails;

@@ -1,5 +1,31 @@
 [
 	{
+		"title": "KoronKorko (Remastered)",
+		"technologies": [
+			"React.js",
+			"Next.js",
+			"TypeScript",
+			"Reactquery",
+			"Tailwind CSS",
+			"MongoDB",
+			"Vercel",
+			"Prisma"
+		],
+		"liveUrl": "https://koronkorko.com/",
+		"codeUrl": "https://github.com/0mppula/koronkorko-remastered",
+		"info": "The Remastered version of KoronKorko. KoronKorko is a full-stack web-application with different types of useful and frequently used finance calculators. Some of the included calculators cover compound interest, annualized return, and present value. Users can also choose between a dark or light theme and select the currency in which the monetary results of the calculators are displayed. Additionally, authenticated users have the ability to create, save, edit, import, and delete their calculations.",
+		"repositoryName": "koronkorko-remastered",
+		"new": true
+	},
+	{
+		"title": "BookStackr",
+		"technologies": ["React.js", "Redux Toolkit", "TypeScript", "Firebase", "Netlify", "Css3"],
+		"liveUrl": "https://bookstackr.netlify.app/",
+		"codeUrl": "https://github.com/0mppula/BookStackr",
+		"info": "A comprehensive book tracking application allowing the users to track their read books by year, category and format. Book data can be viewed both in table and chart format. The app can be used with mock data without user authentication. Alternatively, users can sign in with their Google accounts and save their book data to a secure Firestore database for later use.",
+		"repositoryName": "BookStackr"
+	},
+	{
 		"title": "Money Mapper",
 		"technologies": [
 			"React.js",
@@ -19,22 +45,21 @@
 	{
 		"title": "Element Compare",
 		"technologies": ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-		"new": true,
 		"liveUrl": "https://elementcompare.vercel.app/",
 		"codeUrl": "https://github.com/0mppula/element-compare",
 		"info": "A single-page Next.js 14 app featuring the periodic table in its classic rectangular layout. Users can interactively highlight elements by type, individually select them for detailed property inspection and choose a second element for side-by-side property comparison. The app's components utilize shadcn-ui and are styled with Tailwind CSS. Users can choose between dark and light modes based on their preference.",
 		"repositoryName": "element-compare"
 	},
 	{
-		"title": "BookStackr",
-		"technologies": ["React.js", "Redux Toolkit", "TypeScript", "Firebase", "Netlify", "Css3"],
-		"liveUrl": "https://bookstackr.netlify.app/",
-		"codeUrl": "https://github.com/0mppula/BookStackr",
-		"info": "A comprehensive book tracking application allowing the users to track their read books by year, category and format. Book data can be viewed both in table and chart format. The app can be used with mock data without user authentication. Alternatively, users can sign in with their Google accounts and save their book data to a secure Firestore database for later use.",
-		"repositoryName": "BookStackr"
+		"title": "Instagram Quote Generator",
+		"technologies": ["React.js", "TypeScript", "Netlify", "Tailwind CSS"],
+		"liveUrl": "https://instagram-quote-generator.vercel.app/",
+		"codeUrl": "https://github.com/0mppula/ig-quote-image-generator",
+		"info": "An app that allows users to create stunning 1:1 images with custom quotes and their respective authors. Additionally, users can customize the background and text color of the quote. The generated image can be downloaded to the user's device.",
+		"repositoryName": "ig-quote-image-generator"
 	},
 	{
-		"title": "KoronKorko",
+		"title": "KoronKorko (MERN)",
 		"technologies": [
 			"MongoDB",
 			"React.js",
@@ -44,19 +69,10 @@
 			"JavaScript",
 			"Heroku"
 		],
-		"liveUrl": "https://www.koronkorko.com/",
+		"liveUrl": "https://koronkorko.herokuapp.com/",
 		"codeUrl": "https://github.com/0mppula/KoronKorko",
-		"info": "A full stack web-application with different types of useful and frequently used finance calculators. Some of the included calculators are compound interest, annualized return and present value. Users can also select between a dark or light theme and in which currency the monetary results of the calculators are displayed in. Additionally, authenticated users can create, save, edit, import and delete their calculations.",
+		"info": "A full-stack web-application with different types of useful and frequently used finance calculators. Some of the included calculators cover compound interest, annualized return, and present value. Users can also choose between a dark or light theme and select a currency in which the monetary results of a calculator are displayed. Additionally, authenticated users have the ability to create, save, edit, import, and delete their calculations.",
 		"repositoryName": "KoronKorko"
-	},
-	{
-		"title": "Instagram Quote Generator",
-		"technologies": ["React.js", "TypeScript", "Netlify", "Tailwind CSS"],
-		"liveUrl": "https://instagram-quote-generator.vercel.app/",
-		"codeUrl": "https://github.com/0mppula/ig-quote-image-generator",
-		"info": "An app that allows users to create stunning 1:1 images with custom quotes and their respective authors. Additionally, users can customize the background and text color of the quote. The generated image can be downloaded to the user's device.",
-		"repositoryName": "ig-quote-image-generator",
-		"new": true
 	},
 	{
 		"title": "GoalTrackr",
@@ -81,14 +97,6 @@
 		"codeUrl": "https://github.com/0mppula/CoinCaps",
 		"info": "A React web-application where the user can view the 250 most valuable cryptocurrencies by market capitalization. Additionally, the user can select in which currency the app displays the price data for the cryptos. All of the cryptos can also be filtered out with a search field. The data and statistics of the application are retrieved from the CoinGecko API with different AJAX calls.",
 		"repositoryName": "CoinCaps"
-	},
-	{
-		"title": "WSB-Tickers",
-		"technologies": ["React.js", "TypeScript", "Styled Components", "Css3", "Netlify"],
-		"liveUrl": "https://wsb-tickers.netlify.app/",
-		"codeUrl": "https://github.com/0mppula/wsb-tickers",
-		"info": "A React app that displays the top 50 stocks discussed on reddit.com/r/wallstreetbets/. Each ticker element displays both the sentiment from bullish to bearish and the sentiment score from -1 to 1 of the stock. The total daily comments are also displayed for each symbol. Tickers can be sorted in ascending or descending order. The data for this app is retrieved from the https://tradestie.com/apps/reddit/api/ API.",
-		"repositoryName": "wsb-tickers"
 	},
 	{
 		"title": "Viewport Select",
