@@ -1,12 +1,12 @@
 # Omar Kraidié - Portfolio
 
-### About
+## About
 
 This is my personal web-based portfolio showcasing some information about me and my recent projects.
 
 Live version: [Portfolio][0]
 
-### Projects
+## Projects
 
 Here are links to some of my projects.
 
@@ -21,7 +21,7 @@ Here are links to some of my projects.
 -   [Viewport Select][viewport-select]
 -   [CS-GO Weapons][cs-go weapons]
 
-### Legacy Projects
+## Legacy Projects
 
 Here are links to some of my legacy projects.
 
@@ -34,7 +34,7 @@ Here are links to some of my legacy projects.
 -   [React Redux Toolkit Hello World][react redux toolkit hello world]
 -   [Simple JavaScript Projects][Simple JavaScript Projects]
 
-### Tech books
+## Tech books
 
 Here is the full list of all the tech books that I have read.
 
