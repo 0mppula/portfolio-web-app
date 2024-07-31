@@ -166,7 +166,7 @@ const Home = () => {
 												src={sg.avatar_url}
 												alt={`stargazer ${i + 1}`}
 												style={{
-													zIndex: stargazers.length - i,
+													zIndex: stargazers.length + i,
 												}}
 											/>
 										))}
