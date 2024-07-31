@@ -6,6 +6,7 @@ import './styles/Nav.css';
 import './styles/ProjectCommits.css';
 import './styles/ToTop.css';
 import './styles/index.css';
+import './styles/home.css';
 
 ReactDOM.render(
 	<React.StrictMode>
