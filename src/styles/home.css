@@ -82,7 +82,7 @@
 		background: var(--clr-white);
 
 		.greet-card {
-			display: flex;
+			display: flex !important;
 			flex-direction: column;
 			gap: 1rem;
 
