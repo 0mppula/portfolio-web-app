@@ -1,12 +1,81 @@
-import React from 'react';
+import { useQuery } from '@tanstack/react-query';
+import axios from 'axios';
 import { FaEnvelope } from 'react-icons/fa';
+import { FaEllipsis } from 'react-icons/fa6';
+
 import { Link } from 'react-router-dom';
 import Frame from '../components/Frame';
+import legacyProjects from '../data/legacy-projects.json';
+import projects from '../data/projects.json';
 import { useTitle } from '../hooks/useTitle';
 import hero from '../images/hero.png';
 
+const stargazersToRememove = [97590272, 76154107];
+const projectsWithoutRepo = ['Simple JavaScript Projects'];
+
+const allProjects = [...projects, ...legacyProjects].filter(
+	(repo) => !projectsWithoutRepo.includes(repo.title)
+);
+
+const fallbackStargazerAvatarUrls = [
+	'https://avatars.githubusercontent.com/u/117259733?v=4',
+	'https://avatars.githubusercontent.com/u/60621382?v=4',
+	'https://avatars.githubusercontent.com/u/71003132?v=4',
+	'https://avatars.githubusercontent.com/u/57848655?v=4',
+	'https://avatars.githubusercontent.com/u/140701144?v=4',
+	'https://avatars.githubusercontent.com/u/2363295?v=4',
+	'https://avatars.githubusercontent.com/u/34961099?v=4',
+	'https://avatars.githubusercontent.com/u/159700711?v=4',
+	'https://avatars.githubusercontent.com/u/47819048?v=4',
+	'https://avatars.githubusercontent.com/u/156190087?v=4',
+];
+
 const Home = () => {
 	useTitle('home');
+
+	const {
+		data: stargazers,
+		isLoading: stargazersIsLoading,
+		isError: stargazersIsError,
+	} = useQuery({
+		queryKey: ['stargazers'],
+		queryFn: getProjectStargazers,
+		staleTime: Infinity,
+	});
+
+	async function getProjectStargazers() {
+		const urls = allProjects.map((project) => {
+			return `https://api.github.com/repos/0mppula/${project.repositoryName}/stargazers`;
+		});
+
+		const promises = [
+			'https://api.github.com/repos/0mppula/portfolio-web-app/stargazers',
+			...urls,
+		].map((url) => {
+			return axios.get(url, {
+				headers: {
+					Authorization: `token ${process.env.REACT_APP_GITHUB_ACCESS_TOKEN}`,
+				},
+			});
+		});
+
+		try {
+			const responses = await Promise.all(promises);
+			const rawStargazers = responses.map((res) => res.data).flat();
+			// remove duplicates
+			const filteredStargazers = [
+				...new Map(rawStargazers.map((item) => [item.id, item])).values(),
+			]
+				.filter((stargazer) => !stargazersToRememove.includes(stargazer.id))
+				.sort(() => Math.random() - 0.5)
+				.slice(0, 9);
+
+			return filteredStargazers || [];
+		} catch (error) {
+			console.error('Error fetching stargazers:', error.name);
+		}
+	}
+
 	return (
 		<div className="hero-container">
 			<div>
@@ -27,8 +96,9 @@ const Home = () => {
 
 							<p>
 								Feel free to view some of my showcased projects and their code.
-								Additionally, you can take a look at my CV or reach out to me via
-								email by clicking the buttons below.
+								Additionally, you can check out my CV with the button below. If you
+								like what you see and want to build beautiful web apps reach out to
+								me via email by clicking the button below.
 							</p>
 							<Frame />
 						</div>
@@ -74,13 +144,49 @@ const Home = () => {
 						</div>
 
 						<div className="greet-card-stars">
-							<div>
-								{[...Array.from({ length: 5 })].map((_, i) => (
-									<img key={i} src="" alt="" />
-								))}
-							</div>
+							{stargazersIsLoading ? (
+								<div className="skeleton" />
+							) : (
+								<h2>Awesome Devs Who Starred My GitHub ⭐</h2>
+							)}
 
-							<p>Github Stargazers</p>
+							<div>
+								{stargazersIsLoading ? (
+									Array.from({ length: 10 }).map((_, i) => (
+										<div
+											key={`stargazer-skeleton-${i + 1}`}
+											className="stargazer-skeleton"
+										/>
+									))
+								) : !stargazersIsError ? (
+									<>
+										{(stargazers || []).map((sg, i) => (
+											<img
+												key={i}
+												src={sg.avatar_url}
+												alt={`stargazer ${i + 1}`}
+												style={{
+													zIndex: stargazers.length - i,
+												}}
+											/>
+										))}
+										<div className="ellipsis">
+											<FaEllipsis />
+										</div>
+									</>
+								) : (
+									fallbackStargazerAvatarUrls.map((url, i) => (
+										<img
+											key={i}
+											src={url}
+											alt={`stargazer ${i + 1}`}
+											style={{
+												zIndex: fallbackStargazerAvatarUrls.length - i,
+											}}
+										/>
+									))
+								)}
+							</div>
 						</div>
 					</div>
 				</div>
