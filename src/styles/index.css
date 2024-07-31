@@ -10,7 +10,7 @@
 }
 
 :root {
-	--clr-body: rgb(238, 238, 238);
+	--clr-body: #eeeeee;
 	--clr-secondary: hsl(265, 34%, 65%);
 	--clr-black: #1b1b1b;
 	--clr-black-light: #2e2e2e;
@@ -125,17 +125,6 @@ li a {
 .btn:disabled {
 	opacity: 0.5;
 	pointer-events: none;
-}
-
-.greet-buttons {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1rem;
-}
-
-.greet-buttons .btn {
-	font-size: 1.25rem;
-	min-height: 41.6px;
 }
 
 .btn:hover,
