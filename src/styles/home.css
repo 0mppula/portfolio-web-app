@@ -116,8 +116,9 @@
 	> img {
 		max-width: 720px;
 		min-width: 0;
-		flex: 0 1 720px;
+		flex: 0 1 auto;
 		object-fit: cover;
+		max-height: calc(100svh - 56px);
 
 		@media screen and (max-width: 1040px) {
 			display: none;
