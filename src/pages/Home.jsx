@@ -163,7 +163,7 @@ const Home = () => {
 										{(stargazers || []).map((sg, i) => (
 											<img
 												className="stargazer"
-												key={i}
+												key={`${sg.id}-${i + 1}`}
 												src={sg.avatar_url}
 												alt={`stargazer ${i + 1}`}
 												style={{
@@ -178,7 +178,7 @@ const Home = () => {
 								) : (
 									fallbackStargazerAvatarUrls.map((url, i) => (
 										<img
-											key={i}
+											key={url}
 											src={url}
 											alt={`stargazer ${i + 1}`}
 											style={{

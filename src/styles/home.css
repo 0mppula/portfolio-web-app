@@ -131,6 +131,32 @@
 		gap: 1rem;
 		margin-top: 1rem;
 
+		.ellipsis {
+			height: 3rem;
+			width: 3rem;
+			border-radius: 50%;
+			background-color: var(--clr-white);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 2px solid #1b1b1b;
+			margin-left: -0.5rem;
+			z-index: 20;
+		}
+
+		.stargazer {
+			height: 3rem;
+			width: 3rem;
+			border-radius: 50%;
+			border: 2px solid #1b1b1b;
+			background-color: var(--clr-white);
+			margin-left: -0.5rem;
+
+			&:first-of-type {
+				margin-left: 0;
+			}
+		}
+
 		.skeleton {
 			width: 224px;
 			height: 32px;
@@ -158,32 +184,6 @@
 			line-height: 26px;
 			font-weight: 600;
 			margin: 0;
-		}
-
-		.ellipsis {
-			height: 3rem;
-			width: 3rem;
-			border-radius: 50%;
-			background-color: var(--clr-white);
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			border: 2px solid #1b1b1b;
-			margin-left: -0.5rem;
-			z-index: 20;
-		}
-
-		.stargazer {
-			height: 3rem;
-			width: 3rem;
-			border-radius: 50%;
-			border: 2px solid #1b1b1b;
-			background-color: var(--clr-white);
-			margin-left: -0.5rem;
-
-			&:first-of-type {
-				margin-left: 0;
-			}
 		}
 	}
 
