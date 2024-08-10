@@ -173,7 +173,7 @@
 			z-index: 20;
 		}
 
-		img {
+		.stargazer {
 			height: 3rem;
 			width: 3rem;
 			border-radius: 50%;

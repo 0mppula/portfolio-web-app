@@ -162,13 +162,12 @@ const Home = () => {
 									<>
 										{(stargazers || []).map((sg, i) => (
 											<img
+												className="stargazer"
 												key={i}
 												src={sg.avatar_url}
 												alt={`stargazer ${i + 1}`}
 												style={{
 													zIndex: stargazers.length + i,
-													height: '3rem',
-													width: '3rem',
 												}}
 											/>
 										))}
