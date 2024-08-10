@@ -167,6 +167,8 @@ const Home = () => {
 												alt={`stargazer ${i + 1}`}
 												style={{
 													zIndex: stargazers.length + i,
+													height: '3rem',
+													width: '3rem',
 												}}
 											/>
 										))}
