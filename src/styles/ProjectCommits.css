@@ -75,19 +75,6 @@
 					span {
 						padding-left: 0.25rem;
 					}
-
-					a.commit-author {
-						text-decoration: none !important;
-						color: var(--clr-black);
-
-						&:hover {
-							text-decoration: underline !important;
-						}
-
-						&:active {
-							text-decoration: dashed underline !important;
-						}
-					}
 				}
 			}
 
@@ -140,6 +127,19 @@
 		font-size: 1.25rem;
 		line-height: 28px;
 		margin-bottom: 0;
+	}
+
+	a.commit-author {
+		text-decoration: none !important;
+		color: var(--clr-black);
+
+		&:hover {
+			text-decoration: underline !important;
+		}
+
+		&:active {
+			text-decoration: dashed underline !important;
+		}
 	}
 
 	.commit-msg-header a {
