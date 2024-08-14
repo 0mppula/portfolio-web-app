@@ -7,7 +7,7 @@ const ProjectCommitItem = ({ commit, project }) => {
 	return (
 		<li>
 			{/* Commit message */}
-			<h3>
+			<h3 className="commit-msg-header">
 				<a href={commit.html_url} target="_blank" rel="noreferrer">
 					{commit.commit.message}
 				</a>

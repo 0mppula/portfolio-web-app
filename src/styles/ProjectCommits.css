@@ -142,7 +142,7 @@
 		margin-bottom: 0;
 	}
 
-	h3 a {
+	.commit-msg-header a {
 		line-height: 24px;
 
 		width: fit-content;
