@@ -24,7 +24,12 @@ const ProjectCommitItem = ({ commit, project }) => {
 					</a>
 
 					<div>
-						<a href={commit.author.html_url} target="_blank" rel="noreferrer">
+						<a
+							className="commit-author"
+							href={commit.author.html_url}
+							target="_blank"
+							rel="noreferrer"
+						>
 							{commit.author.login}
 						</a>
 

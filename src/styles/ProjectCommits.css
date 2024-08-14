@@ -76,7 +76,7 @@
 						padding-left: 0.25rem;
 					}
 
-					a {
+					a.commit-author {
 						text-decoration: none !important;
 						color: var(--clr-black);
 
