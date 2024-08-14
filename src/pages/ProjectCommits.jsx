@@ -118,7 +118,7 @@ const ProjectCommits = () => {
 								const date = new Date(commits[0].commit.author.date).toDateString();
 
 								return (
-									<div key={i}>
+									<div key={i + 'date' + date}>
 										<div>
 											{i === 0 ? null : <span />}
 
@@ -132,7 +132,7 @@ const ProjectCommits = () => {
 										<ul className="card">
 											{commits.map((commit, i) => {
 												return (
-													<Fragment key={commit.commit.author.date}>
+													<Fragment key={commit.commit.author.date + i}>
 														<ProjectCommitItem
 															project={project}
 															commit={commit}
