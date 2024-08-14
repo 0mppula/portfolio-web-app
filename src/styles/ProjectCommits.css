@@ -142,21 +142,19 @@
 		margin-bottom: 0;
 	}
 
-	h3 {
+	h3 a {
 		line-height: 24px;
 
-		a {
-			width: fit-content;
-			text-decoration: none;
-			color: var(--clr-black);
+		width: fit-content;
+		text-decoration: none;
+		color: var(--clr-black);
 
-			&:hover {
-				text-decoration: underline !important;
-			}
+		&:hover {
+			text-decoration: underline !important;
+		}
 
-			&:active {
-				text-decoration: dashed underline !important;
-			}
+		&:active {
+			text-decoration: dashed underline !important;
 		}
 	}
 
