@@ -129,19 +129,6 @@
 		margin-bottom: 0;
 	}
 
-	a.commit-author {
-		text-decoration: none !important;
-		color: var(--clr-black);
-
-		&:hover {
-			text-decoration: underline !important;
-		}
-
-		&:active {
-			text-decoration: dashed underline !important;
-		}
-	}
-
 	.commit-msg-header a {
 		line-height: 24px;
 
@@ -163,6 +150,19 @@
 		display: flex;
 		flex-direction: column;
 		overflow: hidden;
+	}
+}
+
+a.commit-author {
+	text-decoration: none !important;
+	color: var(--clr-black);
+
+	&:hover {
+		text-decoration: underline !important;
+	}
+
+	&:active {
+		text-decoration: dashed underline !important;
 	}
 }
 
