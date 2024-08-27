@@ -158,6 +158,10 @@ const About = () => {
 									on developing a full-stack web application for personal finance
 									management.
 								</li>
+								<li>
+									<b>Q3 2024</b> Graduated with a Bachelor's degree in Computer
+									Science.
+								</li>
 							</ul>
 							<Frame />
 						</div>
