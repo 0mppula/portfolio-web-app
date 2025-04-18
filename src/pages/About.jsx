@@ -51,9 +51,9 @@ const About = () => {
 						<h2>General Info</h2>
 						<div>
 							<p>
-								My name is <b>Omar Kraidié</b> I'm a third-year software engineering
-								student with over 4 years of professional experience in developing
-								client-facing projects for businesses, as well as 4+ years of
+								My name is <b>Omar Kraidié</b> I'm a fullstack software engineer
+								with over 4 years of professional experience developing
+								client-facing projects for businesses, as well as over 5 years of
 								experience developing independent open-source projects.
 							</p>
 							<p>
