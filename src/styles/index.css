@@ -372,7 +372,7 @@ li a {
 }
 
 .about-image {
-	background: url(../images/about_image.jpg) no-repeat center top;
+	background: url(../images/hero-1.png) no-repeat center 8%;
 	padding: 0rem !important;
 	background-size: cover;
 }

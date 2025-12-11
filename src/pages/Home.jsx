@@ -8,7 +8,7 @@ import Frame from '../components/Frame';
 import legacyProjects from '../data/legacy-projects.json';
 import projects from '../data/projects.json';
 import { useTitle } from '../hooks/useTitle';
-import hero from '../images/hero.png';
+import hero from '../images/hero-1.png';
 
 const stargazersToRememove = [97590272, 76154107];
 const projectsWithoutRepo = ['Simple JavaScript Projects'];
