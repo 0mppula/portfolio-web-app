@@ -8,13 +8,13 @@ import Frame from '../components/Frame';
 import legacyProjects from '../data/legacy-projects.json';
 import projects from '../data/projects.json';
 import { useTitle } from '../hooks/useTitle';
-import hero from '../images/hero-1.png';
+import hero from '../images/hero-2.jpg';
 
 const stargazersToRememove = [97590272, 76154107];
 const projectsWithoutRepo = ['Simple JavaScript Projects'];
 
 const allProjects = [...projects, ...legacyProjects].filter(
-	(repo) => !projectsWithoutRepo.includes(repo.title)
+	(repo) => !projectsWithoutRepo.includes(repo.title),
 );
 
 const fallbackStargazerAvatarUrls = [

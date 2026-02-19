@@ -21,7 +21,7 @@
 				height: var(--avatar-size);
 				width: var(--avatar-size);
 				object-fit: cover;
-				object-position: -4px 32px;
+				object-position: 4px 32px;
 				transform: scale(1.5);
 			}
 		}
