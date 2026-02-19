@@ -30,7 +30,7 @@
 			--avatar-size: 192px;
 
 			> img {
-				object-position: -4px 16px;
+				object-position: 2px 24px;
 				transform: scale(1.5);
 			}
 		}
