@@ -132,6 +132,20 @@
 		gap: 1rem;
 		margin-top: 1rem;
 
+		img {
+			height: 3rem;
+			width: 3rem;
+			border-radius: 50%;
+			object-fit: cover;
+			object-position: center;
+			margin-left: -0.5rem;
+			border: 2px solid #1b1b1b;
+
+			&:first-of-type {
+				margin-left: 0;
+			}
+		}
+
 		.ellipsis {
 			height: 3rem;
 			width: 3rem;
