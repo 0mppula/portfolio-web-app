@@ -75,22 +75,6 @@
 		"repositoryName": "KoronKorko"
 	},
 	{
-		"title": "GoalTrackr",
-		"technologies": [
-			"React.js",
-			"Next.js",
-			"TypeScript",
-			"Reactquery",
-			"Tailwind CSS",
-			"MongoDB",
-			"Vercel"
-		],
-		"liveUrl": "https://goaltrackr.vercel.app/",
-		"codeUrl": "https://github.com/0mppula/goal-trackr",
-		"info": "A fullstack Next.js 13 application created using the shadcn/ui library. The app allows authenticated users to list and track their daily goals. Global state is managed with Zustand, database queries are done using TanStack Query and authentication is managed with NextAuth.js. Data is saved to a MongoDB data base. Additionally, some routes are protected from unauthorized users.",
-		"repositoryName": "goal-trackr"
-	},
-	{
 		"title": "CoinCaps",
 		"technologies": ["JavaScript", "React.js", "Css3", "Node.js", "Netlify"],
 		"liveUrl": "https://coincaps.netlify.app/",
